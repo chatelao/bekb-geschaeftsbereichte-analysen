@@ -41,7 +41,7 @@ Diese Roadmap beschreibt den strukturierten Plan zur schrittweisen Konvertierung
 ### Phase 2: Konvertierung der Semesterberichte (2016–2023)
 - [x] Semesterberichte 2013–2015
 - [x] Batch 1: Semesterberichte 2016–2019
-- [ ] Batch 2: Semesterberichte 2020–2023
+- [x] Batch 2: Semesterberichte 2020–2023
 - [ ] Sichtprüfung und Qualitätskontrolle der erzeugten `.md`-Dateien
 
 ### Phase 3: Konvertierung der Geschäftsberichte (2003–2024)
@@ -77,7 +77,7 @@ Diese Roadmap beschreibt den strukturierten Plan zur schrittweisen Konvertierung
 | Meilenstein | Beschreibung | Status |
 | :--- | :--- | :--- |
 | **M1** | Infrastruktur & Konvertierungsskript eingerichtet | Abgeschlossen |
-| **M2** | Alle Semesterberichte (2013–2023) konvertiert | Teilweise (7/11) |
+| **M2** | Alle Semesterberichte (2013–2023) konvertiert | Abgeschlossen |
 | **M3** | Geschäftsberichte 2003–2012 konvertiert | Offen |
 | **M4** | Geschäftsberichte 2013–2024 konvertiert | Offen |
 | **M5** | Finaler Review & Abschlussdokumentation | Offen |
