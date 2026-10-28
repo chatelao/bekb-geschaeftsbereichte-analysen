@@ -31,16 +31,16 @@ Diese Roadmap beschreibt den strukturierten Plan zur schrittweisen Konvertierung
 
 ### Phase 1: Vorbereitung & Skripterstellung
 - [x] Download-Skript für fehlende Berichte erstellen (`download_reports.py`)
-- [ ] Erstellung eines Konvertierungsskripts (`convert_pdf_to_md.py`):
+- [x] Erstellung eines Konvertierungsskripts (`convert_pdf_to_md.py`):
   - Automatisches Einlesen aller PDF-Dateien aus `pdf/`
   - Konvertierung mittels `pymupdf4llm.to_markdown()`
   - Bildextraktion nach `.md/images/<pdf-name>/`
   - Speichern der `.md`-Dateien in `.md/`
-- [ ] Abhängigkeiten verifizieren (`pymupdf4llm`, `PyMuPDF`)
+- [x] Abhängigkeiten verifizieren (`pymupdf4llm`, `PyMuPDF`)
 
 ### Phase 2: Konvertierung der Semesterberichte (2016–2023)
 - [x] Semesterberichte 2013–2015
-- [ ] Batch 1: Semesterberichte 2016–2019
+- [x] Batch 1: Semesterberichte 2016–2019
 - [ ] Batch 2: Semesterberichte 2020–2023
 - [ ] Sichtprüfung und Qualitätskontrolle der erzeugten `.md`-Dateien
 
@@ -76,8 +76,8 @@ Diese Roadmap beschreibt den strukturierten Plan zur schrittweisen Konvertierung
 
 | Meilenstein | Beschreibung | Status |
 | :--- | :--- | :--- |
-| **M1** | Infrastruktur & Konvertierungsskript eingerichtet | In Arbeit |
-| **M2** | Alle Semesterberichte (2013–2023) konvertiert | Teilweise (3/11) |
+| **M1** | Infrastruktur & Konvertierungsskript eingerichtet | Abgeschlossen |
+| **M2** | Alle Semesterberichte (2013–2023) konvertiert | Teilweise (7/11) |
 | **M3** | Geschäftsberichte 2003–2012 konvertiert | Offen |
 | **M4** | Geschäftsberichte 2013–2024 konvertiert | Offen |
 | **M5** | Finaler Review & Abschlussdokumentation | Offen |
