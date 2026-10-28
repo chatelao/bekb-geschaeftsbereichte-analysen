@@ -45,7 +45,7 @@ Diese Roadmap beschreibt den strukturierten Plan zur schrittweisen Konvertierung
 - [ ] Sichtprüfung und Qualitätskontrolle der erzeugten `.md`-Dateien
 
 ### Phase 3: Konvertierung der Geschäftsberichte (2003–2024)
-- [ ] Batch 1: Geschäftsberichte 2003–2009 (Ältere Berichte, einfache/klassische Layouts)
+- [x] Batch 1: Geschäftsberichte 2003–2009 (Ältere Berichte, einfache/klassische Layouts)
 - [ ] Batch 2: Geschäftsberichte 2010–2016 (Mittlere Dekade, komplexere Tabellen)
 - [ ] Batch 3: Geschäftsberichte 2017–2024 (Neueste Berichte, umfangreiche Finanztabellen)
 - [ ] Überprüfung der Bild- und Tabellenintegrität
@@ -78,6 +78,6 @@ Diese Roadmap beschreibt den strukturierten Plan zur schrittweisen Konvertierung
 | :--- | :--- | :--- |
 | **M1** | Infrastruktur & Konvertierungsskript eingerichtet | Abgeschlossen |
 | **M2** | Alle Semesterberichte (2013–2023) konvertiert | Abgeschlossen |
-| **M3** | Geschäftsberichte 2003–2012 konvertiert | Offen |
-| **M4** | Geschäftsberichte 2013–2024 konvertiert | Offen |
+| **M3** | Geschäftsberichte 2003–2009 konvertiert | Abgeschlossen |
+| **M4** | Geschäftsberichte 2010–2024 konvertiert | Offen |
 | **M5** | Finaler Review & Abschlussdokumentation | Offen |
