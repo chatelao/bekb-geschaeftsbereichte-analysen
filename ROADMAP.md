@@ -46,7 +46,7 @@ Diese Roadmap beschreibt den strukturierten Plan zur schrittweisen Konvertierung
 
 ### Phase 3: Konvertierung der Geschäftsberichte (2003–2024)
 - [x] Batch 1: Geschäftsberichte 2003–2009 (Ältere Berichte, einfache/klassische Layouts)
-- [ ] Batch 2: Geschäftsberichte 2010–2016 (Mittlere Dekade, komplexere Tabellen)
+- [x] Batch 2: Geschäftsberichte 2010–2016 (Mittlere Dekade, komplexere Tabellen)
 - [ ] Batch 3: Geschäftsberichte 2017–2024 (Neueste Berichte, umfangreiche Finanztabellen)
 - [ ] Überprüfung der Bild- und Tabellenintegrität
 
