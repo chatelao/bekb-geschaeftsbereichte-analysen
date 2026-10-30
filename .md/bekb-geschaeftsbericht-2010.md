@@ -6591,3 +6591,4 @@ Bern-Liebefeld, Schwarzenburgstrasse 160 Biel-Mett, Poststrasse 17 Ittigen, Auto
 Berner Kantonalbank AG / Banque Cantonale Bernoise SA
 
 601.081.00
+
