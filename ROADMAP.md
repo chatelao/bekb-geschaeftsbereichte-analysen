@@ -21,9 +21,8 @@ Diese Roadmap beschreibt den strukturierten Plan zur schrittweisen Konvertierung
   - `bekb-semesterbericht-2013.pdf` bis `bekb-semesterbericht-2023.pdf`
 
 ### Aktueller Fortschritt
-- [x] Semesterberichte 2013–2015 konvertiert (`.md/bekb-semesterbericht-2013.md` bis `2015.md`)
-- [ ] Semesterberichte 2016–2023 ausstehend
-- [ ] Geschäftsberichte 2003–2024 ausstehend
+- [x] Semesterberichte 2013–2023 konvertiert (`.md/bekb-semesterbericht-2013.md` bis `2023.md`)
+- [x] Geschäftsberichte 2003–2024 konvertiert (`.md/bekb-geschaeftsbericht-2003.md` bis `2024.md`)
 
 ---
 
@@ -47,7 +46,7 @@ Diese Roadmap beschreibt den strukturierten Plan zur schrittweisen Konvertierung
 ### Phase 3: Konvertierung der Geschäftsberichte (2003–2024)
 - [x] Batch 1: Geschäftsberichte 2003–2009 (Ältere Berichte, einfache/klassische Layouts)
 - [x] Batch 2: Geschäftsberichte 2010–2016 (Mittlere Dekade, komplexere Tabellen)
-- [ ] Batch 3: Geschäftsberichte 2017–2024 (Neueste Berichte, umfangreiche Finanztabellen)
+- [x] Batch 3: Geschäftsberichte 2017–2024 (Neueste Berichte, umfangreiche Finanztabellen)
 - [ ] Überprüfung der Bild- und Tabellenintegrität
 
 ### Phase 4: Qualitätskontrolle & Nachbearbeitung
@@ -79,5 +78,5 @@ Diese Roadmap beschreibt den strukturierten Plan zur schrittweisen Konvertierung
 | **M1** | Infrastruktur & Konvertierungsskript eingerichtet | Abgeschlossen |
 | **M2** | Alle Semesterberichte (2013–2023) konvertiert | Abgeschlossen |
 | **M3** | Geschäftsberichte 2003–2009 konvertiert | Abgeschlossen |
-| **M4** | Geschäftsberichte 2010–2024 konvertiert | Offen |
+| **M4** | Geschäftsberichte 2010–2024 konvertiert | Abgeschlossen |
 | **M5** | Finaler Review & Abschlussdokumentation | Offen |

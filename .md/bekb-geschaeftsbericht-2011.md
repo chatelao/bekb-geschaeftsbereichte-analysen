@@ -4361,3 +4361,4 @@ Aarberg 032 392 42 14 Aarwangen 062 916 27 90 Adelboden 033 673 71 71 Anet 032 3
 Berne-Liebefeld, Schwarzenburgstrasse 160 Bienne-Mâche, Poststrasse 17 Ittigen, restoroute Grauholz Langenthal, gare CFF Ostermundigen, Centre MM Soleure, Hauptgasse 14 Spiez, Centre MM
 
 Banque Cantonale Bernoise SA / Berner Kantonalbank AG  601.081.01Banque Cantonale Bernoise SA / Berner Kantonalbank AG
+
