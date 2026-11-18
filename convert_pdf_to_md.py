@@ -17,7 +17,7 @@ def convert_pdf(pdf_path, output_dir=".md", images_base_dir=".md/images", force=
     target_md_path = os.path.join(output_dir, f"{stem}.md")
     target_img_dir = os.path.join(images_base_dir, stem)
 
-    if os.path.exists(target_md_path) and not force:
+    if os.path.exists(target_md_path) and os.path.getsize(target_md_path) > 0 and not force:
         print(f"[SKIP] {target_md_path} already exists. Use --force to overwrite.")
         return True
 
@@ -32,6 +32,10 @@ def convert_pdf(pdf_path, output_dir=".md", images_base_dir=".md/images", force=
             image_path=target_img_dir,
             image_format="png"
         )
+        if not md_text or not md_text.strip():
+            print(f"[ERROR] Extracted Markdown for {pdf_path} is empty.")
+            return False
+
         # Fix image paths in markdown to be relative to the .md directory
         # pymupdf4llm prefixes image path with the target_img_dir passed to it
         md_text = md_text.replace(f"{target_img_dir}/", f"images/{stem}/")
