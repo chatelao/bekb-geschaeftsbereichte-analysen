@@ -503,6 +503,101 @@ def build_offenlegung_panel(
     return rows
 
 
+# Offizieller Schweizer Landesindex der Konsumentenpreise (BFS LIK Jahresdurchschnitt Ø, Basis Dez. 1982 = 100)
+BFS_LIK_DEZ1982: dict[int, float] = {
+    2003: 150.7, 2004: 152.0, 2005: 153.7, 2006: 155.4, 2007: 156.5,
+    2008: 160.3, 2009: 159.5, 2010: 160.6, 2011: 161.0, 2012: 159.9,
+    2013: 159.5, 2014: 159.5, 2015: 157.7, 2016: 157.0, 2017: 157.8,
+    2018: 159.3, 2019: 159.9, 2020: 158.7, 2021: 159.7, 2022: 164.2,
+    2023: 167.7, 2024: 169.5, 2025: 169.7,
+}
+
+# Geprüfte ordentliche Vergütungen gemäss Corporate-Governance-/Vergütungsberichten der BEKB-Geschäftsberichte
+# Format: (vr_total_tchf, vr_fte_seats, ceo_total_tchf, gl_total_tchf, gl_fte_seats, notes)
+# Hinweis: 2003 & 2006 sind Kurzberichte ohne vollständige VR/CEO/GL-Vergütungstabellen.
+COMP_ORDINARY_DATA: dict[int, tuple[float, float, float, float, float, str]] = {
+    2004: (1740.0, 10.0, 938.0, 2870.0, 4.0, "GL: 1 CEO + 3 GL-Mitgl. (Suter bis 30.09., Eggenschwiler ab 01.10.)"),
+    2005: (1920.0, 10.0, 960.0, 2900.0, 4.167, "Frz. Geschäftsbericht; GL: 4 ganzj. + Hopf ab 01.11. (2/12)"),
+    2007: (1954.0, 10.0, 954.0, 3289.0, 4.5, "Vergütung gemäss Vorjahrestabelle GB 2008; Gewinn inkl. BKW-Einmalverkauf (+132,5 Mio. netto)"),
+    2008: (1958.0, 10.0, 962.0, 2961.0, 4.0, "Kontinuierliche Vergütungsberichterstattung ab 2008"),
+    2009: (1839.0, 9.0, 970.0, 3136.0, 4.0, "VR auf 9 Sitze reduziert"),
+    2010: (1827.0, 8.925, 971.0, 3415.0, 4.333, "VR: Funk verstorben 02.11.2010 (37/40); GL: Schärli ab 01.09. (4/12)"),
+    2011: (1726.0, 8.0, 968.0, 3779.0, 5.0, "GL: 5 Vollzeitmitglieder"),
+    2012: (1725.0, 8.2, 933.0, 3071.0, 4.0, "Ordentliche Vergütung exkl. einmalige 10J-Nachhaltigkeitsprämie (VR +1'290, CEO +319, GL +991 TCHF)"),
+    2013: (1816.0, 8.75, 980.0, 3311.0, 4.0, "VegüV restated im GB 2014 inkl. gesetzl. AHV/IV/ALV; Personalaufwand ohne PK-Einlage (15'310 TCHF)"),
+    2014: (1722.0, 8.575, 1027.0, 3358.0, 4.0, "VR: Hunziker ab 13.05.2014 (23/40)"),
+    2015: (1573.0, 8.0, 1013.0, 3337.0, 4.0, "Personalaufwand ohne einmalige PK-Sanierungseinlage (83'778 TCHF)"),
+    2016: (1437.0, 8.0, 1003.0, 3325.0, 4.0, "Senkung variabler VR-Anteile"),
+    2017: (1372.0, 8.0, 994.0, 3322.0, 4.0, "Ab 01.01.2017 Verzicht auf variable VR-Vergütung; exkl. NP & Pensionierungsabgeltungen"),
+    2018: (1324.0, 8.0, 1008.0, 3734.0, 5.0, "Erweiterte GL auf 5 Mitglieder"),
+    2019: (1330.0, 8.0, 791.0, 3423.0, 4.583, "CEO-Wechsel 30.06.2019 (A. Brun: 6 Mt. GL + 6 Mt. CEO statt H. Rüfenacht)"),
+    2020: (1356.0, 8.0, 891.0, 3518.0, 5.0, "Erstes volles Jahr CEO Armin Brun"),
+    2021: (1431.0, 8.5, 898.0, 3520.0, 5.0, "VR: Schürmann ab 01.07.2021 (0,5 Sitz)"),
+    2022: (1531.0, 9.0, 937.0, 3603.0, 5.0, "VegüV restated exkl. Kinderzulagen; FTE auf 940 durch IT-Auslagerung (aity AG)"),
+    2023: (1517.0, 9.0, 970.0, 3930.0, 5.5, "GL: 4 ganzj. + Schafer 12 Mt. Kündigungsfrist + Kern 4/12 + Sottile 2/12"),
+    2024: (1471.0, 9.0, 992.0, 4301.0, 5.583, "GL: 5 ganzj. + Schärli 4/12 + Schafer 3/12 Kündigungsfrist"),
+    2025: (1452.0, 9.0, 998.0, 4685.0, 6.6, "GL-Bestand gemäss GB 2025 S. 2316 explizit teilzeitbereinigt 6,6 FTE"),
+}
+
+
+def build_real_compensation_panel(annual_rows: list[dict]) -> list[dict]:
+    """Erstellt die rückwirkend auf real 2025 CHF inflationsbereinigte Vergütungs- und Gewinnzeitreihe (2003–2025)."""
+    lik_base_2025 = BFS_LIK_DEZ1982[2025]
+    rows: list[dict] = []
+    for r in annual_rows:
+        y = r["year"]
+        lik = BFS_LIK_DEZ1982[y]
+        factor = lik_base_2025 / lik
+
+        profit_nom = r.get("net_profit_mio")
+        profit_real = r_round(profit_nom * factor, 3) if profit_nom is not None else None
+
+        pers_nom_tchf = abs(r["personnel_expenses"]) if r.get("personnel_expenses") is not None else None
+        pers_real_mio = r_round((pers_nom_tchf / 1000.0) * factor, 3) if pers_nom_tchf is not None else None
+
+        fte = r.get("fte_count")
+        avg_fte_nom = r_round(safe_div(pers_nom_tchf, fte), 2)
+        avg_fte_real = r_round(avg_fte_nom * factor, 2) if avg_fte_nom is not None else None
+
+        comp = COMP_ORDINARY_DATA.get(y)
+        if comp:
+            vr_tot, vr_seats, ceo_nom, gl_tot, gl_seats, notes = comp
+            vr_avg_nom = r_round(vr_tot / vr_seats, 2)
+            vr_avg_real = r_round(vr_avg_nom * factor, 2)
+            ceo_real = r_round(ceo_nom * factor, 2)
+            gl_ex_ceo_avg_nom = r_round((gl_tot - ceo_nom) / (gl_seats - 1.0), 2)
+            gl_ex_ceo_avg_real = r_round(gl_ex_ceo_avg_nom * factor, 2)
+        else:
+            vr_tot = vr_seats = vr_avg_nom = vr_avg_real = None
+            ceo_nom = ceo_real = gl_tot = gl_seats = gl_ex_ceo_avg_nom = gl_ex_ceo_avg_real = None
+            notes = "Kurzbericht ohne ausgewiesene VR/CEO/GL-Vergütungstabellen"
+
+        rows.append({
+            "year": y,
+            "bfs_lik_dez1982": lik,
+            "cpi_factor_2025": r_round(factor, 6),
+            "net_profit_mio_nom": profit_nom,
+            "net_profit_mio_real2025": profit_real,
+            "personnel_ord_tchf_nom": pers_nom_tchf,
+            "personnel_ord_mio_real2025": pers_real_mio,
+            "fte_count": fte,
+            "avg_per_fte_tchf_nom": avg_fte_nom,
+            "avg_per_fte_tchf_real2025": avg_fte_real,
+            "vr_total_tchf_nom": vr_tot,
+            "vr_fte_seats": vr_seats,
+            "vr_avg_tchf_nom": vr_avg_nom,
+            "vr_avg_tchf_real2025": vr_avg_real,
+            "ceo_total_tchf_nom": ceo_nom,
+            "ceo_total_tchf_real2025": ceo_real,
+            "gl_total_tchf_nom": gl_tot,
+            "gl_fte_seats": gl_seats,
+            "gl_ex_ceo_avg_tchf_nom": gl_ex_ceo_avg_nom,
+            "gl_ex_ceo_avg_tchf_real2025": gl_ex_ceo_avg_real,
+            "notes": notes,
+        })
+    return rows
+
+
 def export_csv(path: Path, rows: list[dict], columns: list[str]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="", encoding="utf-8") as fh:
@@ -894,7 +989,7 @@ Der aktuelle Offenlegungsbericht **per 30.06.2026** weist **{fmt_num(h26['cet1_c
     return title, data_table, body
 
 
-def report_4_effizienz(ann: list[dict]) -> tuple[str, str, str]:
+def report_4_effizienz(ann: list[dict], comp_rows: list[dict]) -> tuple[str, str, str]:
     title = "Mehrjahresbericht 4: Operative Effizienz, Digitalisierung & Filialnetz-Transformation (2003–2025)"
     header = "| Jahr | Geschäftsaufwand (Mio.) | Personalaufwand (Mio.) | Sachaufwand (Mio.) | CIR (%) | CIR bereinigt (%) | FTE | Standorte | Ertrag / FTE (TCHF) | Bilanzsumme / FTE (Mio.) | AuM / FTE (Mio.) |"
     sep = "| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |"
@@ -914,14 +1009,19 @@ def report_4_effizienz(ann: list[dict]) -> tuple[str, str, str]:
     gen_03 = abs(r2003["general_expenses"]) / 1000.0
     gen_25 = abs(r2025["general_expenses"]) / 1000.0
     gen_chg = safe_div(gen_25 - gen_03, gen_03, 100.0)
+    c04 = next(c for c in comp_rows if c["year"] == 2004)
+    c25 = next(c for c in comp_rows if c["year"] == 2025)
+    fte_real_chg = safe_div(c25["avg_per_fte_tchf_real2025"] - c04["avg_per_fte_tchf_real2025"], c04["avg_per_fte_tchf_real2025"], 100.0)
+    pers_real_chg = safe_div(c25["personnel_ord_mio_real2025"] - c04["personnel_ord_mio_real2025"], c04["personnel_ord_mio_real2025"], 100.0)
 
     body = f"""# {title}
 
-> **Datenbasis:** Bereinigte Jahresabschlüsse 2003–2025 (`data/bekb_panel_annual.csv`). Hinweis: Ab 2015 Rechnungslegung nach FINMA-RVB; 2015 enthält eine einmalige PK-Zuweisung (83,8 Mio. CHF).
+> **Datenbasis:** Bereinigte Jahresabschlüsse 2003–2025 (`data/bekb_panel_annual.csv`) sowie inflationsbereinigte Vergütungsreihe (`data/bekb_verguetung_real_2003_2025.csv`). Hinweis: Ab 2015 Rechnungslegung nach FINMA-RVB; 2015 enthält eine einmalige PK-Zuweisung (83,8 Mio. CHF).
 
 ## 1. Management Summary
 
 - **Starke Steigerung der Produktivität pro Vollzeitstelle:** Zwischen 2003 und 2025 sank der Personalbestand (FTE) um **–{fmt_pct(abs(safe_div(r2025['fte_count'] - r2003['fte_count'], r2003['fte_count'], 100.0)))}** (von **{fmt_num(r2003['fte_count'], 0)} FTE** auf **{fmt_num(r2025['fte_count'], 0)} FTE**; Tiefststand 2022: **{fmt_num(r2022['fte_count'], 0)} FTE**), während sich die Bilanzsumme je FTE von **{fmt_num(r2003['assets_per_fte_mio'], 2)} Mio. CHF (2003)** auf **{fmt_num(r2025['assets_per_fte_mio'], 2)} Mio. CHF (2025, +{fmt_pct(safe_div(r2025['assets_per_fte_mio'] - r2003['assets_per_fte_mio'], r2003['assets_per_fte_mio'], 100.0))})** und der Geschäftsertrag je FTE von **{fmt_num(r2003['income_per_fte_tchf'])} TCHF** auf **{fmt_num(r2025['income_per_fte_tchf'])} TCHF (+{fmt_pct(safe_div(r2025['income_per_fte_tchf'] - r2003['income_per_fte_tchf'], r2003['income_per_fte_tchf'], 100.0))})** erhöhten.
+- **Realer Lohnanstieg pro FTE bei konstanten Gesamtlohnkosten:** Inflationsbereinigt (BFS LIK, Basis 2025) stieg der ordentliche Personalaufwand je FTE von **{fmt_num(c04['avg_per_fte_tchf_real2025'])} TCHF (2004)** auf **{fmt_num(c25['avg_per_fte_tchf_real2025'])} TCHF (2025, +{fmt_pct(fte_real_chg)})**, während die realen Gesamtlohnkosten dank Personalabbau fast unverändert blieben (**{fmt_num(c04['personnel_ord_mio_real2025'])}** $\\rightarrow$ **{fmt_num(c25['personnel_ord_mio_real2025'])} Mio. CHF**, +{fmt_pct(pers_real_chg)}).
 - **Disziplinierte Cost-Income-Ratio (CIR):** Trotz steigender IT- und Regulatorik-Ausgaben blieb die operative CIR meist nahe oder unter **55 %** (Spitzenwerte in der Zinswende: **2023: {fmt_pct(r2023['cir_pct'])}**; **2024: {fmt_pct(r2024['cir_pct'])}**; **2025: {fmt_pct(r2025['cir_pct'])}**).
 - **Einmaleffekt 2015 sauber isoliert:** Die ausgewiesene CIR 2015 von **{fmt_pct(r2015['cir_pct'])}** resultiert ausschliesslich aus der einmaligen Stärkung der BEKB-Pensionskasse (**83,8 Mio. CHF**); bereinigt betrug der Geschäftsaufwand **{fmt_num(r2015['operating_expenses_ex_oneoff_mio'])} Mio. CHF** (CIR bereinigt: **{fmt_pct(r2015['cir_ex_oneoff_pct'])}**).
 - **Wandel des Standortnetzes:** Die klassischen Niederlassungen wurden bis 2019 von **79 (2011/2012)** auf **60 (2019)** reduziert. Mit der «Strategie 2025» erfasste die BEKB ab **2020** breiter sämtliche *Standorte* (Smart- und Beratungscenter: **81** in 2020 $\\rightarrow$ **72** in 2024/2025).
@@ -929,6 +1029,10 @@ def report_4_effizienz(ann: list[dict]) -> tuple[str, str, str]:
 ## 2. Quantitative Entwicklung & Visuelle Analyse
 
 ![Operative Effizienz, Kostenstruktur und Produktivität pro FTE 2003–2025](./charts/04_effizienz_produktivitaet_2003_2025.png)
+
+### Inflationsbereinigter Vergleich: Gesamtgewinn, Lohnkosten & Pro-Kopf-Vergütung (real 2025 CHF)
+
+![Inflationsbereinigte Entwicklung von Gesamtgewinn, Lohnkosten, VR-, CEO-, GL- und FTE-Vergütung 2003–2025](./charts/07_gewinn_loehne_verguetung_real_2003_2025.png)
 
 ### Phasenvergleich
 
@@ -1091,7 +1195,7 @@ Der Abgleich der 14 Semesterberichte zeigt eine hochgradig verlässliche unterj�
     return title, data_table, body
 
 
-def report_7_epochen(ann: list[dict], sem: list[dict], off: list[dict]) -> tuple[str, str, str]:
+def report_7_epochen(ann: list[dict], sem: list[dict], off: list[dict], comp_rows: list[dict]) -> tuple[str, str, str]:
     title = "Mehrjahresbericht 7: Strategische Epochen, Nachhaltigkeit & Governance im Wandel (2003–2026)"
     e1 = [x for x in ann if 2003 <= x["year"] <= 2012]
     e2 = [x for x in ann if 2013 <= x["year"] <= 2019]
@@ -1109,14 +1213,36 @@ def report_7_epochen(ann: list[dict], sem: list[dict], off: list[dict]) -> tuple
     ]
     data_table = "\n".join(t_rows)
 
+    c04 = next(c for c in comp_rows if c["year"] == 2004)
+    c08 = next(c for c in comp_rows if c["year"] == 2008)
+    c25 = next(c for c in comp_rows if c["year"] == 2025)
+
+    def pct_diff(a: float, b: float) -> str:
+        val = safe_div(b - a, a, 100.0)
+        return f"+{fmt_pct(val)}" if val is not None and val >= 0 else fmt_pct(val)
+
+    comp_table_lines = [
+        "| Jahr | BFS LIK (Dez. 82=100) | Faktor 2025 | Gesamtgewinn real (Mio.) | Lohnkosten gesamt real (Mio.) | Ø Personalaufw./FTE real (TCHF) | Ø VR-Mitglied real (TCHF) | CEO-Lohn real (TCHF) | Ø GL ohne CEO real (TCHF) |",
+        "| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |",
+    ]
+    for c in comp_rows:
+        comp_table_lines.append(
+            f"| {c['year']} | {fmt_num(c['bfs_lik_dez1982'], 1)} | {fmt_num(c['cpi_factor_2025'], 3)} | "
+            f"{fmt_num(c['net_profit_mio_real2025'], 1)} | {fmt_num(c['personnel_ord_mio_real2025'], 1)} | "
+            f"{fmt_num(c['avg_per_fte_tchf_real2025'], 1)} | {fmt_num(c['vr_avg_tchf_real2025'], 1)} | "
+            f"{fmt_num(c['ceo_total_tchf_real2025'], 1)} | {fmt_num(c['gl_ex_ceo_avg_tchf_real2025'], 1)} |"
+        )
+    comp_table = "\n".join(comp_table_lines)
+
     body = f"""# {title}
 
-> **Datenbasis:** Synthese aus Lageberichten, Corporate-Governance-Kapiteln und quantitativem Gesamtpanel (2003–H1-2026) gemäss `ANALYSE_STRATEGIE.md`.
+> **Datenbasis:** Synthese aus Lageberichten, Corporate-Governance-Kapiteln und quantitativem Gesamtpanel (2003–H1-2026) gemäss `ANALYSE_STRATEGIE.md` sowie inflationsbereinigtem Vergütungs-Panel (`data/bekb_verguetung_real_2003_2025.csv`, BFS LIK Jahresdurchschnitt, Basis 2025 = 100 %).
 
 ## 1. Management Summary
 
 - **Drei konsistente strategische Epochen ohne Zickzackkurs:** Über 24 Berichtsjahre hinweg verfolgte die BEKB konsequent eine Strategie der regionalen Verankerung (Espace Mittelland / Kantone Bern und Solothurn), des bewussten Verzichts auf hochrisikobehaftetes Investmentbanking und des stetigen Substanzaufbaus.
 - **Vom FCF-Ziel zur Ökosystem- und Nachhaltigkeitsbank:** Während **Epoche 1 (2003–2012)** durch das quantitative 10-Jahres-Ziel «800 Mio. bis 1 Mrd. CHF Free-Cash-Flow» und den Abschied von der Staatsgarantie geprägt war, standen in **Epoche 2 (2013–2019)** Eigenmittelstärke unter FINMA-RVB, der BEKB-Förderfonds und die Standortbereinigung im Fokus. **Epoche 3 (2020–2026)** verankerte mit der **«Strategie 2025»** Ökosysteme (Wohnen, Vorsorge, KMU), GRI-konforme Nachhaltigkeitsberichterstattung und die digitale Transformation.
+- **Reale Entkopplung von Gewinnwachstum und Spitzenvergütungen (2004–2025, real 2025 CHF):** Während der inflationsbereinigte **Gesamtgewinn** um **{pct_diff(c04['net_profit_mio_real2025'], c25['net_profit_mio_real2025'])}** (**{fmt_num(c04['net_profit_mio_real2025'])}** $\\rightarrow$ **{fmt_num(c25['net_profit_mio_real2025'])} Mio. CHF**; ggü. 2008: **{pct_diff(c08['net_profit_mio_real2025'], c25['net_profit_mio_real2025'])}**) stieg, legte der reale **Personalaufwand je FTE** um **{pct_diff(c04['avg_per_fte_tchf_real2025'], c25['avg_per_fte_tchf_real2025'])}** (**{fmt_num(c04['avg_per_fte_tchf_real2025'])}** $\\rightarrow$ **{fmt_num(c25['avg_per_fte_tchf_real2025'])} TCHF**) zu und die gesamten realen **Lohnkosten** blieben praktisch stabil (**{pct_diff(c04['personnel_ord_mio_real2025'], c25['personnel_ord_mio_real2025'])}**). Gleichzeitig gingen die realen Durchschnittsvergütungen von **VR-Mitgliedern ({pct_diff(c04['vr_avg_tchf_real2025'], c25['vr_avg_tchf_real2025'])})**, **GL-Mitgliedern ohne CEO ({pct_diff(c04['gl_ex_ceo_avg_tchf_real2025'], c25['gl_ex_ceo_avg_tchf_real2025'])})** und **CEO ({pct_diff(c04['ceo_total_tchf_real2025'], c25['ceo_total_tchf_real2025'])})** zurück.
 - **Kontinuität in der Governance:** Trotz Generationenwechseln an der Spitze – aktuell mit der Wahl von **Dr. Annelis Lüscher Hämmerli zur Verwaltungsratspräsidentin im H1 2026** neben CEO Armin Brun – blieben Risikoprofil, Ausschüttungskontinuität (30 Jahre ununterbrochene Dividendenerhöhung) und Kapitalresilienz (**CET1 06-2026: {fmt_pct(o26['cet1_ratio_pct'], 2)}**) unverändert stabil.
 
 ## 2. Quantitative Entwicklung & Langfrist-Scorecard
@@ -1124,6 +1250,14 @@ def report_7_epochen(ann: list[dict], sem: list[dict], off: list[dict]) -> tuple
 ![Langfrist-Scorecard über drei Strategie-Epochen 2003 bis 2025](./charts/07_langfrist_dashboard_epochen_2003_2026.png)
 
 {data_table}
+
+### Inflationsbereinigte Gewinn-, Lohn- und Vergütungsentwicklung (real 2025 CHF)
+
+![Inflationsbereinigte Entwicklung von Gesamtgewinn, Lohnkosten, VR-, CEO-, GL- und FTE-Vergütung 2003–2025](./charts/07_gewinn_loehne_verguetung_real_2003_2025.png)
+
+> **Methodik & Bereinigungen:** Rückwirkende Teuerungsbereinigung mit dem **BFS Landesindex der Konsumentenpreise (LIK Jahresdurchschnitt, Basis 2025 = 169,7 Punkte)**. Ausgewiesen sind jeweils die **ordentlichen** Gesamtvergütungen (inkl. Vorsorgeleistungen und ab 2013 VegüV inkl. gesetzlicher AHV/IV/ALV; 2012/2017 ohne einmalige 10-Jahres-Nachhaltigkeitsprämie bzw. Pensionierungsabgeltungen; ordentlicher Personalaufwand ohne PK-Einmalzuweisungen 2013/2015). Pro-Kopf-Werte bei VR und GL berücksichtigen unterjährige Ein-/Austritte und Kündigungsfristen exakt pro rata temporis (2025 GL gemäss GB S. 2316 explizit teilzeitbereinigt `6,6 FTE`). Kurzberichte 2003 & 2006 publizierten keine VR/CEO/GL-Tabellen.
+
+{comp_table}
 
 ## 3. Treiberanalyse & Strukturelle Wendepunkte
 
@@ -1133,6 +1267,7 @@ def report_7_epochen(ann: list[dict], sem: list[dict], off: list[dict]) -> tuple
    - Krönender Abschluss 2012: Ziel deutlich übertroffen, **Sonderdividende von CHF 5.30**, danach Ende der Staatsgarantie ab 2013/2014.
 2. **Epoche 2 (2013–2019) – «Langfristige Ausrichtung, FINMA-RVB & Nachhaltigkeit»:**
    - Nach dem Ende der Staatsgarantie (Garantieabgeltung fiel von **3,4 Mio. CHF** 2012 auf **0,1 Mio. CHF** 2013 bzw. **0,0 Mio. CHF** 2014) richtete sich die Bank noch stärker auf autonome Eigenmittelstärke aus (CET1-Quote 2015–2019 durchgehend zwischen **{fmt_pct(min(cet1_e2), 2)} und {fmt_pct(max(cet1_e2), 2)}**).
+   - Governance-Reform ab **1. Januar 2017**: Abschaffung der variablen Vergütungskomponente für den Verwaltungsrat, wodurch das reale VR-Salär pro Sitz bis 2025 um **–22,2 %** gegenüber 2008 sank (**{fmt_num(c08['vr_avg_tchf_real2025'])}** $\\rightarrow$ **{fmt_num(c25['vr_avg_tchf_real2025'])} TCHF**).
    - Rechnungslegungswechsel auf **FINMA-RVB (2015)** und einmalige **83,8-Mio.-CHF-Sanierungseinlage in die Pensionskasse** zur Absenkung des technischen Zinssatzes von 2,5 % auf 2,0 % – getragen durch vorher gebildete Reserven.
    - Start des BEKB-Förderfonds und Straffung der klassischen Filialzahl auf **60 (2019)** bei sinkendem Vollzeitbestand (**1'171 FTE** 2013 $\\rightarrow$ **1'013 FTE** 2019).
 3. **Epoche 3 (2020–2026) – «Strategie 2025, Digitalisierung & Governance-Übergang»:**
@@ -1141,7 +1276,7 @@ def report_7_epochen(ann: list[dict], sem: list[dict], off: list[dict]) -> tuple
 
 ## 4. Fazit & Ausblick
 
-Der Langfristvergleich 2003–2026 verdeutlicht, dass die überdurchschnittliche Stabilität der BEKB kein Zufallsprodukt einzelner Zinszyklen ist, sondern aus drei konstanten Governance-Pfeilern erwächst: konsequente Fokussierung auf den Heimatmarkt, konservative Kredit- und Handelsrisikopolitik sowie antizyklische Reservenbildung. Mit einer **Bilanzsumme von {fmt_num(h26['total_assets_mio'])} Mio. CHF (H1-2026)**, einem **Halbjahresgewinn von {fmt_num(h26['net_profit_mio'])} Mio. CHF (+{fmt_pct(h26['yoy_h1_net_profit_pct'])})**, einer **CIR von {fmt_pct(h26['cir_pct'])}** und einer **CET1-Quote von {fmt_pct(o26['cet1_ratio_pct'], 2)}** unter Basel III final startet die neue Führungsriege um VR-Präsidentin Dr. Annelis Lüscher Hämmerli und CEO Armin Brun aus einer Position historischer Stärke in den nächsten Strategiezyklus.
+Der Langfristvergleich 2003–2026 verdeutlicht, dass die überdurchschnittliche Stabilität der BEKB kein Zufallsprodukt einzelner Zinszyklen ist, sondern aus drei konstanten Governance-Pfeilern erwächst: konsequente Fokussierung auf den Heimatmarkt, konservative Kredit- und Handelsrisikopolitik sowie antizyklische Reservenbildung – flankiert von einer zurückhaltenden Vergütungspolitik auf VR- und GL-Stufe bei real steigendem Aufwand pro Vollzeitstelle. Mit einer **Bilanzsumme von {fmt_num(h26['total_assets_mio'])} Mio. CHF (H1-2026)**, einem **Halbjahresgewinn von {fmt_num(h26['net_profit_mio'])} Mio. CHF (+{fmt_pct(h26['yoy_h1_net_profit_pct'])})**, einer **CIR von {fmt_pct(h26['cir_pct'])}** und einer **CET1-Quote von {fmt_pct(o26['cet1_ratio_pct'], 2)}** unter Basel III final startet die neue Führungsriege um VR-Präsidentin Dr. Annelis Lüscher Hämmerli und CEO Armin Brun aus einer Position historischer Stärke in den nächsten Strategiezyklus.
 """
     return title, data_table, body
 
@@ -1150,7 +1285,7 @@ def write_readme(ann: list[dict], sem: list[dict], off: list[dict], healed_count
     r03, r25, h26, o26 = ann[0], ann[-1], sem[-1], off[-1]
     content = f"""# BEKB Mehrjahresanalysen (2003–2026)
 
-Dieser Ordner enthält die **7 konsolidierten Mehrjahresberichte** sowie **12 Visualisierungen (`charts/`)**, generiert aus allen **57 Geschäfts-, Semester- und Offenlegungsberichten** (`.md/*.md`) gemäss der Pipeline in [`ANALYSE_STRATEGIE.md`](../ANALYSE_STRATEGIE.md).
+Dieser Ordner enthält die **7 konsolidierten Mehrjahresberichte** sowie **13 Visualisierungen (`charts/`)**, generiert aus allen **57 Geschäfts-, Semester- und Offenlegungsberichten** (`.md/*.md`) gemäss der Pipeline in [`ANALYSE_STRATEGIE.md`](../ANALYSE_STRATEGIE.md).
 
 ![BEKB Langfrist-Scorecard über drei Strategie-Epochen 2003–2025](./charts/07_langfrist_dashboard_epochen_2003_2026.png)
 
@@ -1172,10 +1307,10 @@ Dieser Ordner enthält die **7 konsolidierten Mehrjahresberichte** sowie **12 Vi
 1. [01 – Zinszyklen & Ertragsarchitektur im Wandel (2003–2025)](./01_zinszyklen_und_ertragsarchitektur_2003_2025.md) — inkl. **Wasserfalldiagramm (Erfolgsrechnung 2025)** & **Kombiniertes Säulen-/Liniendiagramm**
 2. [02 – Bilanzwachstum, Hypothekarmarkt & Refinanzierungskraft (2003–2026)](./02_bilanzwachstum_hypotheken_und_refinanzierung_2003_2026.md) — inkl. **Gestapelte Bilanzsäulen (absolut & 100 %)**, **Treemap**, **Sankey-Diagramm** & **Langfrist-Bilanzwachstum**
 3. [03 – Aufsichtsrechtliche Resilienz & Basel-III-Evolution (2015–2026)](./03_aufsichtsrechtliche_resilienz_basel_iii_2015_2026.md) — inkl. **Horizontaler Soll-Ist-Vergleich** & **Basel-III-Zeitreihe**
-4. [04 – Operative Effizienz, Digitalisierung & Filialnetz-Transformation (2003–2025)](./04_operative_effizienz_und_transformation_2003_2025.md) — inkl. **Kosten-/CIR- & Produktivitätschart**
+4. [04 – Operative Effizienz, Digitalisierung & Filialnetz-Transformation (2003–2025)](./04_operative_effizienz_und_transformation_2003_2025.md) — inkl. **Kosten-/CIR- & Produktivitätschart** sowie **Reale Lohn- vs. Gewinnentwicklung**
 5. [05 – BEKB-Aktie, Dividendenkontinuität & Wertschöpfung für den Kanton Bern (2003–2025)](./05_aktie_dividenden_und_wertschoepfung_2003_2025.md) — inkl. **Kurs-/Dividendenverlauf & Rückflüsse öff. Hand**
 6. [06 – Unterjährige Dynamik & Halbjahres-Muster (Semesterberichte 2013–2026)](./06_unterjaehrige_dynamik_semesterberichte_2013_2026.md) — inkl. **H1/H2-Saisonalität & Reservensteuerung**
-7. [07 – Strategische Epochen, Nachhaltigkeit & Governance im Wandel (2003–2026)](./07_strategische_epochen_und_governance_2003_2026.md) — inkl. **Langfrist-Scorecard (2003 = 100)**
+7. [07 – Strategische Epochen, Nachhaltigkeit & Governance im Wandel (2003–2026)](./07_strategische_epochen_und_governance_2003_2026.md) — inkl. **Langfrist-Scorecard (2003 = 100)** & **Inflationsbereinigtem Gewinn-/Vergütungsvergleich (real 2025 CHF)**
 
 ## Datensätze & Audit
 
@@ -1183,9 +1318,10 @@ Dieser Ordner enthält die **7 konsolidierten Mehrjahresberichte** sowie **12 Vi
 - [`../data/bekb_panel_annual.csv`](../data/bekb_panel_annual.csv) (23 Geschäftsberichte 2003–2025 inkl. berechneter KPIs)
 - [`../data/bekb_panel_semester.csv`](../data/bekb_panel_semester.csv) (14 Semesterberichte H1-2013–H1-2026 inkl. Saisonalität)
 - [`../data/bekb_panel_offenlegung.csv`](../data/bekb_panel_offenlegung.csv) (20 Offenlegungsberichte 2015–06-2026)
+- [`../data/bekb_verguetung_real_2003_2025.csv`](../data/bekb_verguetung_real_2003_2025.csv) (Inflationsbereinigte Gewinn-, Lohnkosten-, VR-, CEO-, GL- & FTE-Reihe in real 2025 CHF inkl. BFS LIK)
 - [`../data/bekb_panel_all.json`](../data/bekb_panel_all.json) (vollständiges JSON-Dataset inkl. Validierungs-Log)
 - [`../data/validation_report.md`](../data/validation_report.md) ({healed_count} vorjahresgeheilte Werte, FINMA-RVB 2015 & Basel III final 2025)
-- [`../scripts/generate_charts.py`](../scripts/generate_charts.py) (Generator-Skript für alle 12 Grafiken unter [`charts/`](./charts/))
+- [`../scripts/generate_charts.py`](../scripts/generate_charts.py) (Generator-Skript für alle 13 Grafiken unter [`charts/`](./charts/))
 """
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
     (REPORTS_DIR / "README.md").write_text(content, encoding="utf-8")
@@ -1218,6 +1354,7 @@ def main() -> None:
     sem_by_y = {r["year"]: r for r in semester_rows}
 
     off_rows = build_offenlegung_panel(off_docs, ann_by_y, sem_by_y)
+    comp_rows = build_real_compensation_panel(annual_rows)
     all_disc = disc_ann + disc_sem
 
     ann_cols = [
@@ -1260,6 +1397,18 @@ def main() -> None:
         "leverage_ratio_pct", "lcr_pct", "nsfr_pct",
     ]
     export_csv(DATA_DIR / "bekb_panel_offenlegung.csv", off_rows, off_cols)
+
+    comp_cols = [
+        "year", "bfs_lik_dez1982", "cpi_factor_2025",
+        "net_profit_mio_nom", "net_profit_mio_real2025",
+        "personnel_ord_tchf_nom", "personnel_ord_mio_real2025",
+        "fte_count", "avg_per_fte_tchf_nom", "avg_per_fte_tchf_real2025",
+        "vr_total_tchf_nom", "vr_fte_seats", "vr_avg_tchf_nom", "vr_avg_tchf_real2025",
+        "ceo_total_tchf_nom", "ceo_total_tchf_real2025",
+        "gl_total_tchf_nom", "gl_fte_seats", "gl_ex_ceo_avg_tchf_nom", "gl_ex_ceo_avg_tchf_real2025",
+        "notes",
+    ]
+    export_csv(DATA_DIR / "bekb_verguetung_real_2003_2025.csv", comp_rows, comp_cols)
 
     # Kombiniertes Gesamtpanel (57 Zeilen) gemäss ANALYSE_STRATEGIE.md Kapitel 7
     combined_rows = []
@@ -1305,6 +1454,7 @@ def main() -> None:
         "annual": annual_rows,
         "semester": semester_rows,
         "offenlegung": off_rows,
+        "verguetung_real": comp_rows,
     }
     (DATA_DIR / "bekb_panel_all.json").write_text(json.dumps(all_json, indent=2, ensure_ascii=False), encoding="utf-8")
     (DATA_DIR / "validation_report.md").write_text(
@@ -1328,10 +1478,10 @@ def main() -> None:
         ("01_zinszyklen_und_ertragsarchitektur_2003_2025.md", *report_1_zinszyklen(annual_rows, semester_rows)),
         ("02_bilanzwachstum_hypotheken_und_refinanzierung_2003_2026.md", *report_2_bilanz(annual_rows, semester_rows)),
         ("03_aufsichtsrechtliche_resilienz_basel_iii_2015_2026.md", *report_3_offenlegung(off_rows)),
-        ("04_operative_effizienz_und_transformation_2003_2025.md", *report_4_effizienz(annual_rows)),
+        ("04_operative_effizienz_und_transformation_2003_2025.md", *report_4_effizienz(annual_rows, comp_rows)),
         ("05_aktie_dividenden_und_wertschoepfung_2003_2025.md", *report_5_aktie_kanton(annual_rows)),
         ("06_unterjaehrige_dynamik_semesterberichte_2013_2026.md", *report_6_semester(semester_rows, annual_rows)),
-        ("07_strategische_epochen_und_governance_2003_2026.md", *report_7_epochen(annual_rows, semester_rows, off_rows)),
+        ("07_strategische_epochen_und_governance_2003_2026.md", *report_7_epochen(annual_rows, semester_rows, off_rows, comp_rows)),
     ]
 
     for fname, title, md_table, local_body in specs:
@@ -1347,3 +1497,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

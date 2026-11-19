@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 BEKB Multi-Year Chart Generator (reports/charts/*.png)
-Erzeugt alle 12 hochauflösenden Grafiken direkt aus den validierten Datensätzen
+Erzeugt alle 13 hochauflösenden Grafiken direkt aus den validierten Datensätzen
 (`data/bekb_panel_all.json`) sowie den geprüften Jahresabschluss-Positionen 2025/2026:
 
 Bilanz-Grafiken (Bericht 02):
@@ -21,6 +21,7 @@ Weitere Langfrist- & Themen-Grafiken (Berichte 03–07 & README):
  10. 05_aktie_dividende_kanton_2003_2025.png
  11. 06_semester_saisonalitaet_reserven_2013_2026.png
  12. 07_langfrist_dashboard_epochen_2003_2026.png
+ 13. 07_gewinn_loehne_verguetung_real_2003_2025.png
 """
 
 from __future__ import annotations
@@ -104,6 +105,12 @@ def load_panel() -> tuple[list[dict], list[dict], list[dict]]:
     with (DATA_DIR / "bekb_panel_all.json").open("r", encoding="utf-8") as f:
         data = json.load(f)
     return data["annual"], data["semester"], data["offenlegung"]
+
+
+def load_verguetung_real() -> list[dict]:
+    with (DATA_DIR / "bekb_panel_all.json").open("r", encoding="utf-8") as f:
+        data = json.load(f)
+    return data["verguetung_real"]
 
 
 # ---------------------------------------------------------------------------
@@ -1076,11 +1083,247 @@ def chart_07_langfrist_dashboard(ann: list[dict], sem: list[dict]) -> None:
     plt.close(fig)
 
 
+# ---------------------------------------------------------------------------
+# 13. Gesamtgewinn vs. Lohnkosten, VR-, CEO-, GL- & FTE-Vergütung (real 2025 CHF)
+# ---------------------------------------------------------------------------
+
+def chart_07_gewinn_loehne_verguetung_real(comp: list[dict]) -> None:
+    fig = plt.figure(figsize=(15.6, 12.2))
+    gs = fig.add_gridspec(2, 2, height_ratios=[1.22, 1.0], hspace=0.50, wspace=0.18)
+    ax_idx = fig.add_subplot(gs[0, :])
+    ax_mac = fig.add_subplot(gs[1, 0])
+    ax_pk = fig.add_subplot(gs[1, 1])
+
+    years = [r["year"] for r in comp]
+    x = np.arange(len(years))
+    base_2008 = next(r for r in comp if r["year"] == 2008)
+
+    fig.suptitle(
+        "Gesamtgewinn vs. Lohnkosten, VR-, CEO-, GL- und FTE-Vergütung (2003–2025, rückwirkend inflationsbereinigt)",
+        fontsize=14.0, fontweight="bold", color=NAVY, y=0.972,
+    )
+    fig.text(
+        0.5, 0.943,
+        "Alle Frankenwerte real in Kaufkraft 2025 gemäss BFS-Landesindex der Konsumentenpreise (LIK Dez. 1982 = 100; 2003: 150,7 → 2025: 169,7)",
+        ha="center", va="top", fontsize=9.5, color=SLATE,
+    )
+
+    # --- Panel A: Reale Indexentwicklung (Basis 2008 = 100) ---
+    clean_ax(ax_idx, "y")
+    ax_idx.set_title(
+        "A) Reale Entwicklung im Indexvergleich (Basis 2008 = 100, Kaufkraft 2025)",
+        color=NAVY, pad=10, loc="left", fontsize=11.5,
+    )
+
+    # Hintergrund-Markierung ab 2013 (VegüV inkl. gesetzl. AHV/IV/ALV)
+    idx_13 = years.index(2013)
+    ax_idx.axvline(idx_13 - 0.5, color="#94A3B8", linestyle="--", lw=1.0, zorder=1)
+    ax_idx.text(
+        idx_13 - 0.35, 224,
+        "Ab 2013: VegüV-Ausweis\n(inkl. gesetzl. AHV/IV/ALV)",
+        fontsize=8.0, color=SLATE, va="top", ha="left",
+        bbox=dict(boxstyle="round,pad=0.25", facecolor="#F8FAFC", edgecolor="#CBD5E1", lw=0.7),
+    )
+
+    # Undisclosed Kurzberichte 2003 & 2006 leicht schattieren
+    for u_y in (2003, 2006):
+        ui = years.index(u_y)
+        ax_idx.axvspan(ui - 0.4, ui + 0.4, color="#E2E8F0", alpha=0.45, zorder=0)
+
+    ax_idx.axhline(100.0, color="#64748B", lw=1.1, linestyle=":", zorder=1)
+
+    series_spec = [
+        ("net_profit_mio_real2025", "Gesamtgewinn real (2008: 119,3 → 2025: 175,4 Mio.)", TEAL, 2.7, "D", 0.0),
+        ("avg_per_fte_tchf_real2025", "Ø Personalaufwand / FTE real (127,2 → 145,4 TCHF)", BLUE, 2.3, "o", 1.5),
+        ("personnel_ord_mio_real2025", "Lohnkosten gesamt real ord. (149,0 → 153,8 Mio.)", NAVY, 2.3, "s", 3.2),
+        ("ceo_total_tchf_real2025", "CEO-Lohn real (1'018 → 998 TCHF)", RED, 2.3, "^", 0.0),
+        ("gl_ex_ceo_avg_tchf_real2025", "Ø GL-Mitglied ohne CEO real (705 → 658 TCHF)", AMBER, 2.2, "P", -3.4),
+        ("vr_avg_tchf_real2025", "Ø VR-Mitglied real (207 → 161 TCHF)", PURPLE, 2.2, "v", 0.0),
+    ]
+
+    for col, lbl, color, lw, marker, y_nudge in series_spec:
+        bval = base_2008[col]
+        vals = [(r[col] / bval * 100.0) if r[col] is not None else None for r in comp]
+        valid_i = [i for i, v in enumerate(vals) if v is not None]
+        segments: list[list[int]] = []
+        cur: list[int] = []
+        for idx_pt in valid_i:
+            if cur and idx_pt != cur[-1] + 1:
+                segments.append(cur)
+                cur = [idx_pt]
+            else:
+                cur.append(idx_pt)
+        if cur:
+            segments.append(cur)
+
+        for s_i, seg in enumerate(segments):
+            sx = [x[i] for i in seg]
+            sy = [vals[i] for i in seg]
+            ax_idx.plot(
+                sx, sy, color=color, lw=lw, marker=marker, ms=4.3,
+                label=lbl if s_i == len(segments) - 1 else None, zorder=4,
+            )
+            if s_i > 0:
+                prev_end = segments[s_i - 1][-1]
+                cur_start = seg[0]
+                ax_idx.plot(
+                    [x[prev_end], x[cur_start]],
+                    [vals[prev_end], vals[cur_start]],
+                    color=color, lw=lw * 0.75, linestyle=":", alpha=0.65, zorder=3,
+                )
+
+        end_val = vals[-1]
+        pct_str = f"{end_val - 100.0:+.1f} %".replace(".", ",")
+        ax_idx.text(
+            len(x) - 0.68, end_val + y_nudge,
+            f" {end_val:.0f} ({pct_str})",
+            va="center", ha="left", fontsize=8.3, fontweight="bold", color=color,
+        )
+
+    # Spezifische Meilenstein-Annotationen in Panel A (alle im freien Weissraum)
+    idx_07 = years.index(2007)
+    bkw_idx_val = comp[idx_07]["net_profit_mio_real2025"] / base_2008["net_profit_mio_real2025"] * 100.0
+    ax_idx.annotate(
+        "2007: BKW-Einmalverkauf\n(256,3 Mio. CHF real / Index 215)",
+        xy=(idx_07, bkw_idx_val), xytext=(idx_07 + 0.9, 206),
+        fontsize=8.0, fontweight="bold", color=TEAL,
+        arrowprops=dict(arrowstyle="->", color=TEAL, lw=1.0),
+    )
+
+    idx_17 = years.index(2017)
+    vr_17_val = comp[idx_17]["vr_avg_tchf_real2025"] / base_2008["vr_avg_tchf_real2025"] * 100.0
+    ax_idx.annotate(
+        "Ab 2017: Verzicht auf\nvariable VR-Vergütung",
+        xy=(idx_17, vr_17_val), xytext=(idx_17 - 1.5, 66),
+        fontsize=7.9, fontweight="bold", color=PURPLE, ha="center",
+        arrowprops=dict(arrowstyle="->", color=PURPLE, lw=1.0),
+    )
+
+    idx_19 = years.index(2019)
+    ceo_19_val = comp[idx_19]["ceo_total_tchf_real2025"] / base_2008["ceo_total_tchf_real2025"] * 100.0
+    ax_idx.annotate(
+        "2019: CEO-Wechsel\n(6 Mt. GL / 6 Mt. CEO)",
+        xy=(idx_19, ceo_19_val), xytext=(idx_19 + 0.3, 66),
+        fontsize=7.9, fontweight="bold", color=RED, ha="center",
+        arrowprops=dict(arrowstyle="->", color=RED, lw=1.0),
+    )
+
+    idx_22 = years.index(2022)
+    fte_22_val = comp[idx_22]["avg_per_fte_tchf_real2025"] / base_2008["avg_per_fte_tchf_real2025"] * 100.0
+    ax_idx.annotate(
+        "2022: aity IT-Ausl.\n(940 FTE, Ø 157,6 TCHF)",
+        xy=(idx_22, fte_22_val), xytext=(idx_22 - 1.5, 168),
+        fontsize=7.9, fontweight="bold", color=BLUE, ha="center",
+        bbox=dict(boxstyle="round,pad=0.22", facecolor="#FFFFFF", edgecolor="#BFDBFE", alpha=0.92),
+        arrowprops=dict(arrowstyle="->", color=BLUE, lw=1.0, connectionstyle="arc3,rad=-0.12"),
+    )
+
+    ax_idx.set_xticks(x)
+    ax_idx.set_xticklabels([str(y) for y in years], rotation=45, ha="right")
+    ax_idx.set_xlim(-0.6, len(years) + 2.45)
+    ax_idx.set_ylim(58, 232)
+    ax_idx.set_ylabel("Real-Index (Basis 2008 = 100)", fontweight="bold", color=NAVY)
+    ax_idx.legend(loc="upper center", bbox_to_anchor=(0.5, -0.175), ncol=3, fontsize=8.3)
+
+    # --- Panel B: Makro-Ebene Gesamtgewinn vs. Lohnkosten in real 2025 Mio. CHF ---
+    clean_ax(ax_mac, "y")
+    ax_mac.set_title(
+        "B) Gesamtgewinn vs. Lohnkosten (real 2025 Mio. CHF)",
+        color=NAVY, pad=10, loc="left", fontsize=11.0,
+    )
+    prof_r = [r["net_profit_mio_real2025"] for r in comp]
+    pers_r = [r["personnel_ord_mio_real2025"] for r in comp]
+
+    ax_mac.bar(
+        x, pers_r, width=0.58, color="#CBD5E1", edgecolor="#64748B", linewidth=0.6,
+        label=f"Lohnkosten gesamt ord. (2025: {ch_num(pers_r[-1])} Mio.)", zorder=2,
+    )
+    ax_mac.plot(
+        x, prof_r, color=TEAL, lw=2.5, marker="D", ms=4.2,
+        label=f"Gesamtgewinn (2025: {ch_num(prof_r[-1])} Mio.)", zorder=4,
+    )
+    ax_mac.fill_between(
+        x, pers_r, prof_r,
+        where=[p >= w for p, w in zip(prof_r, pers_r)],
+        interpolate=True, color="#99F6E4", alpha=0.45, zorder=1,
+        label="Gewinn > Lohnkosten (ab 2018)",
+    )
+    ax_mac.text(idx_07 + 0.55, prof_r[idx_07] - 6, "256,3 Mio.\n(BKW 2007)", fontsize=7.9, fontweight="bold", color=TEAL, va="top")
+    ax_mac.annotate(
+        f"2025: {ch_num(prof_r[-1])} Mio.",
+        xy=(len(x) - 1, prof_r[-1]), xytext=(len(x) - 1.5, 205),
+        ha="right", fontsize=8.1, fontweight="bold", color=TEAL,
+        arrowprops=dict(arrowstyle="->", color=TEAL, lw=0.9),
+    )
+
+    ax_mac.set_xticks(x[::2])
+    ax_mac.set_xticklabels([str(years[i]) for i in range(0, len(years), 2)], rotation=45, ha="right")
+    ax_mac.set_xlim(-0.7, len(years) - 0.1)
+    ax_mac.set_ylim(0, 285)
+    ax_mac.set_ylabel("Mio. CHF (Kaufkraft 2025)", fontweight="bold", color=NAVY)
+    ax_mac.legend(loc="upper right", fontsize=8.0)
+
+    # --- Panel C: Pro-Kopf-Ebene in real 2025 TCHF ---
+    clean_ax(ax_pk, "y")
+    ax_pk.set_title(
+        "C) Pro-Kopf-Vergütung im Zeitverlauf (real 2025 TCHF)",
+        color=NAVY, pad=10, loc="left", fontsize=11.0,
+    )
+
+    pk_specs = [
+        ("ceo_total_tchf_real2025", "CEO-Lohn (2025: 998 TCHF)", RED, 2.3, "^", 0.0),
+        ("gl_ex_ceo_avg_tchf_real2025", "Ø GL ohne CEO (2025: 658 TCHF)", AMBER, 2.2, "P", 0.0),
+        ("vr_avg_tchf_real2025", "Ø VR-Mitglied (2025: 161 TCHF)", PURPLE, 2.2, "v", 28.0),
+        ("avg_per_fte_tchf_real2025", "Ø Personalaufw. / FTE (2025: 145 TCHF)", BLUE, 2.2, "o", -32.0),
+    ]
+    for col, lbl, color, lw, marker, end_nudge in pk_specs:
+        vals = [r[col] for r in comp]
+        valid_i = [i for i, v in enumerate(vals) if v is not None]
+        segments = []
+        cur = []
+        for idx_pt in valid_i:
+            if cur and idx_pt != cur[-1] + 1:
+                segments.append(cur)
+                cur = [idx_pt]
+            else:
+                cur.append(idx_pt)
+        if cur:
+            segments.append(cur)
+        for s_i, seg in enumerate(segments):
+            ax_pk.plot(
+                [x[i] for i in seg], [vals[i] for i in seg],
+                color=color, lw=lw, marker=marker, ms=4.0,
+                label=lbl if s_i == len(segments) - 1 else None, zorder=4,
+            )
+            if s_i > 0:
+                pe, cs = segments[s_i - 1][-1], seg[0]
+                ax_pk.plot([x[pe], x[cs]], [vals[pe], vals[cs]], color=color, lw=lw * 0.75, linestyle=":", alpha=0.65, zorder=3)
+        ev = vals[-1]
+        ax_pk.text(len(x) - 0.65, ev + end_nudge, f" {ev:,.0f}".replace(",", "'"), va="center", ha="left", fontsize=8.2, fontweight="bold", color=color)
+
+    ax_pk.set_xticks(x[::2])
+    ax_pk.set_xticklabels([str(years[i]) for i in range(0, len(years), 2)], rotation=45, ha="right")
+    ax_pk.set_xlim(-0.6, len(years) + 1.8)
+    ax_pk.set_ylim(0, 1260)
+    ax_pk.set_ylabel("TCHF (Kaufkraft 2025)", fontweight="bold", color=NAVY)
+    ax_pk.legend(loc="center", bbox_to_anchor=(0.48, 0.38), ncol=2, fontsize=7.6)
+
+    add_footer(
+        fig,
+        "Quellen: BEKB Geschäftsberichte 2003–2025 (data/bekb_verguetung_real_2003_2025.csv) & BFS LIK Jahresdurchschnitt. "
+        "Ordentliche Vergütungen exkl. Einmaleffekte (2012/2017 NP & Pensionierung; 2013/2015 PK-Sanierung). 2003 & 2006 Kurzberichte ohne VR/GL-Tabellen."
+    )
+    plt.subplots_adjust(left=0.06, right=0.92, top=0.895, bottom=0.085)
+    fig.savefig(CHARTS_DIR / "07_gewinn_loehne_verguetung_real_2003_2025.png", dpi=220)
+    plt.close(fig)
+
+
 def main() -> None:
     setup_style()
     CHARTS_DIR.mkdir(parents=True, exist_ok=True)
 
     ann, sem, off = load_panel()
+    comp = load_verguetung_real()
 
     chart_02_bilanz_gestapelte_saeulen()
     chart_02_bilanz_treemap()
@@ -1094,6 +1337,7 @@ def main() -> None:
     chart_05_aktie_dividende_kanton(ann)
     chart_06_semester_saisonalitaet(sem)
     chart_07_langfrist_dashboard(ann, sem)
+    chart_07_gewinn_loehne_verguetung_real(comp)
 
     charts = sorted(CHARTS_DIR.glob("*.png"))
     print(f"[OK] {len(charts)} Grafiken erfolgreich in {CHARTS_DIR.relative_to(ROOT)}/ erstellt:")
@@ -1103,3 +1347,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

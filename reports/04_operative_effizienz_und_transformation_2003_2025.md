@@ -1,10 +1,11 @@
 # Mehrjahresbericht 4: Operative Effizienz, Digitalisierung & Filialnetz-Transformation (2003–2025)
 
-> **Datenbasis:** Bereinigte Jahresabschlüsse 2003–2025 (`data/bekb_panel_annual.csv`). Hinweis: Ab 2015 Rechnungslegung nach FINMA-RVB; 2015 enthält eine einmalige PK-Zuweisung (83,8 Mio. CHF).
+> **Datenbasis:** Bereinigte Jahresabschlüsse 2003–2025 (`data/bekb_panel_annual.csv`) sowie inflationsbereinigte Vergütungsreihe (`data/bekb_verguetung_real_2003_2025.csv`). Hinweis: Ab 2015 Rechnungslegung nach FINMA-RVB; 2015 enthält eine einmalige PK-Zuweisung (83,8 Mio. CHF).
 
 ## 1. Management Summary
 
 - **Starke Steigerung der Produktivität pro Vollzeitstelle:** Zwischen 2003 und 2025 sank der Personalbestand (FTE) um **–12,6 %** (von **1'210 FTE** auf **1'058 FTE**; Tiefststand 2022: **940 FTE**), während sich die Bilanzsumme je FTE von **16,63 Mio. CHF (2003)** auf **40,62 Mio. CHF (2025, +144,3 %)** und der Geschäftsertrag je FTE von **345,5 TCHF** auf **517,3 TCHF (+49,7 %)** erhöhten.
+- **Realer Lohnanstieg pro FTE bei konstanten Gesamtlohnkosten:** Inflationsbereinigt (BFS LIK, Basis 2025) stieg der ordentliche Personalaufwand je FTE von **125,9 TCHF (2004)** auf **145,4 TCHF (2025, +15,5 %)**, während die realen Gesamtlohnkosten dank Personalabbau fast unverändert blieben (**150,2** $\rightarrow$ **153,8 Mio. CHF**, +2,4 %).
 - **Disziplinierte Cost-Income-Ratio (CIR):** Trotz steigender IT- und Regulatorik-Ausgaben blieb die operative CIR meist nahe oder unter **55 %** (Spitzenwerte in der Zinswende: **2023: 47,8 %**; **2024: 48,3 %**; **2025: 51,3 %**).
 - **Einmaleffekt 2015 sauber isoliert:** Die ausgewiesene CIR 2015 von **76,3 %** resultiert ausschliesslich aus der einmaligen Stärkung der BEKB-Pensionskasse (**83,8 Mio. CHF**); bereinigt betrug der Geschäftsaufwand **253,6 Mio. CHF** (CIR bereinigt: **57,4 %**).
 - **Wandel des Standortnetzes:** Die klassischen Niederlassungen wurden bis 2019 von **79 (2011/2012)** auf **60 (2019)** reduziert. Mit der «Strategie 2025» erfasste die BEKB ab **2020** breiter sämtliche *Standorte* (Smart- und Beratungscenter: **81** in 2020 $\rightarrow$ **72** in 2024/2025).
@@ -12,6 +13,10 @@
 ## 2. Quantitative Entwicklung & Visuelle Analyse
 
 ![Operative Effizienz, Kostenstruktur und Produktivität pro FTE 2003–2025](./charts/04_effizienz_produktivitaet_2003_2025.png)
+
+### Inflationsbereinigter Vergleich: Gesamtgewinn, Lohnkosten & Pro-Kopf-Vergütung (real 2025 CHF)
+
+![Inflationsbereinigte Entwicklung von Gesamtgewinn, Lohnkosten, VR-, CEO-, GL- und FTE-Vergütung 2003–2025](./charts/07_gewinn_loehne_verguetung_real_2003_2025.png)
 
 ### Phasenvergleich
 
