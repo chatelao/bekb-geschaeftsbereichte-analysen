@@ -1,0 +1,163 @@
+{
+  "report_file": ".md/bekb-geschaeftsbericht-2004.md",
+  "stem": "bekb-geschaeftsbericht-2004",
+  "report_type": "annual",
+  "year": 2004,
+  "period": "FY2004",
+  "extraction_backend": "local_deterministic",
+  "metrics": {
+    "total_assets": {
+      "value_current": 20286144.0,
+      "value_prior_year": 20116505.0,
+      "unit": "TCHF",
+      "source_quote": "|**Total Aktiven**||**20 116 505**|**20 286 144**|"
+    },
+    "mortgage_loans": {
+      "value_current": 12465554.0,
+      "value_prior_year": 12004229.0,
+      "unit": "TCHF",
+      "source_quote": "|Hypothekarforderungen||12 004 229|12 465 554|"
+    },
+    "customer_loans_other": {
+      "value_current": 233913.0,
+      "value_prior_year": null,
+      "unit": "TCHF",
+      "source_quote": "|Forderungen gegenüber Kunden||233 913||"
+    },
+    "customer_deposits": {
+      "value_current": 14134041.0,
+      "value_prior_year": 13709672.0,
+      "unit": "TCHF",
+      "source_quote": "|in Spar- und Anlageform|10 452 551|10 973 557| + |Übrige Verpflichtungen gegenüber Kunden|3 257 121|3 160 484|"
+    },
+    "kassenobligationen": {
+      "value_current": 414685.0,
+      "value_prior_year": 530315.0,
+      "unit": "TCHF",
+      "source_quote": "|Kassenobligationen|530 315|414 685|"
+    },
+    "reserves_banking_risks": {
+      "value_current": 403674.0,
+      "value_prior_year": 302513.0,
+      "unit": "TCHF",
+      "source_quote": "|Reserven für allgemeine Bankrisiken|302 513|403 674|"
+    },
+    "shareholders_equity": {
+      "value_current": 1069.0,
+      "value_prior_year": 1017.0,
+      "unit": "Mio. CHF",
+      "source_quote": "|Eigenkapital|943|1 017|1 069 <sup>2)</sup>|"
+    },
+    "net_interest_income": {
+      "value_current": 268711.0,
+      "value_prior_year": 292835.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Erfolg Zinsengeschäft**|**292 835**|**268 711**|"
+    },
+    "commission_income": {
+      "value_current": 76826.0,
+      "value_prior_year": 66001.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Erfolg Kommissions-**<br>**und Dienstleistungsgeschäft**|**66 001**|**76 826**|"
+    },
+    "trading_income": {
+      "value_current": 19845.0,
+      "value_prior_year": 21743.0,
+      "unit": "TCHF",
+      "source_quote": "|**Erfolg aus dem Handelsgeschäft**|**21 743**|**19 845**|"
+    },
+    "total_operating_income": {
+      "value_current": 408749.0,
+      "value_prior_year": 418099.0,
+      "unit": "TCHF",
+      "source_quote": "|Betriebsertrag netto|418 099|408 749|"
+    },
+    "personnel_expenses": {
+      "value_current": -134519.0,
+      "value_prior_year": -138501.0,
+      "unit": "TCHF",
+      "source_quote": "|Personalaufwand|(138 501)|(134 519)|"
+    },
+    "general_expenses": {
+      "value_current": -77735.0,
+      "value_prior_year": -72055.0,
+      "unit": "TCHF",
+      "source_quote": "|Sachaufwand|(72 055)|(77 735)|"
+    },
+    "total_operating_expenses": {
+      "value_current": -212254.0,
+      "value_prior_year": -210556.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Geschäftsaufwand**|**(210 556)**|**(212 254)**|"
+    },
+    "operating_profit": {
+      "value_current": 196494.0,
+      "value_prior_year": 207543.0,
+      "unit": "TCHF",
+      "source_quote": "|Bruttogewinn|207 543|196 494|"
+    },
+    "reserves_change": null,
+    "taxes": {
+      "value_current": -29100.0,
+      "value_prior_year": -28800.0,
+      "unit": "TCHF",
+      "source_quote": "|Steuern|(28 800)|(29 100)|"
+    },
+    "net_profit": {
+      "value_current": 74747.0,
+      "value_prior_year": 71066.0,
+      "unit": "TCHF",
+      "source_quote": "|Jahresgewinn|71 066|74 747|"
+    },
+    "assets_under_management": {
+      "value_current": 17457.0,
+      "value_prior_year": 16332.0,
+      "unit": "Mio. CHF",
+      "source_quote": "|Betreute Vermögenswerte (Depotwerte)<sup>1)</sup>|15 001|16 332|17 457|"
+    },
+    "net_new_money": {
+      "value_current": 808.0,
+      "value_prior_year": null,
+      "unit": "TCHF",
+      "source_quote": "|**Netto-Neugeld-Zufluss betreute Vermögenswerte**|**–**|**808**|"
+    },
+    "free_cash_flow": {
+      "value_current": 116.7,
+      "value_prior_year": 125.5,
+      "unit": "Mio. CHF",
+      "source_quote": "|Netto erarbeitete Mittel (NEM)||125,5|116,7|"
+    },
+    "share_price_eoy": null,
+    "dividend_per_share": null,
+    "payout_ratio_pct": null,
+    "fte_count": null,
+    "headcount": {
+      "value_current": 1433.0,
+      "value_prior_year": 1448.0,
+      "unit": "Personen",
+      "source_quote": "|Personalbestand<br>1 497|1 448|1 433|"
+    },
+    "branch_count": null,
+    "taxes_public_mio": null,
+    "dividend_canton_mio": {
+      "value_current": 16.4,
+      "value_prior_year": 16.9,
+      "unit": "Mio. CHF",
+      "source_quote": "|Ertrag auf Investition des Kantons<sup>7)</sup><br>17,5|16,9|16,4|"
+    },
+    "canton_guarantee_fee_mio": {
+      "value_current": 5.1,
+      "value_prior_year": 4.8,
+      "unit": "Mio. CHF",
+      "source_quote": "|Abgeltung Staatsgarantie an den Kanton<br>4,3|4,8|5,1|"
+    }
+  },
+  "strategy_highlights": [
+    "**Bericht des Verwaltungsrates an die Generalversammlung der Aktionärinnen und Aktionäre über das Geschäftsjahr 2004**",
+    "Die BEKB £ BCBE hat im Geschäftsjahr 2004 ihren Weg mit dem Ziel eines qualitativen Wachstums auf solidem Fundament fortgesetzt. Die Geschäftspolitik, eine Bank mit solider Bilanzstruktur, guter Refinanzierung, starker Ertragskraft und starker Eigenmittelausstattung zu führen, hat sich erneut bewährt. Die **netto erarbeiteten Mittel** (NEM) stiegen im Berichtsjahr um 116,7 Mio. Franken. Die BEKB £ BCBE hat eine langfristig gültige, klare finanzielle Zielsetzung: Sie will über eine Zeitspanne von 10 Jahren (2003 bis 2012) einen Free Cash-Flow (NEM) von 800 Mio. bis 1 Mrd. Franken erzielen. Mit insgesamt 242,2 Mio. Franken liegt der geschaffene Mehrwert nach zwei Jahren über dem Zielbereich.",
+    "Im Geschäftsjahr 2004 hat die BEKB £ BCBE erneut ein solides Ergebnis erwirtschaftet. Der **Jahresgewinn vor Steuern** konnte zum zwölften aufeinander folgenden Mal gesteigert werden. Er stieg um 4,0 Prozent auf 103,8 Mio. Franken. Der Generalversammlung werden eine weitere Erhöhung der Dividende von 3.00 Franken auf 3.10 Franken je Aktie, eine Kapitalreduktion in Form einer Nennwertrückzahlung von 10 Franken je Aktie und eine Platzierung von Aktien gegen Bezugsrecht an die bisherigen Aktionärinnen und Aktionäre im Bezugsverhältnis von 10 zu 1 zum Preis von 100 Franken je Aktie sowie die Schaffung eines bedingten Kapitals von maximal 250 000 Namenaktien für das Beteiligungsprogramm der Mitarbeitenden beantragt.",
+    "Im **Zinsengeschäft** konnte die Margenverengung zu einem wesentlichen Teil durch tiefere Risikokosten aufgefangen werden. Nach Risikokosten resultierte ein Rückgang um 5 Prozent. Die Spargelder der Kundinnen und Kunden konnten auch im Berichtsjahr zu attraktiven Sätzen verzinst werden. Die **Vermögensberatung** wurde weiter ausgebaut. Der Kommissionsertrag aus der Vermögensberatung übertraf mit 75,4 Mio. Franken das Vorjahresergebnis um 15,6 Prozent. Der Erfolg aus dem gemäss Ausrichtung der Bank auf tiefem Niveau gehaltenen **Handelsgeschäft** lag mit 19,8 Mio. Franken um 1,9 Mio. Franken unter dem hohen Vorjahresniveau.",
+    "Dank fortgesetzter Kostenkontrolle liegt das Verhältnis des **Geschäftsaufwandes** zum Betriebsertrag im Zielbereich von 50 bis 55 Prozent. Der Geschäftsaufwand stieg durch höhere Marketinginvestitionen und IT-Kosten um 0,8 Prozent.",
+    "4. **7700 neue Kredite – verstärkte Förderung von KMU und Neuunternehmen** Im Kreditgeschäft wurden insbesondere kleinere und mittlere Engagements bei Privaten sowie KMU im Espace Mittelland gefördert. Die BEKB £ BCBE gewährte ihren Kundinnen und Kunden über 7700 **neue Kredite** im Umfang von 1,7 Mrd. Franken. Die **Kreditbeanspruchung** erhöhte sich auf 14,1 Mrd. Franken. Die **Hypothekarforderungen** stiegen um 3,8 Prozent auf 12,5 Mrd. Franken. Besondere Beachtung schenkt die BEKB £ BCBE innovativen **KMU und Neuunternehmen.** In der Berichtsperiode sind für 106 Vorhaben in allen Regionen des Geschäftsgebietes neue Kredite gesprochen und damit die Schaffung oder Erhaltung von 837 Arbeitsplätzen unterstützt worden. Die neu bereitgestellte Limite von 50 Mio. Franken für Nachfolgefinanzierungen fördert Engagements im Bereich von Nachfolgeregelungen bei kleinen und mittleren Unternehmen."
+  ]
+}

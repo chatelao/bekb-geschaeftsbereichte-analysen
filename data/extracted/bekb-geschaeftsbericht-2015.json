@@ -1,0 +1,183 @@
+{
+  "report_file": ".md/bekb-geschaeftsbericht-2015.md",
+  "stem": "bekb-geschaeftsbericht-2015",
+  "report_type": "annual",
+  "year": 2015,
+  "period": "FY2015",
+  "extraction_backend": "local_deterministic",
+  "metrics": {
+    "total_assets": {
+      "value_current": 28034674.0,
+      "value_prior_year": 26610247.0,
+      "unit": "TCHF",
+      "source_quote": "|**Total Aktiven**|**28 034 674**|**26 610 247**|"
+    },
+    "mortgage_loans": {
+      "value_current": 19377548.0,
+      "value_prior_year": 18754312.0,
+      "unit": "TCHF",
+      "source_quote": "|Hypothekarforderungen|19 377 548|18 754 312|"
+    },
+    "customer_loans_other": {
+      "value_current": 1328836.0,
+      "value_prior_year": 2438511.0,
+      "unit": "TCHF",
+      "source_quote": "|Forderungengegenüber Kunden|1 328 836|2 438 511|"
+    },
+    "customer_deposits": {
+      "value_current": 22082933.0,
+      "value_prior_year": 22006562.0,
+      "unit": "TCHF",
+      "source_quote": "|Verpflichtungen aus Kundeneinlagen<br>l|22 082 933|22 006 562|"
+    },
+    "kassenobligationen": {
+      "value_current": 120115.0,
+      "value_prior_year": 149829.0,
+      "unit": "TCHF",
+      "source_quote": "|Kassenobligationen|120 115|149 829|"
+    },
+    "reserves_banking_risks": {
+      "value_current": 601362.0,
+      "value_prior_year": 654085.0,
+      "unit": "TCHF",
+      "source_quote": "|Reserven für allgemeine Bankrisiken|601 362|654 085|"
+    },
+    "shareholders_equity": {
+      "value_current": 2267.0,
+      "value_prior_year": 2246.0,
+      "unit": "Mio. CHF",
+      "source_quote": "|Eigenkapital|2 267<sup>1</sup>|2 246|"
+    },
+    "net_interest_income": {
+      "value_current": 293705.0,
+      "value_prior_year": 327404.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Netto-Erfolg Zinsengeschäft**|**293 705**|**327 404**|"
+    },
+    "commission_income": {
+      "value_current": 98906.0,
+      "value_prior_year": 102760.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Erfolg Kommissions- und Dienstleistungsgeschäft**|**98 906**|**102 760**|"
+    },
+    "trading_income": {
+      "value_current": 21293.0,
+      "value_prior_year": 21897.0,
+      "unit": "TCHF",
+      "source_quote": "|**Erfolg aus dem Handelsgeschäft und der Fair-Value-Option**|**21 293**|**21 897**|"
+    },
+    "total_operating_income": {
+      "value_current": 442238.0,
+      "value_prior_year": 474230.0,
+      "unit": "TCHF",
+      "source_quote": "|**Geschäftsertrag**|**442 238**|**474 230**|"
+    },
+    "personnel_expenses": {
+      "value_current": -144292.0,
+      "value_prior_year": -148438.0,
+      "unit": "TCHF",
+      "source_quote": "|Personalaufwand|–144 292|–148 438|"
+    },
+    "general_expenses": {
+      "value_current": -109349.0,
+      "value_prior_year": -109430.0,
+      "unit": "TCHF",
+      "source_quote": "|Sachaufwand|–109 349|–109 430|"
+    },
+    "total_operating_expenses": {
+      "value_current": -337419.0,
+      "value_prior_year": -257868.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Geschäftsaufwand**|**–337 419**|**–257 868**|"
+    },
+    "operating_profit": {
+      "value_current": 61260.0,
+      "value_prior_year": 180330.0,
+      "unit": "TCHF",
+      "source_quote": "|**Geschäftserfolg**|**61 260**|**180 330**|"
+    },
+    "reserves_change": {
+      "value_current": 52723.0,
+      "value_prior_year": -23858.0,
+      "unit": "TCHF",
+      "source_quote": "|Veränderungen von Reserven für allgemeine Bankrisiken|52 723|–23 858|"
+    },
+    "taxes": {
+      "value_current": -15500.0,
+      "value_prior_year": -39700.0,
+      "unit": "TCHF",
+      "source_quote": "|Steuern|–15 500|–39 700|"
+    },
+    "net_profit": {
+      "value_current": 131264.0,
+      "value_prior_year": 130368.0,
+      "unit": "TCHF",
+      "source_quote": "|**Gewinn**|**131 264**|**130 368**|"
+    },
+    "assets_under_management": {
+      "value_current": 19971.0,
+      "value_prior_year": 21101.0,
+      "unit": "Mio. CHF",
+      "source_quote": "|Betreute Vermögenswerte(Depotwerte)|19 971|21 101|"
+    },
+    "net_new_money": null,
+    "free_cash_flow": {
+      "value_current": 73.1,
+      "value_prior_year": 128.3,
+      "unit": "Mio. CHF",
+      "source_quote": "|Free-Cash-Flow|73,1|128,3|"
+    },
+    "share_price_eoy": {
+      "value_current": 191.0,
+      "value_prior_year": 181.5,
+      "unit": "CHF",
+      "source_quote": "|Jahresend|191.0|181.5|206.0|"
+    },
+    "dividend_per_share": {
+      "value_current": 6.0,
+      "value_prior_year": 5.8,
+      "unit": "CHF",
+      "source_quote": "|Dividendeje Namenaktie|6.00<sup>1</sup>|5.80|5.50|"
+    },
+    "payout_ratio_pct": null,
+    "fte_count": {
+      "value_current": 1091.0,
+      "value_prior_year": 1137.0,
+      "unit": "FTE",
+      "source_quote": "|Mitarbeiterinnen und Mitarbeiter(teilzeitbereinigt)|1 091|1 137|"
+    },
+    "headcount": {
+      "value_current": 1313.0,
+      "value_prior_year": 1375.0,
+      "unit": "Personen",
+      "source_quote": "|Personalbestand(inkl. Lernende sowie Aushilfen)|1 313|1 375|"
+    },
+    "branch_count": {
+      "value_current": 68.0,
+      "value_prior_year": 73.0,
+      "unit": "Anzahl",
+      "source_quote": "|Anzahl Niederlassungen|68|73|"
+    },
+    "taxes_public_mio": {
+      "value_current": 15.5,
+      "value_prior_year": 39.7,
+      "unit": "Mio. CHF",
+      "source_quote": "|Bundes-,Staats- und Gemeindesteuern|15,5|39,7|"
+    },
+    "dividend_canton_mio": {
+      "value_current": 28.8,
+      "value_prior_year": 27.8,
+      "unit": "Mio. CHF",
+      "source_quote": "|Dividende an den Kanton|28,8<sup>3</sup>|27,8|"
+    },
+    "canton_guarantee_fee_mio": null
+  },
+  "strategy_highlights": [
+    "**Bericht des Verwaltungsrats an die Generalversammlung der Aktionärinnen und Aktionäre über das Geschäftsjahr 2015**",
+    "Berner Kantonalbank AG Bundesplatz 8 Postfach 3001 Bern Telefon 031 666 11 11 Fax 031 666 60 40",
+    "Kerstin Eichenberger, Eveline Wittwer, Harry Tresch, Alex Josty",
+    "Jovana Maria und Janick Fankhauser mit Marysol, BEKB-Aktionäre aus Bern",
+    "_Antoinette Hunziker-Ebneter und Hanspeter Rüfenacht führen die BEKB in die Zukunft._",
+    "2015 war für die Berner Kantonalbank wiederum ein gutes Jahr. Die Hypothekarforderungen erhöhten sich um 623 Millionen Franken, die Kundengelder stiegen um 47 Millionen Franken, und die Bilanzsumme wuchs auf 28 Milliarden Franken an. Trotz dem schwierigen Zinsumfeld konnte der Gewinn auf 131 Millionen Franken erhöht werden."
+  ]
+}

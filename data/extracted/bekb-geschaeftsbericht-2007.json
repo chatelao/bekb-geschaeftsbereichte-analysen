@@ -1,0 +1,173 @@
+{
+  "report_file": ".md/bekb-geschaeftsbericht-2007.md",
+  "stem": "bekb-geschaeftsbericht-2007",
+  "report_type": "annual",
+  "year": 2007,
+  "period": "FY2007",
+  "extraction_backend": "local_deterministic",
+  "metrics": {
+    "total_assets": {
+      "value_current": 21360521.0,
+      "value_prior_year": 21077265.0,
+      "unit": "TCHF",
+      "source_quote": "|**Total Aktiven**|21 077 265|**21 360 521**||||"
+    },
+    "mortgage_loans": {
+      "value_current": 13648988.0,
+      "value_prior_year": 13219213.0,
+      "unit": "TCHF",
+      "source_quote": "|Hypothekarforderungen|13 219 213|**13 648 988**|Rechnungsabgrenzungen|161 723|**188 602**|"
+    },
+    "customer_loans_other": {
+      "value_current": 1289740.0,
+      "value_prior_year": 1203898.0,
+      "unit": "TCHF",
+      "source_quote": "|Forderungen gegenüber Kunden|1 203 898|**1 289 740**|Kassenobligationen|452 274|**604 724**|"
+    },
+    "customer_deposits": {
+      "value_current": 15288514.0,
+      "value_prior_year": 15196838.0,
+      "unit": "TCHF",
+      "source_quote": "|Forderungen aus Geldmarktpapieren|2 438 071|**2 812 825**|Verpflichtungen gegenüber Kunden in Spar- und Anlageform<br>|11 091 852|**10 921 616**| + |Forderungen gegenüber Banken|1 206 825|**617 340**|Übrige Verpflichtun"
+    },
+    "kassenobligationen": {
+      "value_current": 604724.0,
+      "value_prior_year": 452274.0,
+      "unit": "TCHF",
+      "source_quote": "|Forderungen gegenüber Kunden|1 203 898|**1 289 740**|Kassenobligationen|452 274|**604 724**|"
+    },
+    "reserves_banking_risks": {
+      "value_current": 559701.0,
+      "value_prior_year": 535963.0,
+      "unit": "TCHF",
+      "source_quote": "|Finanzanlagen|2 260 868|**1 978 487**|Reserven für allgemeine Bankrisiken|535 963|**559 701**|"
+    },
+    "shareholders_equity": {
+      "value_current": 1168.0,
+      "value_prior_year": 1085.0,
+      "unit": "Mio. CHF",
+      "source_quote": "|Eigenkapital|1 026|1 085|**1 168**<br>2|"
+    },
+    "net_interest_income": {
+      "value_current": 298258.0,
+      "value_prior_year": 278780.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Erfolg Zinsengeschäft**|278 780|**298 258**|**Bruttogewinn**|||"
+    },
+    "commission_income": {
+      "value_current": 104899.0,
+      "value_prior_year": 98086.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Erfolg Kommissions- und Dienstleistungsgeschäft**|98 086|**104 899**|**Zwischenergebnis**|181 095|**196 112**|"
+    },
+    "trading_income": {
+      "value_current": 27634.0,
+      "value_prior_year": 22632.0,
+      "unit": "TCHF",
+      "source_quote": "|**Erfolg aus dem Handelsgeschäft**|22 632|**27 634**|Ausserordentlicher Ertrag|74 981|196 518|"
+    },
+    "total_operating_income": {
+      "value_current": 467196.0,
+      "value_prior_year": 447910.0,
+      "unit": "TCHF",
+      "source_quote": "|Betriebsertragnetto|447 910|**467 196**|_davon Steuern auf Gewinn aus der Veräusserung einer Beteiligung_|_(12 300)_|_(38 100)_|"
+    },
+    "personnel_expenses": {
+      "value_current": -143588.0,
+      "value_prior_year": -140766.0,
+      "unit": "TCHF",
+      "source_quote": "|Zins- und Diskontertrag|483 616|559 181|Personalaufwand|(140 766)|(143 588)|"
+    },
+    "general_expenses": {
+      "value_current": -82597.0,
+      "value_prior_year": -80277.0,
+      "unit": "TCHF",
+      "source_quote": "|Zins- und Dividendenertrag aus Handelsbeständen|112|215|Sachaufwand|(80 277)|(82 597)|"
+    },
+    "total_operating_expenses": {
+      "value_current": -226185.0,
+      "value_prior_year": -221043.0,
+      "unit": "TCHF",
+      "source_quote": "|Zins- und Dividendenertrag aus Finanzanlagen|51 878|46 630|**Subtotal Geschäftsaufwand**|(221 043)|(226 185)|"
+    },
+    "operating_profit": {
+      "value_current": 241011.0,
+      "value_prior_year": 226867.0,
+      "unit": "TCHF",
+      "source_quote": "|**Erfolg aus dem Kommissions- und Dienstleistungsgeschäft**|||Bruttogewinn|226 867|241 011|"
+    },
+    "reserves_change": null,
+    "taxes": {
+      "value_current": -69900.0,
+      "value_prior_year": -46600.0,
+      "unit": "TCHF",
+      "source_quote": "|**vor Erfolg aus Veräusserungen von Finanzanlagen**|432 453|**460 348**|Steuern|(46 600)|(69 900)|"
+    },
+    "net_profit": {
+      "value_current": 236348.0,
+      "value_prior_year": 92155.0,
+      "unit": "TCHF",
+      "source_quote": "||||Jahresgewinn|92 155|236 348|"
+    },
+    "assets_under_management": {
+      "value_current": 20451.0,
+      "value_prior_year": 20099.0,
+      "unit": "Mio. CHF",
+      "source_quote": "|Betreute Vermögenswerte (Depotwerte)<sup>1</sup>|18 902|20 099|**20 451**|"
+    },
+    "net_new_money": null,
+    "free_cash_flow": {
+      "value_current": 121.7,
+      "value_prior_year": 135.5,
+      "unit": "Mio. CHF",
+      "source_quote": "|Netto erarbeitete Mittel (NEM)|135,5|135,5|**121,7**|"
+    },
+    "share_price_eoy": null,
+    "dividend_per_share": null,
+    "payout_ratio_pct": null,
+    "fte_count": {
+      "value_current": 1210.0,
+      "value_prior_year": 1201.0,
+      "unit": "FTE",
+      "source_quote": "|Mitarbeiterinnen und Mitarbeiter(teilzeitbereinigt)|1206|1201|**1210**|"
+    },
+    "headcount": {
+      "value_current": 1457.0,
+      "value_prior_year": 1456.0,
+      "unit": "Personen",
+      "source_quote": "|Personalbestand(inklusive Lernende und Aushilfen)|1441|1456|**1457**|"
+    },
+    "branch_count": {
+      "value_current": 78.0,
+      "value_prior_year": 77.0,
+      "unit": "Anzahl",
+      "source_quote": "|Anzahl Niederlassungen|76|77|**78**|"
+    },
+    "taxes_public_mio": {
+      "value_current": 69.9,
+      "value_prior_year": 46.6,
+      "unit": "Mio. CHF",
+      "source_quote": "|Bundes-, Staats- und Gemeindesteuern|36,2|46,6|**69,9**|"
+    },
+    "dividend_canton_mio": {
+      "value_current": 19.7,
+      "value_prior_year": 19.9,
+      "unit": "Mio. CHF",
+      "source_quote": "|Ertragauf Investition des Kantons<sup>9</sup>|18,4|19,9|**19,7**|"
+    },
+    "canton_guarantee_fee_mio": {
+      "value_current": 3.0,
+      "value_prior_year": 3.2,
+      "unit": "Mio. CHF",
+      "source_quote": "|Abgeltung Staatsgarantie an den Kanton|5,1|3,2|**3,0**|"
+    }
+  },
+  "strategy_highlights": [
+    "**Kontinuität in der Steigerung der Ertragskraft, in der Verstärkung des soliden Fundaments und in der Leitung**",
+    "Im Bereich der Corporate Governance gelten folgende Grundsätze:",
+    "- 2) Keine Einsitznahme von Mitgliedern der Geschäftsleitung im Verwaltungsrat von Unternehmen, in denen ein Verwaltungsrat der ��� Geschäftsleitungsmitglied ist.",
+    "- 3) Das Entschädigungsmodell der Mitglieder des Verwaltungsrates wird vom Gesamtverwaltungsrat festgelegt und vollständig publiziert.",
+    "- 4) Die Vergütungen der Geschäftsleitung werden vom Entschädigungsausschuss festgelegt, dem keine Geschäftsleitungsmitglieder angehören. Die höchste Gesamtentschädigung beträgt grundsätzlich maximal das Zwanzigfache der tiefsten Gesamtentschädigung.",
+    "- 6) Nebst den gemäss Entschädigungsmodell des Verwaltungsrates entrichteten Zahlungen werden keine weiteren Entschädigungen im Sinne von Ziff. 5.1 der Richtlinie zur Corporate Governance (RLCG vom 29.3.2006 der SWX Swiss Exchange) sowie von Art. 663b<sup>bis</sup> Abs. 2, Ziff. 1 und 9 OR wie beispielsweise Beratungshonorare geleistet."
+  ]
+}

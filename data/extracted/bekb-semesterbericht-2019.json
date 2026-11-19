@@ -1,0 +1,100 @@
+{
+  "report_file": ".md/bekb-semesterbericht-2019.md",
+  "stem": "bekb-semesterbericht-2019",
+  "report_type": "semester",
+  "year": 2019,
+  "period": "H1-2019",
+  "extraction_backend": "local_deterministic",
+  "metrics": {
+    "total_assets": {
+      "value_current": 32353068.0,
+      "value_prior_year": 30589219.0,
+      "unit": "TCHF",
+      "source_quote": "|**TOTAL AKTIVEN**|**32 353 068**|**30 589 219**|"
+    },
+    "mortgage_loans": {
+      "value_current": 22249338.0,
+      "value_prior_year": 21628171.0,
+      "unit": "TCHF",
+      "source_quote": "|Hypothekarforderungen|22 249 338|21 628 171|"
+    },
+    "customer_loans_other": {
+      "value_current": 2542072.0,
+      "value_prior_year": 1998381.0,
+      "unit": "TCHF",
+      "source_quote": "|Forderungengegenüber Kunden|2 542 072|1 998 381|"
+    },
+    "customer_deposits": {
+      "value_current": 23026159.0,
+      "value_prior_year": 21914022.0,
+      "unit": "TCHF",
+      "source_quote": "|Verpflichtungen aus Kundeneinlagen|23 026 159|21 914 022|"
+    },
+    "reserves_banking_risks": {
+      "value_current": 631239.0,
+      "value_prior_year": 622317.0,
+      "unit": "TCHF",
+      "source_quote": "|Reserven für allgemeine Bankrisiken|631 239|622 317|"
+    },
+    "net_interest_income": {
+      "value_current": 146714.0,
+      "value_prior_year": 135725.0,
+      "unit": "TCHF",
+      "source_quote": "|**SUBTOTAL NETTO-ERFOLG ZINSENGESCHÄFT**|**146 714**|**135 725**|"
+    },
+    "commission_income": {
+      "value_current": 51815.0,
+      "value_prior_year": 53010.0,
+      "unit": "TCHF",
+      "source_quote": "|**SUBTOTAL ERFOLG KOMMISSIONS- UND DIENSTLEISTUNGSGESCHÄFT**|**51 815**|**53 010**|"
+    },
+    "trading_income": {
+      "value_current": 11208.0,
+      "value_prior_year": 10922.0,
+      "unit": "TCHF",
+      "source_quote": "|**ERFOLG AUS DEM HANDELSGESCHÄFT UND DER FAIR-VALUE-OPTION**|**11 208**|**10 922**|"
+    },
+    "total_operating_income": {
+      "value_current": 221706.0,
+      "value_prior_year": 210448.0,
+      "unit": "TCHF",
+      "source_quote": "|**GESCHÄFTSERTRAG**|**221 706**|**210448**|"
+    },
+    "total_operating_expenses": {
+      "value_current": -125194.0,
+      "value_prior_year": -126462.0,
+      "unit": "TCHF",
+      "source_quote": "|**SUBTOTAL GESCHÄFTSAUFWAND**|**–125 194**|**–126 462**|"
+    },
+    "operating_profit": {
+      "value_current": 79675.0,
+      "value_prior_year": 65524.0,
+      "unit": "TCHF",
+      "source_quote": "|**GESCHÄFTSERFOLG**|**79 675**|**65 524**|"
+    },
+    "reserves_change": {
+      "value_current": -8922.0,
+      "value_prior_year": 4486.0,
+      "unit": "TCHF",
+      "source_quote": "|Veränderungen von Reserven für allgemeine Bankrisiken|–8 922|4 486|"
+    },
+    "taxes": {
+      "value_current": -11700.0,
+      "value_prior_year": -12400.0,
+      "unit": "TCHF",
+      "source_quote": "|Steuern|–11 700|–12 400|"
+    },
+    "net_profit": {
+      "value_current": 59098.0,
+      "value_prior_year": 58036.0,
+      "unit": "TCHF",
+      "source_quote": "|**HALBJAHRESGEWINN**|**59 098**|**58 036**|"
+    }
+  },
+  "strategy_highlights": [
+    "«Wir haben unser Traumhaus gefunden:<br>Schön, umweltschonend und mit genügend<br>Platz für uns zwei, unseren Hund und vielleicht<br>auch mal Kinder.»<br>Tamara Ronner, angehende  Rechtsfachfrau, und<br>Daniel Alber, Projektleiter Telekom, mit Kailua, Kirchberg<br><!-- End of picture text -->",
+    "Armin Brun, CEO, und Antoinette Hunziker­Ebneter, Präsidentin des Verwaltungsrats",
+    "Per 1. Juli 2019 hat Armin Brun die Nachfolge von Hanspeter Rüfenacht als CEO angetreten. Wir danken Hanspeter Rüfenacht für sein lang­ jähriges und erfolgreiches Engagement für die BEKB.",
+    "Die Konjunktur in der Schweiz hat sich analog der globalen Entwicklung abgeschwächt. Der Han­ delsstreit zwischen den USA und China entwickelt sich zu einer langfristigen strategischen Aus­ einandersetzung. Die geopolitischen Risiken sind angestiegen. Der Schweizer Franken hat sich gegenüber dem Euro wieder aufgewertet. Die anhaltende Negativzinssituation, gepaart mit den markant flacheren Zinskurven, drückt auf die Zinsmarge und damit auf den Zinserfolg."
+  ]
+}

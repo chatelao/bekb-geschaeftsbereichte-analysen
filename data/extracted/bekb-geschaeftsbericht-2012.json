@@ -1,0 +1,178 @@
+{
+  "report_file": ".md/bekb-geschaeftsbericht-2012.md",
+  "stem": "bekb-geschaeftsbericht-2012",
+  "report_type": "annual",
+  "year": 2012,
+  "period": "FY2012",
+  "extraction_backend": "local_deterministic",
+  "metrics": {
+    "total_assets": {
+      "value_current": 26371182.0,
+      "value_prior_year": 25218556.0,
+      "unit": "TCHF",
+      "source_quote": "|**Total Aktiven**|**26 371 182**|**25 218 556**|"
+    },
+    "mortgage_loans": {
+      "value_current": 17794919.0,
+      "value_prior_year": 16211001.0,
+      "unit": "TCHF",
+      "source_quote": "|Hypothekarforderungen|17 794 919|16 211 001|"
+    },
+    "customer_loans_other": {
+      "value_current": 2410411.0,
+      "value_prior_year": 2294156.0,
+      "unit": "TCHF",
+      "source_quote": "|Forderungengegenüber Kunden|2 410 411|2 294 156|"
+    },
+    "customer_deposits": {
+      "value_current": 21442222.0,
+      "value_prior_year": 20188157.0,
+      "unit": "TCHF",
+      "source_quote": "|Verpflichtungengegenüber Kunden in Spar­ und Anlageform|16 786 780|16 011 544| + |Übrige Verpflichtungengegenüber Kunden|4 655 442|4 176 613|"
+    },
+    "kassenobligationen": {
+      "value_current": 226237.0,
+      "value_prior_year": 291953.0,
+      "unit": "TCHF",
+      "source_quote": "|Kassenobligationen|226 237|291 953|"
+    },
+    "reserves_banking_risks": {
+      "value_current": 586447.0,
+      "value_prior_year": 571088.0,
+      "unit": "TCHF",
+      "source_quote": "|Reserven für allgemeine Bankrisiken|586 447|571 088|"
+    },
+    "shareholders_equity": {
+      "value_current": 1415.0,
+      "value_prior_year": 1379.0,
+      "unit": "Mio. CHF",
+      "source_quote": "|Eigenkapital|1 415<sup>1</sup>|1 379|1 293|1 186|1 168|1 026<sup>2</sup>|1 017|"
+    },
+    "net_interest_income": {
+      "value_current": 348500.0,
+      "value_prior_year": 354676.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Erfolg Zinsengeschäft**|**348 500**|**354 676**|"
+    },
+    "commission_income": {
+      "value_current": 78613.0,
+      "value_prior_year": 84039.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Erfolg Kommissions- und Dienstleistungsgeschäft**|**78 613**|**84 039**|"
+    },
+    "trading_income": {
+      "value_current": 21950.0,
+      "value_prior_year": 27229.0,
+      "unit": "TCHF",
+      "source_quote": "|**Erfolg aus dem Handelsgeschäft**|**21 950**|**27 229**|"
+    },
+    "total_operating_income": {
+      "value_current": 492551.0,
+      "value_prior_year": 499516.0,
+      "unit": "TCHF",
+      "source_quote": "|Betriebsertragnetto|492 551|499 516|"
+    },
+    "personnel_expenses": {
+      "value_current": -152260.0,
+      "value_prior_year": -152074.0,
+      "unit": "TCHF",
+      "source_quote": "|Personalaufwand<br>|–152 260|–152 074|"
+    },
+    "general_expenses": {
+      "value_current": -114082.0,
+      "value_prior_year": -111934.0,
+      "unit": "TCHF",
+      "source_quote": "|Sachaufwand<br>|–114 082|–111 934|"
+    },
+    "total_operating_expenses": {
+      "value_current": -266342.0,
+      "value_prior_year": -264008.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Geschäftsaufwand**|**–266 342**|**–264 008**|"
+    },
+    "operating_profit": {
+      "value_current": 226208.0,
+      "value_prior_year": 235508.0,
+      "unit": "TCHF",
+      "source_quote": "|Bruttogewinn|226 208|235 508|"
+    },
+    "reserves_change": null,
+    "taxes": {
+      "value_current": -34800.0,
+      "value_prior_year": -32600.0,
+      "unit": "TCHF",
+      "source_quote": "|Steuern|–34 800|–32 600|"
+    },
+    "net_profit": {
+      "value_current": 128053.0,
+      "value_prior_year": 130135.0,
+      "unit": "TCHF",
+      "source_quote": "|**Jahresgewinn**|**128 053**|**130 135**|"
+    },
+    "assets_under_management": {
+      "value_current": 20608.0,
+      "value_prior_year": 19748.0,
+      "unit": "Mio. CHF",
+      "source_quote": "|Betreute Vermögenswerte(Depotwerte)<sup>4</sup>|20 608|19 748|20 474|20 291|20 451|18 902|16 333|"
+    },
+    "net_new_money": {
+      "value_current": 84.0,
+      "value_prior_year": 26.0,
+      "unit": "TCHF",
+      "source_quote": "|**Netto-Neugeld-Zufluss/-Abfluss betreute Vermögenswerte(Depotwerte)**|**84**|**26**|"
+    },
+    "free_cash_flow": null,
+    "share_price_eoy": {
+      "value_current": 254.0,
+      "value_prior_year": 249.1,
+      "unit": "CHF",
+      "source_quote": "|Jahresend|254.0|249.1|242.0|"
+    },
+    "dividend_per_share": {
+      "value_current": 5.3,
+      "value_prior_year": 5.3,
+      "unit": "CHF",
+      "source_quote": "|Dividendeje Namenaktie|5.30<sup>1</sup>|5.30|5.10|"
+    },
+    "payout_ratio_pct": null,
+    "fte_count": {
+      "value_current": 1207.0,
+      "value_prior_year": 1214.0,
+      "unit": "FTE",
+      "source_quote": "|Anzahl Stellen teilzeitbereinigt|1 207|1 214|1 199|1 193|1 210|1 206|1 210|"
+    },
+    "headcount": {
+      "value_current": 1456.0,
+      "value_prior_year": 1465.0,
+      "unit": "Personen",
+      "source_quote": "|Personalbestand(inkl. Lernende sowie Aushilfen)|1 456|1 465|1 448|1 426|1 457|1 441|1 448|"
+    },
+    "branch_count": {
+      "value_current": 79.0,
+      "value_prior_year": 79.0,
+      "unit": "Anzahl",
+      "source_quote": "|Anzahl Niederlassungen|79|79|78|78|79|77|78|"
+    },
+    "taxes_public_mio": null,
+    "dividend_canton_mio": {
+      "value_current": 50.9,
+      "value_prior_year": 25.4,
+      "unit": "Mio. CHF",
+      "source_quote": "|Dividende an den Kanton|50,9<sup>6</sup>|25,4|24,5|23,0|19,7|18,4|16,9|"
+    },
+    "canton_guarantee_fee_mio": {
+      "value_current": 3.4,
+      "value_prior_year": 3.3,
+      "unit": "Mio. CHF",
+      "source_quote": "|AbgeltungStaatsgarantie an den Kanton|3,4|3,3|3,2|3,2|3,0|5,1|4,8|"
+    }
+  },
+  "strategy_highlights": [
+    "Die BEKB versteht sich als Bank der Bernerinnen und Berner, als Bank der Solothurnerinnen und Solothurner – als Bank, die regional stark verwurzelt ist. Ihre Mitarbeitenden sprechen mit der Kundschaft weder englisch noch fachchinesisch: Sie präsentieren verständliche Lösungen in einer verständlichen Sprache, und das ist in den meisten Fällen Mundart: 93 Prozent unserer Aktionärinnen und Aktionäre sprechen Berndeutsch oder Solothurnerisch.",
+    "Die regionale Ausrichtung der BEKB hat sich bewährt, auch in schwierigen Zeiten. Dies unterstreicht unser Bildteil. Wir porträtieren Kundenberaterinnen und Kundenberater mit Dialektausdrücken auf roten Tafeln: mit Worten, die für Werte stehen, welche die BEKB vertritt – auf Berndeutsch, Solothurnerisch oder Französisch. Alle sprechen ihre eigene Sprache, je nachdem, ob sie aus dem Engstligental, dem zweisprachigen Biel oder dem Berner Jura stammen.",
+    "Schon die BEKB-Figur des Zeichners Ted Scapa von 1994 war mehrsprachig. In dieser Tradition stehen die roten Dialekttafeln. Es freut uns, dass der bernische Dialekt – laut Umfragen der beliebteste im Land – wieder aufblüht, nicht nur dank Mundartbands wie Züri West oder Dialektschriftstellern wie Pedro Lenz. Die flüchtige Kommunikation via E-Mail und SMS führt nach einer Phase der Germanismen und Anglizismen zu einer Renaissance unserer Dialekte.",
+    "Die BEKB leistet gerne einen Beitrag zum Erhalt unserer sprachlichen Eigenarten, denn sie sind ein wesentlicher Teil unserer Kultur. Leider ist ausgerechnet das Patois, der Dialekt in der Romandie, bedroht. Wir alle wollen «a moere sine», wie sich die Adelbodnerin Marlies Oester mit viel Lokalkolorit ausdrückt, und dabei nicht vergessen, woher wir kommen und wie wir unser Kulturgut pflegen können.",
+    "Die Standorte<br>Solothurn<br>Berner Jura<br>Emmental<br>Seeland<br>Oberaargau<br>Bern<br>Thun<br>Berner Oberland<br>*a<br><!-- End of picture text -->",
+    "> 2 Nach Gewinnverwendung gemäss Antrag des Verwaltungsrates an die Generalversammlung."
+  ]
+}

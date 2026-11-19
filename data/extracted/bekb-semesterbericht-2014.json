@@ -1,0 +1,95 @@
+{
+  "report_file": ".md/bekb-semesterbericht-2014.md",
+  "stem": "bekb-semesterbericht-2014",
+  "report_type": "semester",
+  "year": 2014,
+  "period": "H1-2014",
+  "extraction_backend": "local_deterministic",
+  "metrics": {
+    "total_assets": {
+      "value_current": 27075885.0,
+      "value_prior_year": 26663445.0,
+      "unit": "TCHF",
+      "source_quote": "|**Total Aktiven**|**27 075 885**|**26 663 445**|"
+    },
+    "mortgage_loans": {
+      "value_current": 18673792.0,
+      "value_prior_year": 18440444.0,
+      "unit": "TCHF",
+      "source_quote": "|Hypothekarforderungen|18 673 792|18 440 444|"
+    },
+    "customer_loans_other": {
+      "value_current": 2702692.0,
+      "value_prior_year": 2147486.0,
+      "unit": "TCHF",
+      "source_quote": "|Forderungengegenüber Kunden|2 702 692|2 147 486|"
+    },
+    "customer_deposits": {
+      "value_current": 22137302.0,
+      "value_prior_year": 21853982.0,
+      "unit": "TCHF",
+      "source_quote": "|Verpflichtungengegenüber Kunden in Spar- und Anlageform<br>l|17 326 659|17 163 393| + |Übrige Verpflichtungengegenüber Kunden|4 810 643|4 690 589|"
+    },
+    "reserves_banking_risks": {
+      "value_current": 647119.0,
+      "value_prior_year": 630227.0,
+      "unit": "TCHF",
+      "source_quote": "|Reserven für allgemeine Bankrisiken|647 119|630 227|"
+    },
+    "net_interest_income": {
+      "value_current": 154322.0,
+      "value_prior_year": 160291.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Erfolg Zinsengeschäft**|**154 322**|**160 291**|"
+    },
+    "commission_income": {
+      "value_current": 39311.0,
+      "value_prior_year": 39079.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Erfolg Kommissions- und Dienstleistungsgeschäft**|**39 311**|**39 079**|"
+    },
+    "trading_income": {
+      "value_current": 10267.0,
+      "value_prior_year": 10885.0,
+      "unit": "TCHF",
+      "source_quote": "|**Erfolg aus dem Handelsgeschäft**|**10 267**|**10 885**|"
+    },
+    "total_operating_income": {
+      "value_current": 225118.0,
+      "value_prior_year": 256095.0,
+      "unit": "TCHF",
+      "source_quote": "|Betriebsertragnetto|225 118|256 095|"
+    },
+    "total_operating_expenses": {
+      "value_current": -132459.0,
+      "value_prior_year": -148478.0,
+      "unit": "TCHF",
+      "source_quote": "|Subtotal Geschäftsaufwand|–132 459|–148 478|"
+    },
+    "operating_profit": {
+      "value_current": 92659.0,
+      "value_prior_year": 107617.0,
+      "unit": "TCHF",
+      "source_quote": "|Bruttogewinn|92 659|107 617|"
+    },
+    "reserves_change": null,
+    "taxes": {
+      "value_current": -22900.0,
+      "value_prior_year": -24200.0,
+      "unit": "TCHF",
+      "source_quote": "|Steuern|–22 900|–24 200|"
+    },
+    "net_profit": {
+      "value_current": 57750.0,
+      "value_prior_year": 59235.0,
+      "unit": "TCHF",
+      "source_quote": "|**Halbjahresgewinn**|**57 750**|**59 235**|"
+    }
+  },
+  "strategy_highlights": [
+    "123 Bundesplatz 8 Postfach 3001 Bern Telefon 031 666 11 11 Fax 031 666 60 40",
+    "Josua Bühler, Tanja Rupp und Patrick Marti, Lernende der BEKB (von links)",
+    "- 3 **Kurzporträt** 10 **Geschäftsergebnis** 4 **Vorwort** 16 **Bildung macht den Meister** 6 **Aktie** 22 **Semester 2014 in Zahlen** 22 Bilanz per 30.6.2014",
+    "- 7 **Organe und Organigramm** 24 Erfolgsrechnung 1.1. bis 30.6.2014 7 Verwaltungsrat 7 Geschäftsleitung 27 **Corporate Governance** 7 Revisionsorgane 8 Organigramm 28 **Standorte**"
+  ]
+}

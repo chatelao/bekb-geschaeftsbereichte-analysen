@@ -1,0 +1,100 @@
+{
+  "report_file": ".md/bekb-semesterbericht-2017.md",
+  "stem": "bekb-semesterbericht-2017",
+  "report_type": "semester",
+  "year": 2017,
+  "period": "H1-2017",
+  "extraction_backend": "local_deterministic",
+  "metrics": {
+    "total_assets": {
+      "value_current": 29340031.0,
+      "value_prior_year": 28404656.0,
+      "unit": "TCHF",
+      "source_quote": "|**TOTAL AKTIVEN**|**29 340 031**|**28 404 656**|"
+    },
+    "mortgage_loans": {
+      "value_current": 20236424.0,
+      "value_prior_year": 19747720.0,
+      "unit": "TCHF",
+      "source_quote": "|Hypothekarforderungen|20 236 424|19 747 720|"
+    },
+    "customer_loans_other": {
+      "value_current": 2280129.0,
+      "value_prior_year": 1525026.0,
+      "unit": "TCHF",
+      "source_quote": "|Forderungengegenüber Kunden|2 280 129|1 525 026|"
+    },
+    "customer_deposits": {
+      "value_current": 21969624.0,
+      "value_prior_year": 22017950.0,
+      "unit": "TCHF",
+      "source_quote": "|Verpflichtungen aus Kundeneinlagen|21 969 624|22 017 950|"
+    },
+    "reserves_banking_risks": {
+      "value_current": 610454.0,
+      "value_prior_year": 602343.0,
+      "unit": "TCHF",
+      "source_quote": "|Reserven für allgemeine Bankrisiken|610 454|602 343|"
+    },
+    "net_interest_income": {
+      "value_current": 152818.0,
+      "value_prior_year": 150413.0,
+      "unit": "TCHF",
+      "source_quote": "|**SUBTOTAL NETTO-ERFOLG ZINSENGESCHÄFT**|**152 818**|**150 413**|"
+    },
+    "commission_income": {
+      "value_current": 52795.0,
+      "value_prior_year": 47340.0,
+      "unit": "TCHF",
+      "source_quote": "|**SUBTOTAL ERFOLG KOMMISSIONS- UND DIENSTLEISTUNGSGESCHÄFT**|**52 795**|**47 340**|"
+    },
+    "trading_income": {
+      "value_current": 9602.0,
+      "value_prior_year": 9148.0,
+      "unit": "TCHF",
+      "source_quote": "|**ERFOLG AUS DEM HANDELSGESCHÄFT UND DER FAIR-VALUE-OPTION**|**9 602**|**9 148**|"
+    },
+    "total_operating_income": {
+      "value_current": 226022.0,
+      "value_prior_year": 215212.0,
+      "unit": "TCHF",
+      "source_quote": "|**GESCHÄFTSERTRAG**|**226 022**|**215 212**|"
+    },
+    "total_operating_expenses": {
+      "value_current": -126049.0,
+      "value_prior_year": -126870.0,
+      "unit": "TCHF",
+      "source_quote": "|**SUBTOTAL GESCHÄFTSAUFWAND**|**–126 049**|**–126 870**|"
+    },
+    "operating_profit": {
+      "value_current": 79698.0,
+      "value_prior_year": 72933.0,
+      "unit": "TCHF",
+      "source_quote": "|**GESCHÄFTSERFOLG**|**79 698**|**72 933**|"
+    },
+    "reserves_change": {
+      "value_current": -8111.0,
+      "value_prior_year": -8960.0,
+      "unit": "TCHF",
+      "source_quote": "|Veränderungen von Reserven für allgemeine Bankrisiken|–8 111|–8 960|"
+    },
+    "taxes": {
+      "value_current": -15500.0,
+      "value_prior_year": -15600.0,
+      "unit": "TCHF",
+      "source_quote": "|Steuern|–15 500|–15 600|"
+    },
+    "net_profit": {
+      "value_current": 56910.0,
+      "value_prior_year": 55436.0,
+      "unit": "TCHF",
+      "source_quote": "|**HALBJAHRESGEWINN**|**56 910**|**55 436**|"
+    }
+  },
+  "strategy_highlights": [
+    "Die BEKB hat uns beim Bau eines Stalls unterstützt. Meine Familie und ich leben nun unsere Leidenschaft für den Pferdesport im Berner Jura. Gabriel Juillerat, Rentner, Bellelay",
+    "Führen die BEKB in die Zukunft: Antoinette Hunziker-Ebneter und Hanspeter Rüfenacht",
+    "Die Eckdaten der Schweizer Wirtschaft blieben auch im ersten Halbjahr 2017 nahezu unverändert. Die globale Konjunktur setzt ihren Erholungspfad fort. In der Schweiz ist der starke Franken nach wie vor eine Herausforderung. Das anhaltend tiefe Zinsniveau drückte bei der BEKB weiter auf die Zinsmarge. Deshalb bleibt das Kostenmanagement zentral.",
+    "Unsere Bank hat in diesem anspruchsvollen Marktumfeld ein gutes Semesterergebnis erzielt und das Kerngeschäft weiter ausgebaut. Die Kundenausleihungen erhöhten sich um 1,2 Milliarden auf 22,5 Milliarden Franken. Die betreuten Vermögenswerte stiegen auf 21,7 Milliarden Franken. Die Bilanzsumme wuchs um 935 Millionen Franken auf 29,3 Milliarden Franken. Der Halbjahresgewinn erhöhte sich auf 56,9 Millionen Franken (Vorjahr 55,4 Millionen Franken)."
+  ]
+}

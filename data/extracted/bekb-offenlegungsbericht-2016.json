@@ -1,0 +1,44 @@
+{
+  "report_file": ".md/bekb-offenlegungsbericht-2016.md",
+  "stem": "bekb-offenlegungsbericht-2016",
+  "report_type": "offenlegung_fy",
+  "year": 2016,
+  "period": "FY2016",
+  "extraction_backend": "local_deterministic",
+  "metrics": {
+    "cet1_capital": {
+      "value_current": 2326058.0,
+      "value_prior_year": null,
+      "unit": "TCHF",
+      "source_quote": "|29<br>= hartes Kernkapital(net CET1)|2 326 058|2 326 058||"
+    },
+    "total_capital": {
+      "value_current": 2326058.0,
+      "value_prior_year": null,
+      "unit": "TCHF",
+      "source_quote": "|59<br>= regulatorisches Kapital(net T1 & T2)|2 326 058|2 326 058||"
+    },
+    "rwa_total": {
+      "value_current": 11739816.0,
+      "value_prior_year": null,
+      "unit": "TCHF",
+      "source_quote": "|60  Summe der risikogewichteten Positionen|11 739 816|11 739 816||"
+    },
+    "cet1_ratio_pct": {
+      "value_current": 19.81,
+      "value_prior_year": null,
+      "unit": "%",
+      "source_quote": "|61<br>CET1-Quote(Ziffer 29,in % der risikogewichteten Positionen)|19,81%|19,81%||"
+    },
+    "total_capital_ratio_pct": {
+      "value_current": 19.81,
+      "value_prior_year": null,
+      "unit": "%",
+      "source_quote": "|63<br> Quote bzgl. des regulatorischen Kapitals(Ziffer 59,in % der risikogewichteten Positionen)|19,81%|19,81%||"
+    },
+    "leverage_ratio_pct": null,
+    "lcr_pct": null,
+    "nsfr_pct": null
+  },
+  "strategy_highlights": []
+}

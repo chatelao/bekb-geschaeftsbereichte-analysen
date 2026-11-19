@@ -1,0 +1,178 @@
+{
+  "report_file": ".md/bekb-geschaeftsbericht-2008.md",
+  "stem": "bekb-geschaeftsbericht-2008",
+  "report_type": "annual",
+  "year": 2008,
+  "period": "FY2008",
+  "extraction_backend": "local_deterministic",
+  "metrics": {
+    "total_assets": {
+      "value_current": 22730029.0,
+      "value_prior_year": 21360521.0,
+      "unit": "TCHF",
+      "source_quote": "|**Total Aktiven**|**21 360 521**|**22 730 029**|"
+    },
+    "mortgage_loans": {
+      "value_current": 14168075.0,
+      "value_prior_year": 13648988.0,
+      "unit": "TCHF",
+      "source_quote": "|Hypothekarforderungen|13 648 988|14 168 075|"
+    },
+    "customer_loans_other": {
+      "value_current": 1852832.0,
+      "value_prior_year": 1289740.0,
+      "unit": "TCHF",
+      "source_quote": "|Forderungen gegenüber Kunden|1 289 740|1 852 832|"
+    },
+    "customer_deposits": {
+      "value_current": 16825404.0,
+      "value_prior_year": 15288514.0,
+      "unit": "TCHF",
+      "source_quote": "|in Spar­ und Anlageform|10 921 616|12 771 075| + |Übrige Verpflichtungen gegenüber Kunden|4 366 898|4 054 329|"
+    },
+    "kassenobligationen": {
+      "value_current": 960928.0,
+      "value_prior_year": 604724.0,
+      "unit": "TCHF",
+      "source_quote": "|Kassenobligationen|604 724|960 928|"
+    },
+    "reserves_banking_risks": {
+      "value_current": 560349.0,
+      "value_prior_year": 559701.0,
+      "unit": "TCHF",
+      "source_quote": "|Reserven für allgemeine Bankrisiken|559 701|560 349|"
+    },
+    "shareholders_equity": {
+      "value_current": 1115.0,
+      "value_prior_year": 1168.0,
+      "unit": "Mio. CHF",
+      "source_quote": "|Eigenkapital|1 085|1 168|1 115<sup>2)</sup>|"
+    },
+    "net_interest_income": {
+      "value_current": 314661.0,
+      "value_prior_year": 298258.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Erfolg Zinsengeschäft**|**298 258**|**314 661**|"
+    },
+    "commission_income": {
+      "value_current": 93708.0,
+      "value_prior_year": 104899.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Erfolg Kommissions­**<br>**und Dienstleistungsgeschäft**|**104 899**|**93 708**|"
+    },
+    "trading_income": {
+      "value_current": 37789.0,
+      "value_prior_year": 27634.0,
+      "unit": "TCHF",
+      "source_quote": "|**Erfolg aus dem Handelsgeschäft**|**27 634**|**37 789**|"
+    },
+    "total_operating_income": {
+      "value_current": 471337.0,
+      "value_prior_year": 467196.0,
+      "unit": "TCHF",
+      "source_quote": "|Betriebsertrag netto|467 196|471 337|"
+    },
+    "personnel_expenses": {
+      "value_current": -140769.0,
+      "value_prior_year": -143588.0,
+      "unit": "TCHF",
+      "source_quote": "|Personalaufwand|(143 588)|(140 769)|"
+    },
+    "general_expenses": {
+      "value_current": -93828.0,
+      "value_prior_year": -82597.0,
+      "unit": "TCHF",
+      "source_quote": "|Sachaufwand|(82 597)|(93 828)|"
+    },
+    "total_operating_expenses": {
+      "value_current": -234597.0,
+      "value_prior_year": -226185.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Geschäftsaufwand**|**(226 185)**|**(234 597)**|"
+    },
+    "operating_profit": {
+      "value_current": 236739.0,
+      "value_prior_year": 241011.0,
+      "unit": "TCHF",
+      "source_quote": "|Bruttogewinn|241 011|236 739|"
+    },
+    "reserves_change": null,
+    "taxes": {
+      "value_current": -27600.0,
+      "value_prior_year": -69900.0,
+      "unit": "TCHF",
+      "source_quote": "|Steuern|(69 900)|(27 600)|"
+    },
+    "net_profit": {
+      "value_current": 112733.0,
+      "value_prior_year": 236348.0,
+      "unit": "TCHF",
+      "source_quote": "|Jahresgewinn|236 348|112 733|"
+    },
+    "assets_under_management": {
+      "value_current": 18731.0,
+      "value_prior_year": 20451.0,
+      "unit": "Mio. CHF",
+      "source_quote": "|Betreute Vermögenswerte (Depotwerte)<sup>1)</sup>|20 099|20 451|18 731|"
+    },
+    "net_new_money": null,
+    "free_cash_flow": {
+      "value_current": 130.5,
+      "value_prior_year": 121.7,
+      "unit": "Mio. CHF",
+      "source_quote": "|Netto erarbeitete Mittel (NEM)|135,5|121,7|130,5|"
+    },
+    "share_price_eoy": {
+      "value_current": 224.0,
+      "value_prior_year": 199.9,
+      "unit": "CHF",
+      "source_quote": "|Jahresend|187,6|199,9|224,0|"
+    },
+    "dividend_per_share": {
+      "value_current": 4.4,
+      "value_prior_year": 4.1,
+      "unit": "CHF",
+      "source_quote": "|Dividende je Namenaktie|3,80|4,10|4.40<sup>5)</sup>|"
+    },
+    "payout_ratio_pct": null,
+    "fte_count": {
+      "value_current": 1172.0,
+      "value_prior_year": 1210.0,
+      "unit": "FTE",
+      "source_quote": "|Mitarbeiterinnen und Mitarbeiter<br>(teilzeitbereinigt)|1 201|1 210|1 172|"
+    },
+    "headcount": {
+      "value_current": 1409.0,
+      "value_prior_year": 1457.0,
+      "unit": "Personen",
+      "source_quote": "|Personalbestand|1 456|1 457|1 409|"
+    },
+    "branch_count": {
+      "value_current": 78.0,
+      "value_prior_year": 78.0,
+      "unit": "Anzahl",
+      "source_quote": "|Anzahl Niederlassungen|77|78|78|"
+    },
+    "taxes_public_mio": null,
+    "dividend_canton_mio": {
+      "value_current": 21.1,
+      "value_prior_year": 19.7,
+      "unit": "Mio. CHF",
+      "source_quote": "|Dividende an den Kanton|19,9|19,7|21,1|"
+    },
+    "canton_guarantee_fee_mio": {
+      "value_current": 2.9,
+      "value_prior_year": 3.0,
+      "unit": "Mio. CHF",
+      "source_quote": "|Abgeltung Staatsgarantie an den Kanton|3,2|3,0|2,9|"
+    }
+  },
+  "strategy_highlights": [
+    "**Bericht des Verwaltungsrates an die Generalversammlung der Aktionärinnen und Aktionäre über das Geschäftsjahr 2008**",
+    "Die 123 fokussiert ihre Tätigkeit auf zwei Kerngeschäftsfelder, nämlich einerseits auf das Geschäft mit Privaten und Firmenkunden, insbesondere mit KMU, und andererseits auf die Vermögensberatung. Die Geschäftspolitik verfolgt eine soli­ de Bilanzstruktur mit starker Eigenmittelausstattung und guter Refinanzierung sowie eine starke Ertragskraft. Dies hat sich im Geschäftsjahr 2008 erneut bewährt. Die netto erarbeiteten Mittel (NEM) stiegen im Berichtsjahr um 130,5 Mio. Franken. Die 123 hat eine langfristig gültige finanzielle Zielsetzung: Sie will über eine Zeitspanne von zehn Jahren einen Free­Cash­Flow (netto erarbeitete Mittel, NEM) von 800 Mio. bis 1 Mrd. Franken erarbeiten (dies entspricht rund 140 Prozent der erforderlichen Eigenmittel). In den Jahren 2003 bis 2008 wurden kumuliert netto er­ arbeitete Mittel von 765,3 Mio. Franken geschaffen. Damit liegt der erreichte Mehr­ wert nach sechs Jahren über dem angestrebten Zielpfad. Die vor 175 Jahren gegrün­ dete 123 ist breit in ihrem Wirtschafts­ und Lebensraum verankert.",
+    "Im Geschäftsjahr 2008 hat die 123 erneut ein gutes Ergebnis erwirt­ schaftet. Der **Jahresgewinn vor Steuern** konnte zum sechzehnten aufeinander folgenden Mal gesteigert werden. Er stieg gegenüber der vergleichbaren Grösse aus dem Vorjahr (Reingewinn vor Steuern exklusive Veräusserungserfolg einer Beteili­ gung) um 3,5 Prozent auf 140,3 Millionen Franken. Der Generalversammlung wird die zwölfte Erhöhung der Dividende in Folge, von 4.10 Franken auf 4.40 Franken je Aktie, beantragt.",
+    "Der Erfolg aus dem **Zinsengeschäft** erhöhte sich im Geschäftsjahr 2008 um 5,5 Pro­ zent. Die Spargelder der Kundinnen und Kunden wurden auch im Berichtsjahr zu attraktiven Sätzen verzinst. Der **Kommissionsertrag** aus der Vermögensberatung erreichte in einem schwierigen Börsenumfeld 89,2 Mio. Franken. Der Erfolg aus dem gemäss Ausrichtung der Bank auf tiefem Niveau gehaltenen **Handelsgeschäft** lag mit 37,8 Mio. Franken hauptsächlich dank genutzten Marktopportunitäten aus Transaktionen mit der zweiten Linie um 10,2 Mio. über dem Vorjahreswert.",
+    "Der Geschäftsaufwand stieg wegen höheren IT­ und Outsourcing­Kosten um 3,7 Prozent. Das Verhältnis des Geschäftsaufwandes zum Betriebsertrag lag leicht unterhalb des Zielbereiches von 50 bis 55 Prozent.",
+    "Im Kreditgeschäft wurden insbesondere kleinere und mittlere Engagements bei Privaten sowie KMU im Espace Mittelland gefördert. Die 123 gewähr­ te ihren Kundinnen und Kunden 8937 **neue Kredite** im Umfang von 2,1 Mrd. Fran­ ken. Die **Kreditbeanspruchung** ohne Öffentlich­rechtliche Körperschaften (OeRK) erhöhte sich auf 15,0 Mrd. Franken. Die **Hypothekarforderungen** stiegen um 3,8 Prozent auf 14,2 Mrd. Franken. Mit einem Förderkonzept, das aus drei Säulen (Finanzierung von Neuunternehmen und Wachstum, Finanzierung von Nachfolge­ regelungen, Seed­Finanzierungen) besteht, werden innovative **KMU** und **Neuunter­ nehmen** unterstützt. Im Geschäftsjahr 2008 wurden im Rahmen der ersten und zweiten Säule des Förderkonzeptes 86 Vorhaben finanziert. Damit wurde die Schaf­ fung beziehungsweise Weiterführung von 1169 Arbeitsplätzen unterstützt."
+  ]
+}

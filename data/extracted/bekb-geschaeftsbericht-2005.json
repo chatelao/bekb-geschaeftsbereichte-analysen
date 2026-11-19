@@ -1,0 +1,173 @@
+{
+  "report_file": ".md/bekb-geschaeftsbericht-2005.md",
+  "stem": "bekb-geschaeftsbericht-2005",
+  "report_type": "annual",
+  "year": 2005,
+  "period": "FY2005",
+  "extraction_backend": "local_deterministic",
+  "metrics": {
+    "total_assets": {
+      "value_current": 20724449.0,
+      "value_prior_year": 20286144.0,
+      "unit": "TCHF",
+      "source_quote": "|**Total des actifs**||**20 286 144**|**20 724 449**|"
+    },
+    "mortgage_loans": {
+      "value_current": 12835009.0,
+      "value_prior_year": 12465554.0,
+      "unit": "TCHF",
+      "source_quote": "|Créances hypothécaires||12 465 554|12 835 009|"
+    },
+    "customer_loans_other": {
+      "value_current": 1046983.0,
+      "value_prior_year": 1585533.0,
+      "unit": "TCHF",
+      "source_quote": "|Créances sur la clientèle||1 585 533|1 046 983|"
+    },
+    "customer_deposits": {
+      "value_current": 14774763.0,
+      "value_prior_year": 14134041.0,
+      "unit": "TCHF",
+      "source_quote": "|et de placements|10 973 557|11 302 860| + |Autres engagements envers la clientèle|3 160 484|3 471 903|"
+    },
+    "kassenobligationen": {
+      "value_current": 392572.0,
+      "value_prior_year": 414685.0,
+      "unit": "TCHF",
+      "source_quote": "|Obligations de caisse|414 685|392 572|"
+    },
+    "reserves_banking_risks": {
+      "value_current": 451734.0,
+      "value_prior_year": 403674.0,
+      "unit": "TCHF",
+      "source_quote": "|Réserves pour risques bancaires généraux|403 674|451 734|"
+    },
+    "shareholders_equity": {
+      "value_current": 1026.0,
+      "value_prior_year": 1069.0,
+      "unit": "Mio. CHF",
+      "source_quote": "|Fonds propres|1 017|1 069|1 026 <sup>2)</sup>|"
+    },
+    "net_interest_income": {
+      "value_current": 273246.0,
+      "value_prior_year": 268711.0,
+      "unit": "TCHF",
+      "source_quote": "|**Sous-total résultant des opérations d’intérêts**|**268 711**|**273 246**|"
+    },
+    "commission_income": {
+      "value_current": 85699.0,
+      "value_prior_year": 77992.0,
+      "unit": "TCHF",
+      "source_quote": "|**Sous-total résultant des opérations de commissions**<br>**et des prestations de service**|**77 992**|**85 699**|"
+    },
+    "trading_income": {
+      "value_current": 22621.0,
+      "value_prior_year": 19845.0,
+      "unit": "TCHF",
+      "source_quote": "|**Résultat des opérations de négoce**|**19 845**|**22 621**|"
+    },
+    "total_operating_income": {
+      "value_current": 437861.0,
+      "value_prior_year": 408749.0,
+      "unit": "TCHF",
+      "source_quote": "|Produit d’exploitation net|408 749|437 861|"
+    },
+    "personnel_expenses": {
+      "value_current": -138463.0,
+      "value_prior_year": -134519.0,
+      "unit": "TCHF",
+      "source_quote": "|Charges de personnel|(134 519)|(138 463)|"
+    },
+    "general_expenses": {
+      "value_current": -80039.0,
+      "value_prior_year": -77735.0,
+      "unit": "TCHF",
+      "source_quote": "|Autres charges d’exploitation|(77 735)|(80 039)|"
+    },
+    "total_operating_expenses": {
+      "value_current": -218502.0,
+      "value_prior_year": -212254.0,
+      "unit": "TCHF",
+      "source_quote": "|**Sous-total charges d’exploitation**|**(212 254)**|**(218 502)**|"
+    },
+    "operating_profit": {
+      "value_current": 219360.0,
+      "value_prior_year": 196494.0,
+      "unit": "TCHF",
+      "source_quote": "|Bénéfice brut|196 494|219 360|"
+    },
+    "reserves_change": null,
+    "taxes": {
+      "value_current": -36200.0,
+      "value_prior_year": -29100.0,
+      "unit": "TCHF",
+      "source_quote": "|Impôts|(29 100)|(36 200)|"
+    },
+    "net_profit": {
+      "value_current": 85007.0,
+      "value_prior_year": 74747.0,
+      "unit": "TCHF",
+      "source_quote": "|Bénéfice de l’exercice|74 747|85 007|"
+    },
+    "assets_under_management": null,
+    "net_new_money": null,
+    "free_cash_flow": null,
+    "share_price_eoy": {
+      "value_current": 182.5,
+      "value_prior_year": 151.0,
+      "unit": "CHF",
+      "source_quote": "|Cours en fin d'année|135.5|151.0|182.5|"
+    },
+    "dividend_per_share": {
+      "value_current": 3.5,
+      "value_prior_year": 3.1,
+      "unit": "CHF",
+      "source_quote": "|Dividende par action nominative|3.00|3.10|3.50 <sup>4)</sup>|"
+    },
+    "payout_ratio_pct": null,
+    "fte_count": {
+      "value_current": 1206.0,
+      "value_prior_year": 1193.0,
+      "unit": "FTE",
+      "source_quote": "|Collaboratrices et collaborateurs|1 210|1 193|1 206|"
+    },
+    "headcount": {
+      "value_current": 1441.0,
+      "value_prior_year": 1433.0,
+      "unit": "Personen",
+      "source_quote": "|Effectif du personnel|1 448|1 433|1 441|"
+    },
+    "branch_count": {
+      "value_current": 76.0,
+      "value_prior_year": 77.0,
+      "unit": "Anzahl",
+      "source_quote": "|Nombre de sièges|77|77|76|"
+    },
+    "taxes_public_mio": {
+      "value_current": 36.2,
+      "value_prior_year": 29.1,
+      "unit": "Mio. CHF",
+      "source_quote": "|Impôts fédéraux, cantonaux et communaux|28,8|29,1|36,2|"
+    },
+    "dividend_canton_mio": {
+      "value_current": 18.4,
+      "value_prior_year": 16.4,
+      "unit": "Mio. CHF",
+      "source_quote": "|Produit sur investissement du canton<sup>7)</sup>|16,9|16,4|18,4|"
+    },
+    "canton_guarantee_fee_mio": {
+      "value_current": 5.1,
+      "value_prior_year": 5.1,
+      "unit": "Mio. CHF",
+      "source_quote": "|Rémunération de la garantie de l'Etat<br>au canton de Berne|4,8|5,1|5,1|"
+    }
+  },
+  "strategy_highlights": [
+    "**Rapport du conseil d’administration à l’assemblée des actionnaires sur l’exercice 2005**",
+    "**Fonds nets générés (FNG) supérieurs aux objectifs Soutien renforcé aux nouvelles entreprises et aux PME Le succès des transactions sur capital augmente la part du public à 44 pour cent**",
+    "La politique d’affaires consistant à doter la banque d’une structure de bilan saine, à lui assurer un bon refinancement et des fonds propres importants a de nouveau fait ses preuves en 2005. Les **fonds nets générés** (FNG) ont augmenté pendant l’année sous revue de 135,5 millions de francs. La 123 s’est fixé un objectif financier valable à long terme: elle entend dégager sur une période de dix ans (2003 à 2012) un free cash-flow (FNG) de 800 millions à 1 milliard de francs. Avec 377,7 millions de francs, la création de plus-value est, après trois années, supérieure aux objectifs.",
+    "- En 2005, la 123 a de nouveau réalisé un résultat solide. Le **bénéfice annuel avant impôts** a progressé pour la treizième année consécutive. Il a augmenté de 16,7 pour cent à 121,2 millions de francs. Le versement d’un dividende de 3.50 francs (année précédente 3.10 francs) sera proposé à l’Assemblée générale.",
+    "Le produit des **opérations d’intérêt** a pu être augmenté en 2005 de 1,7 pour cent malgré un environnement concurrentiel toujours intense. Les fonds d’épargne de la clientèle ont pu être rémunérés à des taux attractifs en 2005 également. Le **conseil en gestion de patrimoine** a encore été renforcé. Le produit des commissions du conseil en placement de 83,5 millions de francs a surpassé le résultat de l’année précédente de 10,7 pour cent. Avec 22,6 millions de francs, le **produit du négoce** – que la banque ne pratique que modérément – a progressé de 14,0 pour cent par rapport au niveau de l’année précédente. Les **charges d’exploitation** ont augmenté de 2,9 pour cent en raison de la hausse des charges de personnel et des coûts de la technologie de l’information. Le rapport entre charges d’exploitation et produit d’exploitation s’est situé dans l’objectif de 50 à 55 pour cent.",
+    "**4. 8300 nouveaux crédits – soutien renforcé des PME et des nouvelles entreprises** L’accent en matière de crédits a été mis sur les petits et moyens engagements envers les particuliers et les PME dans l’Espace Mittelland. La 123 a octroyé à ses clients quelque 8300 **nouveaux crédits** d’un montant de 1,7 milliard de francs. Les **créances sur la clientèle,** sans compter les collectivités de droit public, ont augmenté à 13,5 milliards de francs; les **créances hypothécaires** ont progressé de 3,0 pour cent à 12,8 milliards de francs. Avec un concept d’encouragement reposant sur trois piliers (financement de nouvelles entreprises et de la croissance, financement du règlement de successions, financement de capital d’amorçage), des **PME et de nouvelles entreprises** innovatrices sont soutenues. Dans le cadre de ce concept, 116 projets ont été financés, ce qui a contribué à la création ou à la sauvegarde de 759 places de travail. 30 millions de francs ont été affectés pour la première fois en 2005 au développement des entreprises de technique médicinale et de biotechnologie."
+  ]
+}

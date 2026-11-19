@@ -1,0 +1,59 @@
+{
+  "report_file": ".md/bekb-offenlegungsbericht-2025.md",
+  "stem": "bekb-offenlegungsbericht-2025",
+  "report_type": "offenlegung_fy",
+  "year": 2025,
+  "period": "FY2025",
+  "extraction_backend": "local_deterministic",
+  "metrics": {
+    "cet1_capital": {
+      "value_current": 2954480.0,
+      "value_prior_year": 2875338.0,
+      "unit": "TCHF",
+      "source_quote": "|1<br>Hartes Kernkapital (CET1)|2 954 480|2 896 756|2 875 338|"
+    },
+    "total_capital": {
+      "value_current": 3294883.0,
+      "value_prior_year": 3231533.0,
+      "unit": "TCHF",
+      "source_quote": "|3<br>Gesamtkapital total|3 294 883|3 240 835|3 231 533|"
+    },
+    "rwa_total": {
+      "value_current": 16159205.0,
+      "value_prior_year": 16658058.0,
+      "unit": "TCHF",
+      "source_quote": "|4<br>RWA|16 159 205|15 661 491|16 658 058|"
+    },
+    "cet1_ratio_pct": {
+      "value_current": 18.28,
+      "value_prior_year": 17.26,
+      "unit": "%",
+      "source_quote": "|5<br>CET1-Quote (%)|18,28|18,50|17,26|"
+    },
+    "total_capital_ratio_pct": {
+      "value_current": 20.39,
+      "value_prior_year": 19.4,
+      "unit": "%",
+      "source_quote": "|7<br>Gesamtkapitalquote (%)|20,39|20,69|19,40|"
+    },
+    "leverage_ratio_pct": {
+      "value_current": 6.65,
+      "value_prior_year": 6.9,
+      "unit": "%",
+      "source_quote": "|14<br>Leverate Ratio, ausgedrückt als Tier 1 in % des LRD, einschliesslich der<br>Auswirkung einer vorübergehenden Ausnahme von Zentralbankguthaben|6,65|6,69|6,90|"
+    },
+    "lcr_pct": {
+      "value_current": 141.9,
+      "value_prior_year": 150.5,
+      "unit": "%",
+      "source_quote": "|17<br>LCR (%)|141,9|144,4|150,5|"
+    },
+    "nsfr_pct": {
+      "value_current": 143.3,
+      "value_prior_year": 148.8,
+      "unit": "%",
+      "source_quote": "|20<br>NSFR (%)|143,3|143,0|148,8|"
+    }
+  },
+  "strategy_highlights": []
+}

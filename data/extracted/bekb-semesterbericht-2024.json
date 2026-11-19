@@ -1,0 +1,100 @@
+{
+  "report_file": ".md/bekb-semesterbericht-2024.md",
+  "stem": "bekb-semesterbericht-2024",
+  "report_type": "semester",
+  "year": 2024,
+  "period": "H1-2024",
+  "extraction_backend": "local_deterministic",
+  "metrics": {
+    "total_assets": {
+      "value_current": 39815956.0,
+      "value_prior_year": 40053489.0,
+      "unit": "TCHF",
+      "source_quote": "|**Total Aktiven**|**39 815 956**|**40 053 489**|**–237 532**|**–0,6**|"
+    },
+    "mortgage_loans": {
+      "value_current": 27335318.0,
+      "value_prior_year": 26809178.0,
+      "unit": "TCHF",
+      "source_quote": "|Hypothekarforderungen|27 335 318|26 809 178|526 140|2,0|"
+    },
+    "customer_loans_other": {
+      "value_current": 1911825.0,
+      "value_prior_year": 1987914.0,
+      "unit": "TCHF",
+      "source_quote": "|Forderungen gegenüber Kunden|1 911 825|1 987 914|–76 089|–3,8|"
+    },
+    "customer_deposits": {
+      "value_current": 27181023.0,
+      "value_prior_year": 27057621.0,
+      "unit": "TCHF",
+      "source_quote": "|Verpflichtungen aus Kundeneinlagen|27 181 023|27 057 621|123 402|0,5|"
+    },
+    "reserves_banking_risks": {
+      "value_current": 584747.0,
+      "value_prior_year": 564885.0,
+      "unit": "TCHF",
+      "source_quote": "|Reserven für allgemeine Bankrisiken|584 747|564 885|19 863|3,5|"
+    },
+    "net_interest_income": {
+      "value_current": 188693.0,
+      "value_prior_year": 195107.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Netto-Erfolg Zinsengeschäft**|**188 693**|**195 107**|**–6 414**|**–3,3**|"
+    },
+    "commission_income": {
+      "value_current": 56319.0,
+      "value_prior_year": 52541.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Erfolg Kommissions- und**<br>**Dienstleistungsgeschäft**|**56 319**|**52 541**|**3 778**|**7,2**|"
+    },
+    "trading_income": {
+      "value_current": 12475.0,
+      "value_prior_year": 12890.0,
+      "unit": "TCHF",
+      "source_quote": "|**Erfolg aus dem Handelsgeschäft und**<br>**der Fair-Value-Option**|**12 475**|**12 890**|**–415**|**–3,2**|"
+    },
+    "total_operating_income": {
+      "value_current": 270459.0,
+      "value_prior_year": 270196.0,
+      "unit": "TCHF",
+      "source_quote": "|**Geschäftsertrag**|**270 459**|**270 196**|**264**|**0,1**|"
+    },
+    "total_operating_expenses": {
+      "value_current": -134197.0,
+      "value_prior_year": -129832.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Geschäftsaufwand**|**–134 197**|**–129 832**|**–4 365**|**3,4**|"
+    },
+    "operating_profit": {
+      "value_current": 117996.0,
+      "value_prior_year": 115742.0,
+      "unit": "TCHF",
+      "source_quote": "|**Geschäftserfolg**|**117 996**|**115 742**|**2 254**|**1,9**|"
+    },
+    "reserves_change": {
+      "value_current": -19863.0,
+      "value_prior_year": -17372.0,
+      "unit": "TCHF",
+      "source_quote": "|Veränderungen von Reserven für<br>allgemeine Bankrisiken|–19 863|–17 372|–2 491|14,3|"
+    },
+    "taxes": {
+      "value_current": -23500.0,
+      "value_prior_year": -22800.0,
+      "unit": "TCHF",
+      "source_quote": "|Steuern|–23 500|–22 800|–700|3,1|"
+    },
+    "net_profit": {
+      "value_current": 75287.0,
+      "value_prior_year": 75581.0,
+      "unit": "TCHF",
+      "source_quote": "|**Halbjahresgewinn**|**75 287**|**75 581**|**–293**|**–0,4**|"
+    }
+  },
+  "strategy_highlights": [
+    "Berner Kantonalbank AG **Redaktion** Bundesplatz 8 Barbara Nyfeler Postfach Corina Lardelli 3001 Bern Eveline Wittwer 031 666 16 87 Lauro Mombelli",
+    "Die BEKB erreicht im ersten Halbjahr 2024 ein solides Ergebnis. Zwar liegt der Gewinn mit 75,3 Millionen Franken leicht unter dem Vorjahr, doch der Kundenzuwachs hält weiter an. Auch der Erfolg aus dem Kommissions- und Dienstleistungsgeschäft ist gestiegen.",
+    "Nach einem sehr erfolgreichen Jahr 2023 schliesst die BEKB auch das erste Halbjahr 2024 mit einem soliden Ergebnis ab. Der Gewinn fällt etwas tiefer aus als im Vorjahr, doch der Kundenzuwachs hält unvermindert an: Das zeigt, dass die Kundschaft der BEKB vertraut. Der Ausbau des Anlagegeschäfts ermöglicht es uns, die sich bietenden Wachstumschancen aktiv zu nutzen. So wurde beispielsweise das Departement Key Clients und Asset Management personell verstärkt, unter anderem mit einem neuen Key Client Team in Gstaad und in der Stadt Bern.",
+    "Die Kundeneinlagen wuchsen um 0,5 Prozent auf 27,2 Milliarden Franken. Bei den Kundenausleihungen erreicht die BEKB ein Volumen von 29,2 Milliarden Franken (+1,6 Prozent). Davon belaufen sich die Hypothekarforderungen auf 27,3 Milliarden Franken (+2,0 Prozent)."
+  ]
+}

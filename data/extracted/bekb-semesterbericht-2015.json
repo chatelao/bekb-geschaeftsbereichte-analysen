@@ -1,0 +1,95 @@
+{
+  "report_file": ".md/bekb-semesterbericht-2015.md",
+  "stem": "bekb-semesterbericht-2015",
+  "report_type": "semester",
+  "year": 2015,
+  "period": "H1-2015",
+  "extraction_backend": "local_deterministic",
+  "metrics": {
+    "total_assets": {
+      "value_current": 28030061.0,
+      "value_prior_year": 27054992.0,
+      "unit": "TCHF",
+      "source_quote": "|**Total Aktiven**|**28 030 061**|**27 054 992**|"
+    },
+    "mortgage_loans": {
+      "value_current": 19274059.0,
+      "value_prior_year": 18925491.0,
+      "unit": "TCHF",
+      "source_quote": "|Hypothekarforderungen|19 274 059|18 925 491|"
+    },
+    "customer_loans_other": {
+      "value_current": 1943098.0,
+      "value_prior_year": 2500969.0,
+      "unit": "TCHF",
+      "source_quote": "|Forderungengegenüber Kunden|1 943 098|2 500 969|"
+    },
+    "customer_deposits": {
+      "value_current": 21895191.0,
+      "value_prior_year": 22006562.0,
+      "unit": "TCHF",
+      "source_quote": "|Verpflichtungengegenüber Kunden in Spar- und Anlageform<br>l|17 677 180|17 331 715| + |Übrige Verpflichtungengegenüber Kunden|4 218 011|4 674 847|"
+    },
+    "reserves_banking_risks": {
+      "value_current": 675079.0,
+      "value_prior_year": 654085.0,
+      "unit": "TCHF",
+      "source_quote": "|Reserven für allgemeine Bankrisiken|675 079|654 085|"
+    },
+    "net_interest_income": {
+      "value_current": 141983.0,
+      "value_prior_year": 154322.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Erfolg Zinsengeschäft**|**141 983**|**154 322**|"
+    },
+    "commission_income": {
+      "value_current": 49590.0,
+      "value_prior_year": 39311.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Erfolg Kommissions- und Dienstleistungsgeschäft**|**49 590**|**39 311**|"
+    },
+    "trading_income": {
+      "value_current": 9445.0,
+      "value_prior_year": 10267.0,
+      "unit": "TCHF",
+      "source_quote": "|**Erfolg aus dem Handelsgeschäft**|**9 445**|**10 267**|"
+    },
+    "total_operating_income": {
+      "value_current": 214282.0,
+      "value_prior_year": 225118.0,
+      "unit": "TCHF",
+      "source_quote": "|Betriebsertragnetto|214 282|225 118|"
+    },
+    "total_operating_expenses": {
+      "value_current": -127670.0,
+      "value_prior_year": -132459.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Geschäftsaufwand**|**–127 670**|**–132 459**|"
+    },
+    "operating_profit": {
+      "value_current": 86612.0,
+      "value_prior_year": 92659.0,
+      "unit": "TCHF",
+      "source_quote": "|Bruttogewinn|86 612|92 659|"
+    },
+    "reserves_change": null,
+    "taxes": {
+      "value_current": -22300.0,
+      "value_prior_year": -22900.0,
+      "unit": "TCHF",
+      "source_quote": "|Steuern|–22 300|–22 900|"
+    },
+    "net_profit": {
+      "value_current": 56425.0,
+      "value_prior_year": 57750.0,
+      "unit": "TCHF",
+      "source_quote": "|**Halbjahresgewinn**|**56 425**|**57 750**|"
+    }
+  },
+  "strategy_highlights": [
+    "Berner Kantonalbank AG Bundesplatz 8 Postfach 3001 Bern Telefon 031 666 11 11 Fax 031 666 60 40",
+    "Kerstin Eichenberger, Eveline Wittwer, Harry Tresch, Alex Josty",
+    "Alain Portmann und Brigitte Künzi mit Julien, Privatkunden aus Gwatt",
+    "- 68 Niederlassungen, neun mobile Bankstellen und eine Onlinebank"
+  ]
+}

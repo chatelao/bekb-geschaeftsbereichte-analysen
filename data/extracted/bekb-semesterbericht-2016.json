@@ -1,0 +1,100 @@
+{
+  "report_file": ".md/bekb-semesterbericht-2016.md",
+  "stem": "bekb-semesterbericht-2016",
+  "report_type": "semester",
+  "year": 2016,
+  "period": "H1-2016",
+  "extraction_backend": "local_deterministic",
+  "metrics": {
+    "total_assets": {
+      "value_current": 28714775.0,
+      "value_prior_year": 28034674.0,
+      "unit": "TCHF",
+      "source_quote": "|**Total Aktiven**|**28 714 775**|**28 034 674**|"
+    },
+    "mortgage_loans": {
+      "value_current": 19617931.0,
+      "value_prior_year": 19377548.0,
+      "unit": "TCHF",
+      "source_quote": "|Hypothekarforderungen|19 617 931|19 377 548|"
+    },
+    "customer_loans_other": {
+      "value_current": 1869421.0,
+      "value_prior_year": 1328836.0,
+      "unit": "TCHF",
+      "source_quote": "|Forderungengegenüber Kunden|1 869 421|1 328 836|"
+    },
+    "customer_deposits": {
+      "value_current": 21901843.0,
+      "value_prior_year": 22082933.0,
+      "unit": "TCHF",
+      "source_quote": "|Verpflichtungen aus Kundeneinlagen<br>l|21 901 843|22 082 933|"
+    },
+    "reserves_banking_risks": {
+      "value_current": 610322.0,
+      "value_prior_year": 601362.0,
+      "unit": "TCHF",
+      "source_quote": "|Reserven für allgemeine Bankrisiken|610 322|601 362|"
+    },
+    "net_interest_income": {
+      "value_current": 150413.0,
+      "value_prior_year": 151133.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Netto-Erfolg Zinsengeschäft**|**150 413**|**151 133**|"
+    },
+    "commission_income": {
+      "value_current": 47340.0,
+      "value_prior_year": 49647.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Erfolg Kommissions- und Dienstleistungsgeschäft**|**47 340**|**49 647**|"
+    },
+    "trading_income": {
+      "value_current": 9148.0,
+      "value_prior_year": 9445.0,
+      "unit": "TCHF",
+      "source_quote": "|**Erfolg aus dem Handelsgeschäft und der Fair-Value-Option**|**9 148**|**9 445**|"
+    },
+    "total_operating_income": {
+      "value_current": 215212.0,
+      "value_prior_year": 223431.0,
+      "unit": "TCHF",
+      "source_quote": "|**Geschäftsertrag**|**215 212**|**223 431**|"
+    },
+    "total_operating_expenses": {
+      "value_current": -126870.0,
+      "value_prior_year": -127685.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Geschäftsaufwand**|**–126 870**|**–127 685**|"
+    },
+    "operating_profit": {
+      "value_current": 72933.0,
+      "value_prior_year": 74179.0,
+      "unit": "TCHF",
+      "source_quote": "|**Geschäftserfolg**|**72 933**|**74 179**|"
+    },
+    "reserves_change": {
+      "value_current": -8960.0,
+      "value_prior_year": -20994.0,
+      "unit": "TCHF",
+      "source_quote": "|Veränderungen von Reserven für allgemeine Bankrisiken|–8 960|–20 994|"
+    },
+    "taxes": {
+      "value_current": -15600.0,
+      "value_prior_year": -22300.0,
+      "unit": "TCHF",
+      "source_quote": "|Steuern|–15 600|–22 300|"
+    },
+    "net_profit": {
+      "value_current": 55436.0,
+      "value_prior_year": 56425.0,
+      "unit": "TCHF",
+      "source_quote": "|**Halbjahresgewinn**|**55 436**|**56 425**|"
+    }
+  },
+  "strategy_highlights": [
+    "Berner Kantonalbank AG Bundesplatz 8 Postfach 3001 Bern Telefon 031 666 11 11 Fax 031 666 60 40",
+    "Kerstin Eichenberger, Eveline Wittwer, Harry Tresch, Alex Josty",
+    "Simone, Robert und Henry von Dach, BEKB-Aktionäre aus dem Seeland",
+    "- über 70 Standorte, eine Service-Linie und verschiedene Onlinedienstleistungen"
+  ]
+}

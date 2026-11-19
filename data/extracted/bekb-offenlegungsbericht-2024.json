@@ -1,0 +1,59 @@
+{
+  "report_file": ".md/bekb-offenlegungsbericht-2024.md",
+  "stem": "bekb-offenlegungsbericht-2024",
+  "report_type": "offenlegung_fy",
+  "year": 2024,
+  "period": "FY2024",
+  "extraction_backend": "local_deterministic",
+  "metrics": {
+    "cet1_capital": {
+      "value_current": 2875338.0,
+      "value_prior_year": 2767304.0,
+      "unit": "TCHF",
+      "source_quote": "|1<br>Hartes Kernkapital (CET1)|2 875 338|2 793 607|2 767 304|"
+    },
+    "total_capital": {
+      "value_current": 3231533.0,
+      "value_prior_year": 3127005.0,
+      "unit": "TCHF",
+      "source_quote": "|3<br>Gesamtkapital total|3 231 533|3 154 705|3 127 005|"
+    },
+    "rwa_total": {
+      "value_current": 16658058.0,
+      "value_prior_year": 15975333.0,
+      "unit": "TCHF",
+      "source_quote": "|4<br>RWA|16 658 058|16 323 672|15 975 333|"
+    },
+    "cet1_ratio_pct": {
+      "value_current": 17.26,
+      "value_prior_year": 17.32,
+      "unit": "%",
+      "source_quote": "|5<br>CET1-Quote (%)|17,26|17,11|17,32|"
+    },
+    "total_capital_ratio_pct": {
+      "value_current": 19.4,
+      "value_prior_year": 19.57,
+      "unit": "%",
+      "source_quote": "|7<br>Gesamtkapitalquote (%)|19,40|19,33|19,57|"
+    },
+    "leverage_ratio_pct": {
+      "value_current": 6.9,
+      "value_prior_year": 6.69,
+      "unit": "%",
+      "source_quote": "|14<br>Basel III Leverage Ratio (Kernkapital in % des Gesamtengagements)|6,90|6,81|6,69|"
+    },
+    "lcr_pct": {
+      "value_current": 150.5,
+      "value_prior_year": 190.4,
+      "unit": "%",
+      "source_quote": "|17<br>Liquiditätsquote, LCR (in %)|150,5|187,5|190,4|"
+    },
+    "nsfr_pct": {
+      "value_current": 148.8,
+      "value_prior_year": 155.2,
+      "unit": "%",
+      "source_quote": "|20<br>Finanzierungsquote, NSFR (in %)|148,8|152,9|155,2|"
+    }
+  },
+  "strategy_highlights": []
+}

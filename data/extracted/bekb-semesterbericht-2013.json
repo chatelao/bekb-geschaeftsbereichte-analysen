@@ -1,0 +1,95 @@
+{
+  "report_file": ".md/bekb-semesterbericht-2013.md",
+  "stem": "bekb-semesterbericht-2013",
+  "report_type": "semester",
+  "year": 2013,
+  "period": "H1-2013",
+  "extraction_backend": "local_deterministic",
+  "metrics": {
+    "total_assets": {
+      "value_current": 26459339.0,
+      "value_prior_year": 26371182.0,
+      "unit": "TCHF",
+      "source_quote": "|**Total Aktiven**|**26 459 339**|**26 371 182**|"
+    },
+    "mortgage_loans": {
+      "value_current": 18078631.0,
+      "value_prior_year": 17794919.0,
+      "unit": "TCHF",
+      "source_quote": "|Hypothekarforderungen|18 078 631|17 794 919|"
+    },
+    "customer_loans_other": {
+      "value_current": 2616109.0,
+      "value_prior_year": 2410411.0,
+      "unit": "TCHF",
+      "source_quote": "|Forderungengegenüber Kunden|2 616 109|2 410 411|"
+    },
+    "customer_deposits": {
+      "value_current": 21639125.0,
+      "value_prior_year": 21442222.0,
+      "unit": "TCHF",
+      "source_quote": "|Verpflichtungengegenüber Kunden in Spar- und Anlageform<br>l|17 030 707|16 786 780| + |Übrige Verpflichtungengegenüber Kunden<br>|4 608 418|4 655 442|"
+    },
+    "reserves_banking_risks": {
+      "value_current": 615603.0,
+      "value_prior_year": 586447.0,
+      "unit": "TCHF",
+      "source_quote": "|Reserven für allgemeine Bankrisiken|615 603|586 447|"
+    },
+    "net_interest_income": {
+      "value_current": 160291.0,
+      "value_prior_year": 164759.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Erfolg Zinsengeschäft**|**160 291**|**164 759**|"
+    },
+    "commission_income": {
+      "value_current": 39079.0,
+      "value_prior_year": 36782.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Erfolg Kommissions- und Dienstleistungsgeschäft**|**39 079**|**36 782**|"
+    },
+    "trading_income": {
+      "value_current": 10885.0,
+      "value_prior_year": 10894.0,
+      "unit": "TCHF",
+      "source_quote": "|**Erfolg aus dem Handelsgeschäft**|**10 885**|**10 894**|"
+    },
+    "total_operating_income": {
+      "value_current": 256095.0,
+      "value_prior_year": 236462.0,
+      "unit": "TCHF",
+      "source_quote": "|Betriebsertragnetto|256 095|236 462|"
+    },
+    "total_operating_expenses": {
+      "value_current": -148478.0,
+      "value_prior_year": -134912.0,
+      "unit": "TCHF",
+      "source_quote": "|Subtotal Geschäftsaufwand|–148 478|–134 912|"
+    },
+    "operating_profit": {
+      "value_current": 107617.0,
+      "value_prior_year": 101551.0,
+      "unit": "TCHF",
+      "source_quote": "|Bruttogewinn|107 617|101 551|"
+    },
+    "reserves_change": null,
+    "taxes": {
+      "value_current": -24200.0,
+      "value_prior_year": -23800.0,
+      "unit": "TCHF",
+      "source_quote": "|Steuern|–24 200|–23 800|"
+    },
+    "net_profit": {
+      "value_current": 59235.0,
+      "value_prior_year": 58398.0,
+      "unit": "TCHF",
+      "source_quote": "|**Halbjahresgewinn**|**59 235**|**58 398**|"
+    }
+  },
+  "strategy_highlights": [
+    "123 Kommunikation Bundesplatz 8 Postfach 3001 Bern Telefon 031 666 11 11 Fax 031 666 60 40",
+    "Karin Sidler, Anne-Marie Soletti, Ruth Burri, Kundenberaterinnen der Niederlassung Rapperswil (von links)",
+    "Berner Kantonalbank AG / Banque Cantonale Bernoise SA 601.083.00",
+    "- 16 **Ein Tag im Leben von Niederlassungs­ leiterin Anne­Marie Soletti**"
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "report_file": ".md/bekb-geschaeftsbericht-2022.md",
+  "stem": "bekb-geschaeftsbericht-2022",
+  "report_type": "annual",
+  "year": 2022,
+  "period": "FY2022",
+  "extraction_backend": "local_deterministic",
+  "metrics": {
+    "total_assets": {
+      "value_current": 39757263.0,
+      "value_prior_year": 38993620.0,
+      "unit": "TCHF",
+      "source_quote": "|**Total Aktiven**|**39 757 263**|**38 993 620**|**763 643**|**2,0**|"
+    },
+    "mortgage_loans": {
+      "value_current": 25950848.0,
+      "value_prior_year": 24730782.0,
+      "unit": "TCHF",
+      "source_quote": "|Hypothekarforderungen|25 950 848|24 730 782|1 220 066|4,9|"
+    },
+    "customer_loans_other": {
+      "value_current": 1708680.0,
+      "value_prior_year": 1487614.0,
+      "unit": "TCHF",
+      "source_quote": "|Forderungen gegenüber Kunden|1 708 680|1 487 614|221 066|14,9|"
+    },
+    "customer_deposits": {
+      "value_current": 27303953.0,
+      "value_prior_year": 26254424.0,
+      "unit": "TCHF",
+      "source_quote": "|Verpflichtungen aus Kundeneinlagen|27 303 953|26 254 424|1 049 528|4,0|"
+    },
+    "kassenobligationen": {
+      "value_current": 80555.0,
+      "value_prior_year": 51971.0,
+      "unit": "TCHF",
+      "source_quote": "|Kassenobligationen|80 555|51 971|28 584|55,0|"
+    },
+    "reserves_banking_risks": {
+      "value_current": 523150.0,
+      "value_prior_year": 541966.0,
+      "unit": "TCHF",
+      "source_quote": "|Reserven für allgemeine Bankrisiken|523 150|541 966|–18 816|–3,5|"
+    },
+    "shareholders_equity": {
+      "value_current": 2677.0,
+      "value_prior_year": 2620.0,
+      "unit": "Mio. CHF",
+      "source_quote": "|Eigenkapital|2 677<sup>1</sup>|2 620|"
+    },
+    "net_interest_income": {
+      "value_current": 315400.0,
+      "value_prior_year": 303941.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Netto-Erfolg Zinsengeschäft**|**315 400**|**303 941**|**11 458**|**3,8**|"
+    },
+    "commission_income": {
+      "value_current": 108928.0,
+      "value_prior_year": 112316.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Erfolg Kommissions- und Dienstleistungsgeschäft**|**108 928**|**112 316**|**–3 388**|**–3,0**|"
+    },
+    "trading_income": {
+      "value_current": 37452.0,
+      "value_prior_year": 24924.0,
+      "unit": "TCHF",
+      "source_quote": "|**Erfolg aus dem Handelsgeschäft und der Fair-Value-Option**|**37 452**|**24 924**|**12 528**|**50,3**|"
+    },
+    "total_operating_income": {
+      "value_current": 485689.0,
+      "value_prior_year": 463511.0,
+      "unit": "TCHF",
+      "source_quote": "|**Geschäftsertrag**|**485 689**|**463 511**|**22 179**|**4,8**|"
+    },
+    "personnel_expenses": {
+      "value_current": -143387.0,
+      "value_prior_year": -144157.0,
+      "unit": "TCHF",
+      "source_quote": "|Personalaufwand|–143 387|–144 157|770|–0,5|"
+    },
+    "general_expenses": {
+      "value_current": -111504.0,
+      "value_prior_year": -94462.0,
+      "unit": "TCHF",
+      "source_quote": "|Sachaufwand|–111 504|–94 462|–17 042|18,0|"
+    },
+    "total_operating_expenses": {
+      "value_current": -254891.0,
+      "value_prior_year": -238619.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Geschäftsaufwand**|**–254 891**|**–238 619**|**–16 272**|**6,8**|"
+    },
+    "operating_profit": {
+      "value_current": 170405.0,
+      "value_prior_year": 178574.0,
+      "unit": "TCHF",
+      "source_quote": "|**Geschäftserfolg**|**170 405**|**178 574**|**–8 169**|**–4,6**|"
+    },
+    "reserves_change": {
+      "value_current": 18816.0,
+      "value_prior_year": 11594.0,
+      "unit": "TCHF",
+      "source_quote": "|Veränderungen von Reserven für allgemeine Bankrisiken|18 816|11 594|7 222|62,3|"
+    },
+    "taxes": {
+      "value_current": -29900.0,
+      "value_prior_year": -35400.0,
+      "unit": "TCHF",
+      "source_quote": "|Steuern|–29 900|–35 400|5 500|–15,5|"
+    },
+    "net_profit": {
+      "value_current": 159616.0,
+      "value_prior_year": 154936.0,
+      "unit": "TCHF",
+      "source_quote": "|**Gewinn**|**159 616**|**154 936**|**4 680**|**3,0**|"
+    },
+    "assets_under_management": {
+      "value_current": 17033.0,
+      "value_prior_year": 19584.0,
+      "unit": "Mio. CHF",
+      "source_quote": "|Betreute Vermögenswerte (Depotwerte)|17 033|19 584|"
+    },
+    "net_new_money": null,
+    "free_cash_flow": {
+      "value_current": 118.1,
+      "value_prior_year": 98.9,
+      "unit": "Mio. CHF",
+      "source_quote": "|Free-Cash-Flow|118,1|98,9|"
+    },
+    "share_price_eoy": {
+      "value_current": 222.5,
+      "value_prior_year": 202.5,
+      "unit": "CHF",
+      "source_quote": "|Jahresend|222.50|202.50|228.00|"
+    },
+    "dividend_per_share": {
+      "value_current": 9.6,
+      "value_prior_year": 9.2,
+      "unit": "CHF",
+      "source_quote": "|Dividende (in CHF) je Namenaktie|9.60<sup>1</sup>|9.20|8.80|"
+    },
+    "payout_ratio_pct": {
+      "value_current": 56.0,
+      "value_prior_year": 55.0,
+      "unit": "%",
+      "source_quote": "|Ausschüttungsquote|56%|55%|55%|"
+    },
+    "fte_count": {
+      "value_current": 940.0,
+      "value_prior_year": 1014.0,
+      "unit": "FTE",
+      "source_quote": "|Mitarbeitende (teilzeitbereinigt)|940|1 014|"
+    },
+    "headcount": {
+      "value_current": 1146.0,
+      "value_prior_year": 1228.0,
+      "unit": "Personen",
+      "source_quote": "|Personalbestand (inkl. Lernende sowie Aushilfen)|1 146|1 228|"
+    },
+    "branch_count": {
+      "value_current": 76.0,
+      "value_prior_year": 79.0,
+      "unit": "Anzahl",
+      "source_quote": "|Anzahl Standorte|76|79|"
+    },
+    "taxes_public_mio": {
+      "value_current": 29.9,
+      "value_prior_year": 35.4,
+      "unit": "Mio. CHF",
+      "source_quote": "|Bundes-, Staats- und Gemeindesteuern|29,9|35,4|"
+    },
+    "dividend_canton_mio": {
+      "value_current": 46.1,
+      "value_prior_year": 44.2,
+      "unit": "Mio. CHF",
+      "source_quote": "|Dividende an den Kanton|46,1<sup>3</sup>|44,2|"
+    },
+    "canton_guarantee_fee_mio": null
+  },
+  "strategy_highlights": [
+    "Bericht des Verwaltungsrats an die Generalversammlung der Aktionärinnen und Aktionäre über das Geschäftsjahr 2022",
+    "Der Geschäftsbericht und der Nachhaltigkeitsbericht erscheinen jährlich, der Offenlegungsbericht halbjährlich. Sofern nichts anderes erwähnt wird, beziehen sich die Angaben auf das Stammhaus der BEKB und auf das Engagement der Bank im Jahr 2022.",
+    "Der Geschäftsbericht stellt die wirtschaftliche Lage der Bank dar und umfasst Bilanz, Erfolgsrechnung, Geldflussrechnung, Eigenkapitalnachweis und Anhang. Weiter gibt er unter anderem Auskunft über die Unternehmensstruktur der Bank, die Geschäftstätigkeit, die Corporate Governance, die Vergütungen des Verwaltungsrats und der Geschäftsleitung sowie über das Risikomanagement.",
+    "Buchführung, Bewertung und Bilanzierung erfolgen nach den Schweizer Rechnungslegungsvorschriften für Banken sowie nach dem Kotierungsreglement der Schweizer Börse in Schweizer Franken. Der Einzelabschluss stellt die wirtschaftliche Lage so dar, dass ein den tatsächlichen Verhältnissen entsprechendes Bild nach dem True-and-Fair-View-Prinzip vermittelt wird (statutarischer Einzelabschluss True and Fair View gemäss Artikel 25 Absatz 1 Buchstabe b BankV).",
+    "Der Nachhaltigkeitsbericht umfasst die Auswirkungen, Ziele und Aktivitäten der BEKB im Hinblick auf eine nachhaltige Entwicklung. Zusammen mit dem Geschäftsbericht liefert er ein umfassendes Bild der finanziellen, gesellschaftlichen und ökologischen Dimensionen der Geschäftstätigkeit der BEKB.",
+    "Die BEKB berichtet über alle wesentlichen Nachhaltigkeitsthemen. Dabei dienen ihr die Standards der Global Reporting Initiative (GRI) als Leitlinie: Die BEKB berichtet für den Zeitraum 1. Januar 2022 bis 31. Dezember 2022 in Übereinstimmung mit den GRI-Standards. Die Standardangaben in diesem Bericht wurden nicht extern geprüft, jedoch unterliegen sämtliche Prozesse der Zertifizierung nach ISO 9001, für ökologische Belange derjenigen nach ISO 14001."
+  ]
+}

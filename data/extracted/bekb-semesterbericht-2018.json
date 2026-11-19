@@ -1,0 +1,100 @@
+{
+  "report_file": ".md/bekb-semesterbericht-2018.md",
+  "stem": "bekb-semesterbericht-2018",
+  "report_type": "semester",
+  "year": 2018,
+  "period": "H1-2018",
+  "extraction_backend": "local_deterministic",
+  "metrics": {
+    "total_assets": {
+      "value_current": 30317693.0,
+      "value_prior_year": 29298088.0,
+      "unit": "TCHF",
+      "source_quote": "|**TOTAL AKTIVEN**|**30 317 693**|**29 298 088**|Gesetzliche Kapitalreserve|54 734|54 734|"
+    },
+    "mortgage_loans": {
+      "value_current": 21220985.0,
+      "value_prior_year": 20719922.0,
+      "unit": "TCHF",
+      "source_quote": "|Hypothekarforderungen|21 220 985|20 719 922|Negative Wiederbeschaffungswerte derivativer Finanzinstrumente|233 853|263 106|"
+    },
+    "customer_loans_other": {
+      "value_current": 1679694.0,
+      "value_prior_year": 1647042.0,
+      "unit": "TCHF",
+      "source_quote": "|Forderungengegenüber Kunden|1 679 694|1 647 042|Verpflichtungen aus Handelsgeschäften|0|0|"
+    },
+    "customer_deposits": {
+      "value_current": 21832024.0,
+      "value_prior_year": 22004009.0,
+      "unit": "TCHF",
+      "source_quote": "|Forderungen aus Wertpapierfinanzierungsgeschäften|24 350|9 745|Verpflichtungen aus Kundeneinlagen|21 832 024|22 004 009|"
+    },
+    "reserves_banking_risks": {
+      "value_current": 610796.0,
+      "value_prior_year": 615282.0,
+      "unit": "TCHF",
+      "source_quote": "|Sachanlagen|219 077|221 273|Reserven für allgemeine Bankrisiken|610 796|615 282|"
+    },
+    "net_interest_income": {
+      "value_current": 135725.0,
+      "value_prior_year": 152818.0,
+      "unit": "TCHF",
+      "source_quote": "|**SUBTOTAL NETTO-ERFOLG ZINSENGESCHÄFT**|**135 725**|**152 818**|"
+    },
+    "commission_income": {
+      "value_current": 53010.0,
+      "value_prior_year": 52795.0,
+      "unit": "TCHF",
+      "source_quote": "|**SUBTOTAL ERFOLG KOMMISSIONS- UND DIENSTLEISTUNGSGESCHÄFT**|**53 010**|**52 795**|"
+    },
+    "trading_income": {
+      "value_current": 10922.0,
+      "value_prior_year": 9602.0,
+      "unit": "TCHF",
+      "source_quote": "|**ERFOLG AUS DEM HANDELSGESCHÄFT UND DER FAIR-VALUE-OPTION**|**10 922**|**9 602**|"
+    },
+    "total_operating_income": {
+      "value_current": 210448.0,
+      "value_prior_year": 226022.0,
+      "unit": "TCHF",
+      "source_quote": "|**GESCHÄFTSERTRAG**|**210 448**|**226 022**|"
+    },
+    "total_operating_expenses": {
+      "value_current": -126462.0,
+      "value_prior_year": -126049.0,
+      "unit": "TCHF",
+      "source_quote": "|**SUBTOTAL GESCHÄFTSAUFWAND**|**–126 462**|**–126 049**|"
+    },
+    "operating_profit": {
+      "value_current": 65524.0,
+      "value_prior_year": 79698.0,
+      "unit": "TCHF",
+      "source_quote": "|**GESCHÄFTSERFOLG**|**65 524**|**79 698**|"
+    },
+    "reserves_change": {
+      "value_current": 4486.0,
+      "value_prior_year": -8111.0,
+      "unit": "TCHF",
+      "source_quote": "|Veränderungen von Reserven für allgemeine Bankrisiken|4 486|–8 111|"
+    },
+    "taxes": {
+      "value_current": -12400.0,
+      "value_prior_year": -15500.0,
+      "unit": "TCHF",
+      "source_quote": "|Steuern|–12 400|–15 500|"
+    },
+    "net_profit": {
+      "value_current": 58036.0,
+      "value_prior_year": 56910.0,
+      "unit": "TCHF",
+      "source_quote": "|**HALBJAHRESGEWINN**|**58 036**|**56 910**|"
+    }
+  },
+  "strategy_highlights": [
+    "«Die BEKB hat an unser Start-up und an die Vision einer einzigartigen Kletterund Boulderanlage geglaubt. Auch dank der Unterstützung der BEKB ist unser Traum Wirklichkeit geworden.»",
+    "Sandro Niklaus und Christian Tschudi, Co-Geschäftsführer, o’bloc Kletter- und Boulderanlage, Ostermundigen",
+    "Antoinette Hunziker-Ebneter (Präsidentin des Verwaltungsrats) und Hanspeter Rüfenacht (CEO/Vorsitzender der Geschäftsleitung)",
+    "Die Konjunktur in der Schweiz hat sich analog der globalen Entwicklung weiter gefestigt. Der Schweizer Franken hat sich nach einer temporären Schwächephase gegenüber dem Euro wieder aufgewertet. Deshalb hält die Negativzinssituation in der Schweiz weiter an und drückt so auf die Zinsmarge und damit auf den Zinserfolg. Daher bleibt das Kostenmanagement zentral."
+  ]
+}

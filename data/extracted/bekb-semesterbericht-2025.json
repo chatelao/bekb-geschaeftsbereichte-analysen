@@ -1,0 +1,100 @@
+{
+  "report_file": ".md/bekb-semesterbericht-2025.md",
+  "stem": "bekb-semesterbericht-2025",
+  "report_type": "semester",
+  "year": 2025,
+  "period": "H1-2025",
+  "extraction_backend": "local_deterministic",
+  "metrics": {
+    "total_assets": {
+      "value_current": 41893372.0,
+      "value_prior_year": 40499255.0,
+      "unit": "TCHF",
+      "source_quote": "|**Total Aktiven**|**41 893 372**|**40 499 255**|**1 394 118**|**3,4**|"
+    },
+    "mortgage_loans": {
+      "value_current": 29192896.0,
+      "value_prior_year": 28346775.0,
+      "unit": "TCHF",
+      "source_quote": "|Hypothekarforderungen|29 192 896|28 346 775|846 120|3,0|"
+    },
+    "customer_loans_other": {
+      "value_current": 1743771.0,
+      "value_prior_year": 2197863.0,
+      "unit": "TCHF",
+      "source_quote": "|Forderungen gegenüber Kunden|1 743 771|2 197 863|–454 092|-20,7|"
+    },
+    "customer_deposits": {
+      "value_current": 27511620.0,
+      "value_prior_year": 27059205.0,
+      "unit": "TCHF",
+      "source_quote": "|Verpflichtungen aus Kundeneinlagen|27 511 620|27 059 205|452 415|1,7|"
+    },
+    "reserves_banking_risks": {
+      "value_current": 600302.0,
+      "value_prior_year": 584065.0,
+      "unit": "TCHF",
+      "source_quote": "|Reserven für allgemeine Bankrisiken|600 302|584 065|16 237|2,8|"
+    },
+    "net_interest_income": {
+      "value_current": 191383.0,
+      "value_prior_year": 188693.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Netto-Erfolg Zinsengeschäft**|**191 383**|**188 693**|**2 690**|**1,4**|"
+    },
+    "commission_income": {
+      "value_current": 62596.0,
+      "value_prior_year": 56319.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Erfolg Kommissions- und**<br>**Dienstleistungsgeschäft**|**62 596**|**56 319**|**6 277**|**11,1**|"
+    },
+    "trading_income": {
+      "value_current": 9119.0,
+      "value_prior_year": 12475.0,
+      "unit": "TCHF",
+      "source_quote": "|**Erfolg aus dem Handelsgeschäft und**<br>**der Fair-Value-Option**|**9 119**|**12 475**|**–3 357**|**–26,9**|"
+    },
+    "total_operating_income": {
+      "value_current": 276997.0,
+      "value_prior_year": 270459.0,
+      "unit": "TCHF",
+      "source_quote": "|**Geschäftsertrag**|**276 997**|**270 459**|**6 538**|**2,4**|"
+    },
+    "total_operating_expenses": {
+      "value_current": -140103.0,
+      "value_prior_year": -134197.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Geschäftsaufwand**|**–140 103**|**–134 197**|**–5 906**|**4,4**|"
+    },
+    "operating_profit": {
+      "value_current": 113797.0,
+      "value_prior_year": 117996.0,
+      "unit": "TCHF",
+      "source_quote": "|**Geschäftserfolg**|**113 797**|**117 996**|**–4 199**|**–3,6**|"
+    },
+    "reserves_change": {
+      "value_current": -16237.0,
+      "value_prior_year": -19863.0,
+      "unit": "TCHF",
+      "source_quote": "|Veränderungen von Reserven für<br>allgemeine Bankrisiken|–16 237|–19 863|3 625|–18,3|"
+    },
+    "taxes": {
+      "value_current": -21600.0,
+      "value_prior_year": -23500.0,
+      "unit": "TCHF",
+      "source_quote": "|Steuern|–21 600|–23 500|1 900|–8,1|"
+    },
+    "net_profit": {
+      "value_current": 76325.0,
+      "value_prior_year": 75287.0,
+      "unit": "TCHF",
+      "source_quote": "|**Halbjahresgewinn**|**76 325**|**75 287**|**1 038**|**1,4**|"
+    }
+  },
+  "strategy_highlights": [
+    "**Basel-III-Gesamtkapitalquote** 31.12.2024: 19,4% *nach Basel III final",
+    "Die BEKB legt zu: Trotz geopolitischer Spannungen, volatiler Finanzmärkte und anspruchsvoller Zinssituation erzielte die BEKB ein erfreuliches Halbjahresergebnis 2025 und konnte den Gewinn erneut steigern. Insbesondere der anhaltende Kundenzuwachs und der deutlich gestiegene Erfolg im Kommissions- und Dienstleistungsgeschäft unterstreichen die stabile und nachhaltige Entwicklung der BEKB.",
+    "Die BEKB behauptet sich im aktuell anspruchsvollen Umfeld mit einem stabilen operativen Ergebnis und konnte den Gewinn um 1,4 Prozent auf 76,3 Millionen Franken steigern.",
+    "Die nachhaltige Entwicklung der Bank zeigt sich im kontinuierlichen Kundenzuwachs und der hohen Nachfrage nach Finanzierungen. Das Volumen der Kundenausleihungen stieg auf 30,9 Milliarden Franken, davon entfallen 29,2 Milliarden Franken auf Hypothekarforderungen (+3,0 Prozent). Auch die Kundeneinlagen nahmen zu, um 1,7 Prozent auf 27,5 Milliarden Franken."
+  ]
+}

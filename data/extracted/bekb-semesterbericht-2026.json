@@ -1,0 +1,100 @@
+{
+  "report_file": ".md/bekb-semesterbericht-2026.md",
+  "stem": "bekb-semesterbericht-2026",
+  "report_type": "semester",
+  "year": 2026,
+  "period": "H1-2026",
+  "extraction_backend": "local_deterministic",
+  "metrics": {
+    "total_assets": {
+      "value_current": 44654862.0,
+      "value_prior_year": 42976997.0,
+      "unit": "TCHF",
+      "source_quote": "|**Total Aktiven**|**44 654 862**|**42 976 997**|**1 677 865**|**3,9**|"
+    },
+    "mortgage_loans": {
+      "value_current": 31057124.0,
+      "value_prior_year": 30099615.0,
+      "unit": "TCHF",
+      "source_quote": "|Hypothekarforderungen|31 057 124|30 099 615|957 509|3,2|"
+    },
+    "customer_loans_other": {
+      "value_current": 1724065.0,
+      "value_prior_year": 1844296.0,
+      "unit": "TCHF",
+      "source_quote": "|Forderungen gegenüber Kunden|1 724 065|1 844 296|–120 231|–6,5|"
+    },
+    "customer_deposits": {
+      "value_current": 28754410.0,
+      "value_prior_year": 28086692.0,
+      "unit": "TCHF",
+      "source_quote": "|Verpflichtungen aus Kundeneinlagen|28 754 410|28 086 692|667 718|2,4|"
+    },
+    "reserves_banking_risks": {
+      "value_current": 608022.0,
+      "value_prior_year": 587058.0,
+      "unit": "TCHF",
+      "source_quote": "|Reserven für allgemeine Bankrisiken|608 022|587 058|20 963|3,6|"
+    },
+    "net_interest_income": {
+      "value_current": 183283.0,
+      "value_prior_year": 191383.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Netto-Erfolg Zinsengeschäft**|**183 283**|**191 383**|**–8 100**|**–4,2**|"
+    },
+    "commission_income": {
+      "value_current": 70068.0,
+      "value_prior_year": 62596.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Erfolg Kommissions- und**<br>**Dienstleistungsgeschäft**|**70 068**|**62 596**|**7 472**|**11,9**|"
+    },
+    "trading_income": {
+      "value_current": 14156.0,
+      "value_prior_year": 9119.0,
+      "unit": "TCHF",
+      "source_quote": "|**Erfolg aus dem Handelsgeschäft und**<br>**der Fair-Value-Option**|**14 156**|**9 119**|**5 037**|**55,2**|"
+    },
+    "total_operating_income": {
+      "value_current": 291171.0,
+      "value_prior_year": 276997.0,
+      "unit": "TCHF",
+      "source_quote": "|**Geschäftsertrag**|**291 171**|**276 997**|**14 174**|**5,1**|"
+    },
+    "total_operating_expenses": {
+      "value_current": -142882.0,
+      "value_prior_year": -140103.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Geschäftsaufwand**|**–142 882**|**–140 103**|**–2 779**|**2,0**|"
+    },
+    "operating_profit": {
+      "value_current": 127782.0,
+      "value_prior_year": 113797.0,
+      "unit": "TCHF",
+      "source_quote": "|**Geschäftserfolg**|**127 782**|**113 797**|**13 985**|**12,3**|"
+    },
+    "reserves_change": {
+      "value_current": -20963.0,
+      "value_prior_year": -16237.0,
+      "unit": "TCHF",
+      "source_quote": "|Veränderungen von Reserven für<br>allgemeine Bankrisiken|–20 963|–16 237|–4 726|29,1|"
+    },
+    "taxes": {
+      "value_current": -25000.0,
+      "value_prior_year": -21600.0,
+      "unit": "TCHF",
+      "source_quote": "|Steuern|–25 000|–21 600|–3 400|15,7|"
+    },
+    "net_profit": {
+      "value_current": 82649.0,
+      "value_prior_year": 76325.0,
+      "unit": "TCHF",
+      "source_quote": "|**Halbjahresgewinn**|**82 649**|**76 325**|**6 325**|**8,3**|"
+    }
+  },
+  "strategy_highlights": [
+    "Das erste Halbjahr stand zugleich im Zeichen eines wichtigen Meilensteins für die Zukunft der BEKB: Mit der Wahl einer neuen Verwaltungsratspräsidentin wurde die strategische Führung der Bank in neue Hände gelegt. Dieser Wechsel steht für Kontinuität und Weiterentwicklung zugleich. Gemeinsam mit Verwaltungsrat und Geschäftsleitung richten wir den Blick nach vorne und schaffen die Voraussetzungen, damit die BEKB auch in Zukunft erfolgreich bleibt.",
+    "Die Erwartungen unserer Kundinnen und Kunden entwickeln sich stetig weiter. Gefragt sind persönliche Beratung, überzeugende digitale Lösungen und höchste Sicherheit. Deshalb investieren wir gezielt in unsere Mitarbeitenden, in moderne Technologien und in die kontinuierliche Weiterentwicklung unserer Dienstleistungen.",
+    "Wir sind überzeugt, dass die BEKB hervorragend aufgestellt ist, um die Chancen der Zukunft zu nutzen. Dabei bauen wir auf das, was uns seit jeher auszeichnet: finanzielle Stärke, regionale Verankerung, Kundennähe und das Vertrauen unserer Anspruchsgruppen.",
+    "Dr. Annelis Lüscher Hämmerli (Verwaltungsratspräsidentin) und Armin Brun (CEO)"
+  ]
+}

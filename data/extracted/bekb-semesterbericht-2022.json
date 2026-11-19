@@ -1,0 +1,100 @@
+{
+  "report_file": ".md/bekb-semesterbericht-2022.md",
+  "stem": "bekb-semesterbericht-2022",
+  "report_type": "semester",
+  "year": 2022,
+  "period": "H1-2022",
+  "extraction_backend": "local_deterministic",
+  "metrics": {
+    "total_assets": {
+      "value_current": 39187762.0,
+      "value_prior_year": 38993620.0,
+      "unit": "TCHF",
+      "source_quote": "|**Total Aktiven**|**39** **187** **762**|**38** **993** **620**|**194** **142**|**0,5**|"
+    },
+    "mortgage_loans": {
+      "value_current": 25393056.0,
+      "value_prior_year": 24730782.0,
+      "unit": "TCHF",
+      "source_quote": "|Hypothekarforderungen|25 393 056|24 730 782|662 274|2,7|"
+    },
+    "customer_loans_other": {
+      "value_current": 1715807.0,
+      "value_prior_year": 1487614.0,
+      "unit": "TCHF",
+      "source_quote": "|Forderungen gegenüber Kunden|1 715 807|1 487 614|228 193|15,3|"
+    },
+    "customer_deposits": {
+      "value_current": 26368634.0,
+      "value_prior_year": 26254424.0,
+      "unit": "TCHF",
+      "source_quote": "|Verpflichtungen aus Kundeneinlagen|26 368 634|26 254 424|114 210|0,4|"
+    },
+    "reserves_banking_risks": {
+      "value_current": 542108.0,
+      "value_prior_year": 541966.0,
+      "unit": "TCHF",
+      "source_quote": "|Reserven für allgemeine Bankrisiken|542 108|541 966|141|0,0|"
+    },
+    "net_interest_income": {
+      "value_current": 165081.0,
+      "value_prior_year": 141914.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Netto-Erfolg Zinsengeschäft**|**165 081**|**141 914**|**23 167**|**16,3**|"
+    },
+    "commission_income": {
+      "value_current": 56562.0,
+      "value_prior_year": 55503.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Erfolg Kommissions- und**<br>**Dienstleistungsgeschäft**|**56 562**|**55 503**|**1 060**|**1,9**|"
+    },
+    "trading_income": {
+      "value_current": 21832.0,
+      "value_prior_year": 9904.0,
+      "unit": "TCHF",
+      "source_quote": "|**Erfolg aus dem Handelsgeschäft und**<br>**der Fair-Value-Option**|**21 832**|**9 904**|**11 927**|**120,4**|"
+    },
+    "total_operating_income": {
+      "value_current": 244350.0,
+      "value_prior_year": 217027.0,
+      "unit": "TCHF",
+      "source_quote": "|**Geschäftsertrag**|**244 350**|**217 027**|**27 322**|**12,6**|"
+    },
+    "total_operating_expenses": {
+      "value_current": -125939.0,
+      "value_prior_year": -120296.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Geschäftsaufwand**|**–125 939**|**–120 296**|**–5 642**|**4,7**|"
+    },
+    "operating_profit": {
+      "value_current": 81121.0,
+      "value_prior_year": 76536.0,
+      "unit": "TCHF",
+      "source_quote": "|**Geschäftserfolg**|**81 121**|**76 536**|**4 585**|**6,0**|"
+    },
+    "reserves_change": {
+      "value_current": -141.0,
+      "value_prior_year": 213.0,
+      "unit": "TCHF",
+      "source_quote": "|Veränderungen von Reserven für<br>allgemeine Bankrisiken|–141|213|–354|n.a.|"
+    },
+    "taxes": {
+      "value_current": -15000.0,
+      "value_prior_year": -13300.0,
+      "unit": "TCHF",
+      "source_quote": "|Steuern|–15 000|–13 300|–1 700|12,8|"
+    },
+    "net_profit": {
+      "value_current": 65980.0,
+      "value_prior_year": 63616.0,
+      "unit": "TCHF",
+      "source_quote": "|**Halbjahresgewinn**|**65 980**|**63 616**|**2 363**|**3,7**|"
+    }
+  },
+  "strategy_highlights": [
+    "**Basel-III-Gesamtkapitalquote** +2,2% 31.12.2021: 19,0% **19,4%**",
+    "Die BEKB hat die aktuellen Markteinflüsse im ersten Semester erfolgreich gemeistert. Der Gewinn stieg trotz dieser Herausforderungen um 3,7 Prozent auf ein neues Rekordhoch von 66,0 Millionen Franken. Der Ausblick auf die zweite Jahreshälfte stimmt demzufolge zuversichtlich.",
+    "Die BEKB hat im ersten Semester 2022 ein Rekordergebnis erzielt: Die Kundenausleihungen stiegen um rund 890 Millionen auf 27,1 Milliarden Franken. Die Bilanzsumme konnte weiter ausgebaut werden – und lag bei 39,2 Milliarden Franken. Obwohl negative Markteinflüsse den übrigen ordentlichen Erfolg prägten, stieg der Geschäftsertrag insgesamt um 12,6 Prozent. Dabei erhöhte sich das Zinsengeschäft gegenüber dem Vorjahressemester um 16,3 Prozent auf 165,1 Millionen Franken. Der Halbjahresgewinn stieg von 63,6 Millionen auf 66,0 Millionen Franken.",
+    "Für die BEKB und ihre Kundinnen und Kunden sind die Zeiten herausfordernd. Im ersten Halbjahr 2022 haben der Krieg in der Ukraine und pandemiebedingte Lockdowns in China die konjunkturelle Entwicklung gebremst und die Inflation ansteigen lassen. Eine geldpolitische Wende der Nationalbanken ist die logische Folge. Die BEKB hat ihrerseits die Negativzinsen, von denen nur wenige Kundinnen und Kunden betroffen waren, unverzüglich angepasst. Gleichzeitig bietet die BEKB auch trotz steigender Zinsen im Hypothekargeschäft attraktive Konditionen an und hat ihr Zinsmodell per August 2022 entsprechend angepasst."
+  ]
+}

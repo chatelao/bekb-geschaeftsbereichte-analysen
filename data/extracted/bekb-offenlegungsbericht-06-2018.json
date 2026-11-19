@@ -1,0 +1,49 @@
+{
+  "report_file": ".md/bekb-offenlegungsbericht-06-2018.md",
+  "stem": "bekb-offenlegungsbericht-06-2018",
+  "report_type": "offenlegung_h1",
+  "year": 2018,
+  "period": "H1-2018",
+  "extraction_backend": "local_deterministic",
+  "metrics": {
+    "cet1_capital": {
+      "value_current": 2422872.0,
+      "value_prior_year": null,
+      "unit": "TCHF",
+      "source_quote": "|29<br>= hartes Kernkapital(net CET1)|2 422 872|2 422 872||"
+    },
+    "total_capital": {
+      "value_current": 2422872.0,
+      "value_prior_year": null,
+      "unit": "TCHF",
+      "source_quote": "|59<br>= regulatorisches Kapital(net T1 & T2)|2 422 872|2 422 872||"
+    },
+    "rwa_total": {
+      "value_current": 13010546.0,
+      "value_prior_year": null,
+      "unit": "TCHF",
+      "source_quote": "|60<br>Summe der risikogewichteten Positionen|13 010 546|13 010 546||"
+    },
+    "cet1_ratio_pct": {
+      "value_current": 18.62,
+      "value_prior_year": null,
+      "unit": "%",
+      "source_quote": "|61<br>CET1­Quote(Ziffer 29,in % der risikogewichteten Positionen)|18,62%|18,62%||"
+    },
+    "total_capital_ratio_pct": {
+      "value_current": 18.62,
+      "value_prior_year": null,
+      "unit": "%",
+      "source_quote": "|63<br>Quote bzgl. des regulatorischen Kapitals(Ziffer 59,in % der risikogewichteten Positionen)|18,62%|18,62%||"
+    },
+    "leverage_ratio_pct": null,
+    "lcr_pct": {
+      "value_current": 123.3,
+      "value_prior_year": null,
+      "unit": "%",
+      "source_quote": "|l<br>23<br>Quote für kurzfristige Liquidität LCR(in %)||123,3%||115,3%|"
+    },
+    "nsfr_pct": null
+  },
+  "strategy_highlights": []
+}

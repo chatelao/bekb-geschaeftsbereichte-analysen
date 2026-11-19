@@ -1,0 +1,95 @@
+{
+  "report_file": ".md/bekb-semesterbericht-2020.md",
+  "stem": "bekb-semesterbericht-2020",
+  "report_type": "semester",
+  "year": 2020,
+  "period": "H1-2020",
+  "extraction_backend": "local_deterministic",
+  "metrics": {
+    "total_assets": {
+      "value_current": 35429824.0,
+      "value_prior_year": 32929829.0,
+      "unit": "TCHF",
+      "source_quote": "|**TOTAL AKTIVEN**|**35 429 824**|**32 929 829**|**2 499 995**|**7,6**|"
+    },
+    "mortgage_loans": {
+      "value_current": 23067383.0,
+      "value_prior_year": 22663481.0,
+      "unit": "TCHF",
+      "source_quote": "|Hypothekarforderungen|23 067 383|22 663 481|403 902|1,8|"
+    },
+    "customer_loans_other": {
+      "value_current": 1642007.0,
+      "value_prior_year": 1397513.0,
+      "unit": "TCHF",
+      "source_quote": "|Forderungengegenüber Kunden|1 642 007|1 397 513|244 494|17,5|"
+    },
+    "customer_deposits": {
+      "value_current": 23876349.0,
+      "value_prior_year": 22970344.0,
+      "unit": "TCHF",
+      "source_quote": "|Verpflichtungen aus Kundeneinlagen|23 876 349|22 970 344|906 005|3,9|"
+    },
+    "reserves_banking_risks": {
+      "value_current": 605385.0,
+      "value_prior_year": 611819.0,
+      "unit": "TCHF",
+      "source_quote": "|Reserven für allgemeine Bankrisiken|605 385|611 819|–6 435|–1,1|"
+    },
+    "net_interest_income": {
+      "value_current": 130443.0,
+      "value_prior_year": 146714.0,
+      "unit": "TCHF",
+      "source_quote": "|**SUBTOTAL NETTO-ERFOLG ZINSEN-**<br>**GESCHÄFT**|**130 443**|**146 714**|**–16 270**|**–11,1**|"
+    },
+    "commission_income": {
+      "value_current": 54479.0,
+      "value_prior_year": 51815.0,
+      "unit": "TCHF",
+      "source_quote": "|**SUBTOTAL ERFOLG KOMMISSIONS- UND**<br>**DIENSTLEISTUNGSGESCHÄFT**|**54 479**|**51 815**|**2 664**|**5,1**|"
+    },
+    "trading_income": null,
+    "total_operating_income": {
+      "value_current": 201694.0,
+      "value_prior_year": 221706.0,
+      "unit": "TCHF",
+      "source_quote": "|**GESCHÄFTSERTRAG**|**201 694**|**221 706**|**–20 012**|**–9,0**|"
+    },
+    "total_operating_expenses": {
+      "value_current": -120996.0,
+      "value_prior_year": -125194.0,
+      "unit": "TCHF",
+      "source_quote": "|**SUBTOTAL GESCHÄFTSAUFWAND**|**–120 996**|**–125 194**|**4 199**|**–3,4**|"
+    },
+    "operating_profit": {
+      "value_current": 64127.0,
+      "value_prior_year": 79675.0,
+      "unit": "TCHF",
+      "source_quote": "|**GESCHÄFTSERFOLG**|**64 127**|**79 675**|**–15 548**|**–19,5**|"
+    },
+    "reserves_change": {
+      "value_current": 6435.0,
+      "value_prior_year": -8922.0,
+      "unit": "TCHF",
+      "source_quote": "|Veränderungen von Reserven für allgemeine<br>Bankrisiken|6 435|–8 922|15 357|n. a.|"
+    },
+    "taxes": {
+      "value_current": -10900.0,
+      "value_prior_year": -11700.0,
+      "unit": "TCHF",
+      "source_quote": "|Steuern|–10 900|–11 700|800|–6,8|"
+    },
+    "net_profit": {
+      "value_current": 60073.0,
+      "value_prior_year": 59098.0,
+      "unit": "TCHF",
+      "source_quote": "|**HALBJAHRESGEWINN**|**60 073**|**59 098**|**975**|**1,6**|"
+    }
+  },
+  "strategy_highlights": [
+    "«Die Leidenschaft für Zweiräder verbindet uns.<br>Gemeinsam wollten wir unseren Traum von<br>der Selbstständigkeit verwirklichen. Wie die BEKB<br>legen wir Wert auf einen optimalen Kunden­<br>service und eine stetige Modernisierung.»<br><!-- End of picture text -->",
+    "Adrian und Marina Schär, Inhaber und Geschäftsführer,<br>2 Rad Bärtschi GmbH, Trubschachen<br><!-- End of picture text -->",
+    "Antoinette Hunziker­Ebneter, Präsidentin des Verwaltungsrats, und Armin Brun, CEO",
+    "Die BEKB hat in dem von der COVID­19­Pandemie geprägten ersten Semester 2020 dank ihrer nachhaltigen Kreditpolitik und gezieltem Kostenmanagement wiederum ein gutes Semester­ ergebnis erreicht: Die Kundenausleihungen stiegen um rund 650 Millionen Franken auf 24,7 Mil­ liarden Franken. Die BEKB Fonds verzeichneten einen Netto­Neugeldzufluss von 51,9 Millionen Franken und erreichten ein Volumen von 2,9 Milliarden Franken. Die Bilanzsumme erhöhte sich auf 35,4 Milliarden Franken. Im ersten Halbjahr stieg der Geschäftserfolg vor Veränderungen von ausfallrisikobedingten Wertberichtigungen sowie vor Erfolg aus Veräusserungen von Finanz­ anlagen um 9,6 Millionen Franken auf 69,5 Millionen Franken. Der Halbjahresgewinn erhöhte sich um 1,0 Millionen Franken auf 60,1 Millionen Franken."
+  ]
+}

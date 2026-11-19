@@ -1,0 +1,100 @@
+{
+  "report_file": ".md/bekb-semesterbericht-2021.md",
+  "stem": "bekb-semesterbericht-2021",
+  "report_type": "semester",
+  "year": 2021,
+  "period": "H1-2021",
+  "extraction_backend": "local_deterministic",
+  "metrics": {
+    "total_assets": {
+      "value_current": 37562119.0,
+      "value_prior_year": 36421744.0,
+      "unit": "TCHF",
+      "source_quote": "|**Total Aktiven**|**37 562 119**|**36 421 744**|**1 140 375**|**3,1**|"
+    },
+    "mortgage_loans": {
+      "value_current": 24219730.0,
+      "value_prior_year": 23537693.0,
+      "unit": "TCHF",
+      "source_quote": "|Hypothekarforderungen|24 219 730|23 537 693|682 037|2,9|"
+    },
+    "customer_loans_other": {
+      "value_current": 1526920.0,
+      "value_prior_year": 1403683.0,
+      "unit": "TCHF",
+      "source_quote": "|Forderungengegenüber Kunden|1 526 920|1 403 683|123 237|8,8|"
+    },
+    "customer_deposits": {
+      "value_current": 25630789.0,
+      "value_prior_year": 24498446.0,
+      "unit": "TCHF",
+      "source_quote": "|Verpflichtungen aus Kundeneinlagen|25 630 789|24 498 446|1 132 343|4,6|"
+    },
+    "reserves_banking_risks": {
+      "value_current": 553348.0,
+      "value_prior_year": 553560.0,
+      "unit": "TCHF",
+      "source_quote": "|Reserven für allgemeine Bankrisiken|553 348|553 560|–213|–0,0|"
+    },
+    "net_interest_income": {
+      "value_current": 141914.0,
+      "value_prior_year": 130443.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Netto-Erfolg Zinsengeschäft**|**141 914**|**130 443**|**11 470**|**8,8**|"
+    },
+    "commission_income": {
+      "value_current": 55503.0,
+      "value_prior_year": 54479.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Erfolg Kommissions-**<br>**und  Dienstleistungsgeschäft**|**55 503**|**54 479**|**1 024**|**1,9**|"
+    },
+    "trading_income": {
+      "value_current": 9904.0,
+      "value_prior_year": 11346.0,
+      "unit": "TCHF",
+      "source_quote": "|**Erfolg aus dem Handelsgeschäft**<br>**und der Fair-Value-Option**|**9 904**|**11 346**|**–1 441**|**–12,7**|"
+    },
+    "total_operating_income": {
+      "value_current": 217027.0,
+      "value_prior_year": 201694.0,
+      "unit": "TCHF",
+      "source_quote": "|**Geschäftsertrag**|**217 027**|**201 694**|**15 333**|**7,6**|"
+    },
+    "total_operating_expenses": {
+      "value_current": -120296.0,
+      "value_prior_year": -120996.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Geschäftsaufwand**|**–120 296**|**–120 996**|**699**|**–0,6**|"
+    },
+    "operating_profit": {
+      "value_current": 76536.0,
+      "value_prior_year": 64127.0,
+      "unit": "TCHF",
+      "source_quote": "|**Geschäftserfolg**|**76 536**|**64 127**|**12 408**|**19,3**|"
+    },
+    "reserves_change": {
+      "value_current": 213.0,
+      "value_prior_year": 6435.0,
+      "unit": "TCHF",
+      "source_quote": "|Veränderungen von Reserven für<br>allgemeine  Bankrisiken|213|6 435|–6 222|–96,7|"
+    },
+    "taxes": {
+      "value_current": -13300.0,
+      "value_prior_year": -10900.0,
+      "unit": "TCHF",
+      "source_quote": "|Steuern|–13 300|–10 900|–2 400|22,0|"
+    },
+    "net_profit": {
+      "value_current": 63616.0,
+      "value_prior_year": 60073.0,
+      "unit": "TCHF",
+      "source_quote": "|**Halbjahresgewinn**|**63 616**|**60 073**|**3 543**|**5,9**|"
+    }
+  },
+  "strategy_highlights": [
+    "**«Wir streben danach, berufliche und private Ziele zu verbinden und aus beiden Bereichen die Synergien zu nutzen, um etwas Dauerhaftes zu erschaffen. Die BEKB steht uns dabei als kompetente Begleiterin zur Seite.»**",
+    "Bruno und Corinne Späti, Geschäftsinhaber der Späti Bau AG, Bellach, mit Mona und Vera",
+    "Antoinette Hunziker­Ebneter, Präsidentin des Verwaltungsrats, und Armin Brun, CEO",
+    "Die BEKB hat im ersten Semester 2021 dank ihrer nachhaltigen Geschäftspolitik und gezieltem Kostenmanagement ein gutes Semesterergebnis erzielt: Die Kundenauslei­ hungen stiegen um rund 800 Millionen auf 25,7 Milliarden Franken. Das Volumen der BEKB Fonds wuchs von 3,3 Milliarden auf 3,6 Milliarden Franken. Die Bilanzsumme konnte weiter ausgebaut werden und lag bei 37,6 Milliarden Franken. Der Geschäfts­ erfolg stieg per Ende des ersten Halbjahrs 2021 auf 76,5 Millionen Franken. Er über­ traf damit den Vorjahreswert von 64,1 Millionen Franken deutlich. Der Halbjahres­ gewinn stieg von 60,1 Millionen auf 63,6 Millionen Franken. Dies entspricht einer Erhöhung um 5,9 Prozent."
+  ]
+}

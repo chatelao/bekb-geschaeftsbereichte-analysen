@@ -1,0 +1,118 @@
+{
+  "report_file": ".md/bekb-geschaeftsbericht-2003.md",
+  "stem": "bekb-geschaeftsbericht-2003",
+  "report_type": "annual",
+  "year": 2003,
+  "period": "FY2003",
+  "extraction_backend": "local_deterministic",
+  "metrics": {
+    "total_assets": {
+      "value_current": 20117.0,
+      "value_prior_year": 19325.0,
+      "unit": "Mio. CHF",
+      "source_quote": "|Bilanzsumme|17 888|19 325|**20 117**|"
+    },
+    "mortgage_loans": {
+      "value_current": 12004.0,
+      "value_prior_year": 11375.0,
+      "unit": "Mio. CHF",
+      "source_quote": "|Hypothekarforderungen|10 992|11 375|**12 004**|"
+    },
+    "customer_loans_other": {
+      "value_current": 1352.0,
+      "value_prior_year": 1520.0,
+      "unit": "Mio. CHF",
+      "source_quote": "|Forderungen gegenüber Kunden|1 623|1 520|**1 352**|"
+    },
+    "customer_deposits": {
+      "value_current": 14240.0,
+      "value_prior_year": 13098.0,
+      "unit": "Mio. CHF",
+      "source_quote": "|Kundengelder im engeren Sinn|12 063|13 098|**14 240**|"
+    },
+    "kassenobligationen": null,
+    "reserves_banking_risks": null,
+    "shareholders_equity": {
+      "value_current": 1017.0,
+      "value_prior_year": 943.0,
+      "unit": "Mio. CHF",
+      "source_quote": "|Eigenkapital|943|943|**1017**<br>4|"
+    },
+    "net_interest_income": null,
+    "commission_income": null,
+    "trading_income": null,
+    "total_operating_income": null,
+    "personnel_expenses": null,
+    "general_expenses": null,
+    "total_operating_expenses": null,
+    "operating_profit": null,
+    "reserves_change": null,
+    "taxes": null,
+    "net_profit": {
+      "value_current": 71.1,
+      "value_prior_year": 68.6,
+      "unit": "Mio. CHF",
+      "source_quote": "|Jahresgewinn nach Steuern|62,5|68,6|**71,1**|"
+    },
+    "assets_under_management": {
+      "value_current": 18100.0,
+      "value_prior_year": 16414.0,
+      "unit": "Mio. CHF",
+      "source_quote": "|Betreute Vermögenswerte|16 682|16 414|**18 100**|"
+    },
+    "net_new_money": null,
+    "free_cash_flow": null,
+    "share_price_eoy": {
+      "value_current": 149.0,
+      "value_prior_year": 138.5,
+      "unit": "CHF",
+      "source_quote": "|Jahresend|130.49|138.50|**149.00**|"
+    },
+    "dividend_per_share": {
+      "value_current": 3.0,
+      "value_prior_year": 2.9,
+      "unit": "CHF",
+      "source_quote": "|Dividendeje Namenaktie|2.70|2.90|**3.00**<br>1|"
+    },
+    "payout_ratio_pct": null,
+    "fte_count": {
+      "value_current": 1210.0,
+      "value_prior_year": 1257.0,
+      "unit": "FTE",
+      "source_quote": "|Mitarbeiterinnen und Mitarbeiter(teilzeitbereinigt)|1 481|1 257|**1 210**|"
+    },
+    "headcount": null,
+    "branch_count": {
+      "value_current": 77.0,
+      "value_prior_year": 77.0,
+      "unit": "Anzahl",
+      "source_quote": "|Anzahl Niederlassungen|80|77|**77**|"
+    },
+    "taxes_public_mio": {
+      "value_current": 28.8,
+      "value_prior_year": 28.3,
+      "unit": "Mio. CHF",
+      "source_quote": "|Bundes-, Staats- und Gemeindesteuern|3,9|28,3|**28,8**|"
+    },
+    "dividend_canton_mio": {
+      "value_current": 18.0,
+      "value_prior_year": 17.5,
+      "unit": "Mio. CHF",
+      "source_quote": "|Ertrag auf Investition des Kantons<sup>1</sup>|0|17,5|**18,0**|"
+    },
+    "canton_guarantee_fee_mio": {
+      "value_current": 4.8,
+      "value_prior_year": 4.3,
+      "unit": "Mio. CHF",
+      "source_quote": "|Abgeltung Staatsgarantie an den Kanton|–|4,3|**4,8**|"
+    }
+  },
+  "strategy_highlights": [
+    "Im Jahr 2003 hat die 123 (Berner Kantonalbank) ihre breite Verankerung weiter ausgebaut und ein solides Ergebnis erwirtschaftet. Das solide Fundament und die Ertragskraft konnten zum elften aufeinander folgenden Mal gestärkt werden. Die vorliegende Broschüre gibt einen Überblick über das Geschäftsjahr 2003 der 123.",
+    "Im vergangenen Jahr hat die 123 ihre breite Verankerung weiter ausgebaut. Die Zahl der Miteigentümerinnen und Miteigentümer ist um 7000 gestiegen. Die 123 ist die grösste Bank mit Entscheidzentrum im Kanton Bern. In Bezug auf die Breite des Aktionariats gehört sie zu den ersten 15 schweizerischen Publikumsgesellschaften.",
+    "500 000 Kundinnen und Kunden, über 46 000 Aktionärinnen und Aktionäre. Dank ihnen ist die 123 in allen Regionen ihres Marktgebietes breit verankert, von Nidau bis Interlaken, von Tramelan bis Oensingen. Die vorliegende Kurzfassung des Geschäftsberichtes 2003 stellt einige Aktionärinnen und Aktionäre im Bild vor. Sie sind gleichzeitig auch Kundinnen und Kunden der 123. Ihr Engagement und ihre Verbundenheit sind wesentliche Voraussetzungen für den langfristigen Erfolg unserer Bank.",
+    "Im Geschäftsjahr 2003 hat die 123 ihre Ertragskraft weiter gestärkt. Die Konzentration auf zwei Kerngeschäftsfelder – das Privat- und Firmenkundengeschäft sowie die Vermögensberatung – hat sich erneut bewährt. Dasselbe gilt für die Geschäftspolitik, eine Bank mit gesunder Bilanzstruktur, guter Refinanzierung und starker Eigenmittelausstattung zu führen. Der mit anderen Kantonalbanken vergleichbare Jahresgewinn vor Steuern wurde zum elften aufeinander folgenden Mal gesteigert. Er stieg um 3,0 Prozent auf 99,9 Millionen Franken. Der Generalversammlung vom 11. Mai 2004 wird eine Dividende von 3 Franken pro Aktie beantragt (Vorjahr 2.90 Franken).",
+    "in Millionen Franken<br>100<br>80<br>60<br>40<br>20<br>23,6 27,1 32,4 37,2 47,1 51,1 66,2 81,2 91,4 96,9 99,9<br>0<br>1993 1994 1995 1996 1997 1998 1999 2000 2001 2002 2003<br><!-- End of picture text -->",
+    "Der Reingewinn vor Steuern konnte zum elften aufeinander folgenden Mal gesteigert werden."
+  ]
+}

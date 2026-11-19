@@ -1,0 +1,188 @@
+{
+  "report_file": ".md/bekb-geschaeftsbericht-2011.md",
+  "stem": "bekb-geschaeftsbericht-2011",
+  "report_type": "annual",
+  "year": 2011,
+  "period": "FY2011",
+  "extraction_backend": "local_deterministic",
+  "metrics": {
+    "total_assets": {
+      "value_current": 25218556.0,
+      "value_prior_year": 24335133.0,
+      "unit": "TCHF",
+      "source_quote": "|**Total Aktiven**||**25 218 556**|**24 335 133**|"
+    },
+    "mortgage_loans": {
+      "value_current": 16211001.0,
+      "value_prior_year": 15609781.0,
+      "unit": "TCHF",
+      "source_quote": "|Hypothekarforderungen||16 211 001|15 609 781|"
+    },
+    "customer_loans_other": {
+      "value_current": 2294156.0,
+      "value_prior_year": 2361692.0,
+      "unit": "TCHF",
+      "source_quote": "|Forderungengegenüber Kunden||2 294 156|2 361 692|"
+    },
+    "customer_deposits": {
+      "value_current": 20188157.0,
+      "value_prior_year": 19168936.0,
+      "unit": "TCHF",
+      "source_quote": "|Verpflichtungengegenüber Kunden in Spar- und Anlageform<br>l|16 011 544|15 275 360| + |Übrige Verpflichtungengegenüber Kunden|4 176 613|3 893 576|"
+    },
+    "kassenobligationen": {
+      "value_current": 291953.0,
+      "value_prior_year": 452573.0,
+      "unit": "TCHF",
+      "source_quote": "|Kassenobligationen|291 953|452 573|"
+    },
+    "reserves_banking_risks": {
+      "value_current": 571088.0,
+      "value_prior_year": 607188.0,
+      "unit": "TCHF",
+      "source_quote": "|Reserven für allgemeine Bankrisiken|571 088|607 188|"
+    },
+    "shareholders_equity": {
+      "value_current": 1379.0,
+      "value_prior_year": 1293.0,
+      "unit": "Mio. CHF",
+      "source_quote": "|Eigenkapital|1 379 <sup>2</sup>|1 293|1 186|"
+    },
+    "net_interest_income": {
+      "value_current": 354676.0,
+      "value_prior_year": 358164.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Erfolg Zinsengeschäft**|**354 676**|**358 164**|"
+    },
+    "commission_income": {
+      "value_current": 84039.0,
+      "value_prior_year": 89775.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Erfolg Kommissions- und Dienstleistungsgeschäft**|**84 039**|**89 775**|"
+    },
+    "trading_income": {
+      "value_current": 27229.0,
+      "value_prior_year": 22673.0,
+      "unit": "TCHF",
+      "source_quote": "|**Erfolg aus dem Handelsgeschäft**|**27 229**|**22 673**|"
+    },
+    "total_operating_income": {
+      "value_current": 499516.0,
+      "value_prior_year": 506359.0,
+      "unit": "TCHF",
+      "source_quote": "|Betriebsertragnetto|499 516|506 359|"
+    },
+    "personnel_expenses": {
+      "value_current": -152074.0,
+      "value_prior_year": -147936.0,
+      "unit": "TCHF",
+      "source_quote": "|Personalaufwand|–152 074|–147 936|"
+    },
+    "general_expenses": {
+      "value_current": -111934.0,
+      "value_prior_year": -104706.0,
+      "unit": "TCHF",
+      "source_quote": "|Sachaufwand|–111 934|–104 706|"
+    },
+    "total_operating_expenses": {
+      "value_current": -264008.0,
+      "value_prior_year": -252642.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Geschäftsaufwand**|**–264 008**|**–252 642**|"
+    },
+    "operating_profit": {
+      "value_current": 235508.0,
+      "value_prior_year": 253717.0,
+      "unit": "TCHF",
+      "source_quote": "|Bruttogewinn|235 508|253 717|"
+    },
+    "reserves_change": null,
+    "taxes": {
+      "value_current": -32600.0,
+      "value_prior_year": -35500.0,
+      "unit": "TCHF",
+      "source_quote": "|Steuern|–32 600|–35 500|"
+    },
+    "net_profit": {
+      "value_current": 130135.0,
+      "value_prior_year": 124437.0,
+      "unit": "TCHF",
+      "source_quote": "|**Jahresgewinn**|**130 135**|**124 437**|"
+    },
+    "assets_under_management": {
+      "value_current": 19748.0,
+      "value_prior_year": 20474.0,
+      "unit": "Mio. CHF",
+      "source_quote": "|Betreute Vermögenswerte(Depotwerte)<sup>1</sup>|19 748|20 474|20 291|"
+    },
+    "net_new_money": {
+      "value_current": 26.0,
+      "value_prior_year": 232.0,
+      "unit": "TCHF",
+      "source_quote": "|**Netto-Neugeld-Zufluss/-Abfluss betreute Vermögenswerte(Depotwerte)**|**26**|**232**|"
+    },
+    "free_cash_flow": {
+      "value_current": 120.0,
+      "value_prior_year": 118.0,
+      "unit": "Mio. CHF",
+      "source_quote": "|Netto erarbeitete Mittel(NEM)|120,0|118,0|147,0|"
+    },
+    "share_price_eoy": {
+      "value_current": 249.1,
+      "value_prior_year": 242.0,
+      "unit": "CHF",
+      "source_quote": "|Jahresendkurs Namenaktie in CHF<sup>7</sup>|249,1|242,0|"
+    },
+    "dividend_per_share": {
+      "value_current": 5.3,
+      "value_prior_year": 5.1,
+      "unit": "CHF",
+      "source_quote": "|Dividendeje Namenaktie in CHF|5,30 <sup>6</sup>|5,10|"
+    },
+    "payout_ratio_pct": null,
+    "fte_count": {
+      "value_current": 1214.0,
+      "value_prior_year": 1199.0,
+      "unit": "FTE",
+      "source_quote": "|Mitarbeiterinnen und Mitarbeiter(teilzeitbereinigt)|1 214|1 199|1 193|"
+    },
+    "headcount": {
+      "value_current": 1465.0,
+      "value_prior_year": 1448.0,
+      "unit": "Personen",
+      "source_quote": "|Personalbestand(inkl. Lernende sowie Aushilfen)|1 465|1 448|1 426|"
+    },
+    "branch_count": {
+      "value_current": 79.0,
+      "value_prior_year": 78.0,
+      "unit": "Anzahl",
+      "source_quote": "|Anzahl Niederlassungen|79|78|78|"
+    },
+    "taxes_public_mio": {
+      "value_current": 32.6,
+      "value_prior_year": 35.5,
+      "unit": "Mio. CHF",
+      "source_quote": "|Bundes-,Staats- und Gemeindesteuern|32,6|35,5|37,5|"
+    },
+    "dividend_canton_mio": {
+      "value_current": 25.4,
+      "value_prior_year": 24.5,
+      "unit": "Mio. CHF",
+      "source_quote": "|Dividende an den Kanton|25,4 <sup>4</sup>|24,5|23,0|"
+    },
+    "canton_guarantee_fee_mio": {
+      "value_current": 3.3,
+      "value_prior_year": 3.2,
+      "unit": "Mio. CHF",
+      "source_quote": "|AbgeltungStaatsgarantie an den Kanton|3,3|3,2|3,2|"
+    }
+  },
+  "strategy_highlights": [
+    "**Bericht des Verwaltungsrates an die Generalversammlung der Aktionärinnen und Aktionäre über das Geschäftsjahr 2011**",
+    "Die 123 fokussiert ihre Tätigkeit auf zwei Kerngeschäftsfelder, nämlich einerseits auf das Geschäft mit Privaten und Firmenkunden, insbesondere mit KMU, und anderseits auf die Vermögensberatung. Die Geschäftspolitik verfolgt eine solide Bilanzstruktur mit starker Eigenmittelausstattung und guter Refinanzierung sowie eine starke Ertragskraft. Dies hat sich im Geschäftsjahr 2011 erneut bewährt. Die netto erarbeiteten Mittel (NEM) stiegen im Berichtsjahr um 120,0 Mio. Franken. Die 123 hat eine langfristig gültige finanzielle Zielsetzung: Sie will über eine Zeitspanne von zehn Jahren einen Free-Cash-Flow (netto erarbeitete Mittel, NEM) von 1 Mrd. Franken erarbeiten. In den Jahren 2003 bis 2011 wurden kumuliert netto erarbeitete Mittel von 1150 Mio. Franken geschaffen. Damit liegt der erreichte Mehrwert nach neun Jahren über dem angestrebten Zielpfad. Eine Nachhaltigkeitsprämie wird an alle Mitarbeitenden nach zehn Jahren ausbezahlt, wenn ein Free-Cash-Flow von mindestens 500 Mio. Franken erreicht wird; die Prämie ist ein Element des langfristigen und limitierten Entschädigungsmodells.",
+    "Im Geschäftsjahr 2011 hat die 123 erneut ein gutes Ergebnis erwirtschaftet. Der **Jahresgewinn vor Steuern** konnte zum neunzehnten aufeinander folgenden Mal gesteigert werden. Er stieg um 1,7 Prozent auf 162,7 Mio. Franken. Der Generalversammlung wird die fünfzehnte Erhöhung der Dividende in Folge, von 5.10 Franken auf 5.30 Franken je Aktie, beantragt. Der Erfolg aus dem **Zinsengeschäft** erreichte im Geschäftsjahr 2011 354,7 Mio. Franken und lag damit 1,0 Prozent unter dem Vorjahr. Der **Kommissionsertrag** aus der Vermögensberatung lag mit 79,7 Mio. Franken 6,3 Prozent unter dem Vorjahreswert. Der Erfolg aus dem gemäss Ausrichtung der Bank auf tiefem Niveau gehaltenen **Handelsgeschäft** übertraf mit 27,2 Mio. Franken das Vorjahresergebnis um 4,6 Mio. Franken.",
+    "Der Personalbestand im Niederlassungsnetz wurde gezielt ausgebaut. Weiter wurden die Marketingaktivitäten verstärkt. Zusätzlich wirkten sich die Kosten für das IT-Outsourcing an das HP Banking Service Center erstmals für ein ganzes Jahr aus. Insgesamt erhöhte sich der Geschäftsaufwand um 4,5 Prozent. Das Verhältnis des Geschäftsaufwandes zum Betriebsertrag lag innerhalb des Zielbereiches von 50 bis 55 Prozent.",
+    "Im Kreditgeschäft wurden insbesondere kleinere und mittlere Engagements bei Privaten sowie KMU im Marktgebiet gefördert. Die **Kreditbeanspruchung** ohne Öffentlich-rechtliche Körperschaften (OeRK) erhöhte sich auf 17,2 Mrd. Franken. Die **Hypothekarforderungen** stiegen um 3,9 Prozent auf 16,2 Mrd. Franken. Mit einem Förderkonzept, das aus drei Säulen",
+    "(Finanzierung von Neuunternehmen und Wachstum, Finanzierung von Nachfolgeregelungen, Seed-Finanzierungen) besteht, werden innovative **KMU** und **Neuunternehmen** unterstützt. Im Geschäftsjahr 2011 wurden im Rahmen der ersten und zweiten Säule des Förderkonzeptes 63 Vorhaben finanziert. Damit wurde die Schaffung beziehungsweise Weiterführung von 1050 Arbeitsplätzen unterstützt."
+  ]
+}

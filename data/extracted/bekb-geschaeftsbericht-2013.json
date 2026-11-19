@@ -1,0 +1,188 @@
+{
+  "report_file": ".md/bekb-geschaeftsbericht-2013.md",
+  "stem": "bekb-geschaeftsbericht-2013",
+  "report_type": "annual",
+  "year": 2013,
+  "period": "FY2013",
+  "extraction_backend": "local_deterministic",
+  "metrics": {
+    "total_assets": {
+      "value_current": 26663445.0,
+      "value_prior_year": 26371182.0,
+      "unit": "TCHF",
+      "source_quote": "|**Total Aktiven**|**26 663 445**|**26 371 182**|"
+    },
+    "mortgage_loans": {
+      "value_current": 18440444.0,
+      "value_prior_year": 17794919.0,
+      "unit": "TCHF",
+      "source_quote": "|Hypothekarforderungen|18 440 444|17 794 919|"
+    },
+    "customer_loans_other": {
+      "value_current": 2147486.0,
+      "value_prior_year": 2410411.0,
+      "unit": "TCHF",
+      "source_quote": "|Forderungengegenüber Kunden|2 147 486|2 410 411|"
+    },
+    "customer_deposits": {
+      "value_current": 21853982.0,
+      "value_prior_year": 21442222.0,
+      "unit": "TCHF",
+      "source_quote": "|Verpflichtungengegenüber Kunden in Spar- und Anlageform|17 163 393|16 786 780| + |Übrige Verpflichtungengegenüber Kunden|4 690 589|4 655 442|"
+    },
+    "kassenobligationen": {
+      "value_current": 171140.0,
+      "value_prior_year": 226237.0,
+      "unit": "TCHF",
+      "source_quote": "|Kassenobligationen|171 140|226 237|"
+    },
+    "reserves_banking_risks": {
+      "value_current": 630227.0,
+      "value_prior_year": 586447.0,
+      "unit": "TCHF",
+      "source_quote": "|Reserven für allgemeine Bankrisiken|630 227|586 447|"
+    },
+    "shareholders_equity": {
+      "value_current": 1496.0,
+      "value_prior_year": 1415.0,
+      "unit": "Mio. CHF",
+      "source_quote": "|Eigenkapital|1 496<sup>2</sup>|1 415|1 379|"
+    },
+    "net_interest_income": {
+      "value_current": 329737.0,
+      "value_prior_year": 348500.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Erfolg Zinsengeschäft**|**329 737**|**348 500**|"
+    },
+    "commission_income": {
+      "value_current": 83829.0,
+      "value_prior_year": 78613.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Erfolg Kommissions- und Dienstleistungsgeschäft**|**83 829**|**78 613**|"
+    },
+    "trading_income": {
+      "value_current": 21217.0,
+      "value_prior_year": 21950.0,
+      "unit": "TCHF",
+      "source_quote": "|**Erfolg aus dem Handelsgeschäft**|**21 217**|**21 950**|"
+    },
+    "total_operating_income": {
+      "value_current": 512708.0,
+      "value_prior_year": 492551.0,
+      "unit": "TCHF",
+      "source_quote": "|Betriebsertragnetto|512 708|492 551|"
+    },
+    "personnel_expenses": {
+      "value_current": -149947.0,
+      "value_prior_year": -152260.0,
+      "unit": "TCHF",
+      "source_quote": "|Personalaufwand|–149 947|–152 260|"
+    },
+    "general_expenses": {
+      "value_current": -112883.0,
+      "value_prior_year": -114082.0,
+      "unit": "TCHF",
+      "source_quote": "|Sachaufwand|–112 883|–114 082|"
+    },
+    "total_operating_expenses": {
+      "value_current": -278140.0,
+      "value_prior_year": -266342.0,
+      "unit": "TCHF",
+      "source_quote": "|Subtotal Geschäftsaufwand|–278 140|–266 342|"
+    },
+    "operating_profit": {
+      "value_current": 234568.0,
+      "value_prior_year": 226208.0,
+      "unit": "TCHF",
+      "source_quote": "|Bruttogewinn|234 568|226 208|"
+    },
+    "reserves_change": null,
+    "taxes": {
+      "value_current": -38900.0,
+      "value_prior_year": -34800.0,
+      "unit": "TCHF",
+      "source_quote": "|Steuern|–38 900|–34 800|"
+    },
+    "net_profit": {
+      "value_current": 130132.0,
+      "value_prior_year": 128053.0,
+      "unit": "TCHF",
+      "source_quote": "|**Jahresgewinn**|**130 132**|**128 053**|"
+    },
+    "assets_under_management": {
+      "value_current": 19419.0,
+      "value_prior_year": 20608.0,
+      "unit": "Mio. CHF",
+      "source_quote": "|Betreute Vermögenswerte(Depotwerte)<sup>1</sup>|19 419|20 608|19 748|"
+    },
+    "net_new_money": {
+      "value_current": -1693.0,
+      "value_prior_year": 84.0,
+      "unit": "TCHF",
+      "source_quote": "|**Netto-Neugeld-Zufluss/-Abfluss betreute Vermögenswerte(Depotwerte)**|**–1 693**|**84**|"
+    },
+    "free_cash_flow": {
+      "value_current": 155.7,
+      "value_prior_year": 107.8,
+      "unit": "Mio. CHF",
+      "source_quote": "|Free-Cash-Flow|155,7|107,8|120,0|"
+    },
+    "share_price_eoy": {
+      "value_current": 206.0,
+      "value_prior_year": 254.0,
+      "unit": "CHF",
+      "source_quote": "|Jahresend|206.0|254.0|249.1|"
+    },
+    "dividend_per_share": {
+      "value_current": 5.5,
+      "value_prior_year": 5.3,
+      "unit": "CHF",
+      "source_quote": "|Dividendeje Namenaktie|5.50<sup>1</sup>|5.30|5.30|"
+    },
+    "payout_ratio_pct": null,
+    "fte_count": {
+      "value_current": 1171.0,
+      "value_prior_year": 1207.0,
+      "unit": "FTE",
+      "source_quote": "|Mitarbeiterinnen und Mitarbeiter(teilzeitbereinigt)|1 171|1 207|1 214|"
+    },
+    "headcount": {
+      "value_current": 1418.0,
+      "value_prior_year": 1456.0,
+      "unit": "Personen",
+      "source_quote": "|Personalbestand(inkl. Lernende sowie Aushilfen)|1 418|1 456|1 465|"
+    },
+    "branch_count": {
+      "value_current": 75.0,
+      "value_prior_year": 79.0,
+      "unit": "Anzahl",
+      "source_quote": "|Anzahl Niederlassungen|75|79|79|"
+    },
+    "taxes_public_mio": {
+      "value_current": 38.9,
+      "value_prior_year": 34.8,
+      "unit": "Mio. CHF",
+      "source_quote": "|Bundes-,Staats- und Gemeindesteuern|38,9|34,8|32,6|"
+    },
+    "dividend_canton_mio": {
+      "value_current": 26.4,
+      "value_prior_year": 50.9,
+      "unit": "Mio. CHF",
+      "source_quote": "|Dividende an den Kanton|26,4<sup>5</sup>|50,9|25,4|"
+    },
+    "canton_guarantee_fee_mio": {
+      "value_current": 0.1,
+      "value_prior_year": 3.4,
+      "unit": "Mio. CHF",
+      "source_quote": "|AbgeltungStaatsgarantie an den Kanton|0,1|3,4|3,3|"
+    }
+  },
+  "strategy_highlights": [
+    "**Bericht des Verwaltungsrats an die Generalversammlung der Aktionärinnen und Aktionäre über das Geschäftsjahr 2013**",
+    "123 Bundesplatz 8 Postfach 3001 Bern Telefon 031 666 11 11 Fax 031 666 60 40",
+    "Alex Josty, Eveline Wittwer, Kerstin Eichenberger, Manuel Inderbitzin",
+    "Bettina Amstutz, Benjamin Bratch und Deborah Lüthi, Lernende der BEKB (von links)",
+    "No. 01-13-509235 – www.myclimate.org © myclimate – The Climate Protection Partnership",
+    "_Der Verwaltungsratspräsident, Jürg Rieben, und der Vorsitzende der Geschäftsleitung, Hanspeter Rüfenacht._"
+  ]
+}

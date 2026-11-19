@@ -1,0 +1,188 @@
+{
+  "report_file": ".md/bekb-geschaeftsbericht-2023.md",
+  "stem": "bekb-geschaeftsbericht-2023",
+  "report_type": "annual",
+  "year": 2023,
+  "period": "FY2023",
+  "extraction_backend": "local_deterministic",
+  "metrics": {
+    "total_assets": {
+      "value_current": 40053489.0,
+      "value_prior_year": 39757263.0,
+      "unit": "TCHF",
+      "source_quote": "|**Total Aktiven**|**40 053 489**|**39 757 263**|**296 226**|**0,7**|"
+    },
+    "mortgage_loans": {
+      "value_current": 26809178.0,
+      "value_prior_year": 25950848.0,
+      "unit": "TCHF",
+      "source_quote": "|Hypothekarforderungen|26 809 178|25 950 848|858 330|3,3|"
+    },
+    "customer_loans_other": {
+      "value_current": 1987914.0,
+      "value_prior_year": 1708680.0,
+      "unit": "TCHF",
+      "source_quote": "|Forderungen gegenüber Kunden|1 987 914|1 708 680|279 234|16,3|"
+    },
+    "customer_deposits": {
+      "value_current": 27057621.0,
+      "value_prior_year": 27303953.0,
+      "unit": "TCHF",
+      "source_quote": "|Verpflichtungen aus Kundeneinlagen|27 057 621|27 303 953|–246 332|–0,9|"
+    },
+    "kassenobligationen": {
+      "value_current": 162566.0,
+      "value_prior_year": 80555.0,
+      "unit": "TCHF",
+      "source_quote": "|Kassenobligationen|162 566|80 555|82 011|101,8|"
+    },
+    "reserves_banking_risks": {
+      "value_current": 564885.0,
+      "value_prior_year": 523150.0,
+      "unit": "TCHF",
+      "source_quote": "|Reserven für allgemeine Bankrisiken|564 885|523 150|41 735|8,0|"
+    },
+    "shareholders_equity": {
+      "value_current": 2794.0,
+      "value_prior_year": 2677.0,
+      "unit": "Mio. CHF",
+      "source_quote": "|Eigenkapital|2 794<sup>1</sup>|2 677|"
+    },
+    "net_interest_income": {
+      "value_current": 376450.0,
+      "value_prior_year": 315400.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Netto-Erfolg Zinsengeschäft**|**376 450**|**315 400**|**61 051**|**19,4**|"
+    },
+    "commission_income": {
+      "value_current": 104916.0,
+      "value_prior_year": 108928.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Erfolg Kommissions- und Dienstleistungsgeschäft**|**104 916**|**108 928**|**–4 012**|**–3,7**|"
+    },
+    "trading_income": {
+      "value_current": 24269.0,
+      "value_prior_year": 37452.0,
+      "unit": "TCHF",
+      "source_quote": "|**Erfolg aus dem Handelsgeschäft und der Fair-Value-Option**|**24 269**|**37 452**|**–13 183**|**–35,2**|"
+    },
+    "total_operating_income": {
+      "value_current": 532285.0,
+      "value_prior_year": 485689.0,
+      "unit": "TCHF",
+      "source_quote": "|**Geschäftsertrag**|**532 285**|**485 689**|**46 595**|**9,6**|"
+    },
+    "personnel_expenses": {
+      "value_current": -140420.0,
+      "value_prior_year": -143387.0,
+      "unit": "TCHF",
+      "source_quote": "|Personalaufwand|–140 420|–143 387|2 967|–2,1|"
+    },
+    "general_expenses": {
+      "value_current": -113942.0,
+      "value_prior_year": -111504.0,
+      "unit": "TCHF",
+      "source_quote": "|Sachaufwand|–113 942|–111 504|–2 438|2,2|"
+    },
+    "total_operating_expenses": {
+      "value_current": -254362.0,
+      "value_prior_year": -254891.0,
+      "unit": "TCHF",
+      "source_quote": "|**Subtotal Geschäftsaufwand**|**–254 362**|**–254 891**|**529**|**–0,2**|"
+    },
+    "operating_profit": {
+      "value_current": 238918.0,
+      "value_prior_year": 170405.0,
+      "unit": "TCHF",
+      "source_quote": "|**Geschäftserfolg**|**238 918**|**170 405**|**68 513**|**40,2**|"
+    },
+    "reserves_change": {
+      "value_current": -41735.0,
+      "value_prior_year": 18816.0,
+      "unit": "TCHF",
+      "source_quote": "|Veränderungen von Reserven für allgemeine Bankrisiken|–41 735|18 816|–60 551|n.a.|"
+    },
+    "taxes": {
+      "value_current": -55000.0,
+      "value_prior_year": -29900.0,
+      "unit": "TCHF",
+      "source_quote": "|Steuern|–55 000|–29 900|–25 100|83,9|"
+    },
+    "net_profit": {
+      "value_current": 174885.0,
+      "value_prior_year": 159616.0,
+      "unit": "TCHF",
+      "source_quote": "|**Gewinn**|**174 885**|**159 616**|**15 269**|**9,6**|"
+    },
+    "assets_under_management": {
+      "value_current": 18242.0,
+      "value_prior_year": 17033.0,
+      "unit": "Mio. CHF",
+      "source_quote": "|Betreute Vermögenswerte (Depotwerte)|18 242|17 033|"
+    },
+    "net_new_money": null,
+    "free_cash_flow": {
+      "value_current": 211.8,
+      "value_prior_year": 118.1,
+      "unit": "Mio. CHF",
+      "source_quote": "|Free-Cash-Flow|211,8|118,1|"
+    },
+    "share_price_eoy": {
+      "value_current": 236.0,
+      "value_prior_year": 222.5,
+      "unit": "CHF",
+      "source_quote": "|Jahresend|236.00|222.50|202.50|"
+    },
+    "dividend_per_share": {
+      "value_current": 10.0,
+      "value_prior_year": 9.6,
+      "unit": "CHF",
+      "source_quote": "|Dividende (in CHF) je Namenaktie|10.00<sup>1</sup>|9.60|9.20|"
+    },
+    "payout_ratio_pct": {
+      "value_current": 53.0,
+      "value_prior_year": 56.0,
+      "unit": "%",
+      "source_quote": "|Ausschüttungsquote|53%|56%|55%|"
+    },
+    "fte_count": {
+      "value_current": 966.0,
+      "value_prior_year": 940.0,
+      "unit": "FTE",
+      "source_quote": "|Mitarbeitende (teilzeitbereinigt)|966|940|"
+    },
+    "headcount": {
+      "value_current": 1165.0,
+      "value_prior_year": 1146.0,
+      "unit": "Personen",
+      "source_quote": "|Personalbestand (inkl. Lernenden sowie Aushilfen)|1 165|1 146|"
+    },
+    "branch_count": {
+      "value_current": 73.0,
+      "value_prior_year": 76.0,
+      "unit": "Anzahl",
+      "source_quote": "|Anzahl Standorte|73|76|"
+    },
+    "taxes_public_mio": {
+      "value_current": 55.0,
+      "value_prior_year": 29.9,
+      "unit": "Mio. CHF",
+      "source_quote": "|Bundes-, Staats- und Gemeindesteuern|55,0|29,9|"
+    },
+    "dividend_canton_mio": {
+      "value_current": 48.0,
+      "value_prior_year": 46.1,
+      "unit": "Mio. CHF",
+      "source_quote": "|Dividende an den Kanton|48,0<sup>3</sup>|46,1|"
+    },
+    "canton_guarantee_fee_mio": null
+  },
+  "strategy_highlights": [
+    "Bericht des Verwaltungsrats an die Generalversammlung der Aktionärinnen und Aktionäre über das Geschäftsjahr 2023",
+    "Der Geschäftsbericht und der Nachhaltigkeitsbericht erscheinen jährlich, der Offenlegungsbericht halbjährlich. Sofern nichts anderes erwähnt wird, beziehen sich die Angaben auf das Stammhaus der BEKB und auf das Engagement der Bank im Jahr 2023.",
+    "Der Geschäftsbericht stellt die wirtschaftliche Lage der Bank dar und umfasst Bilanz, Erfolgsrechnung, Geldflussrechnung, Eigenkapitalnachweis und Anhang. Weiter gibt er unter anderem Auskunft über die Unternehmensstruktur der Bank, die Geschäftstätigkeit, die Corporate Governance, die Vergütungen des Verwaltungsrats und der Geschäftsleitung sowie über das Risikomanagement.",
+    "Buchführung, Bewertung und Bilanzierung erfolgen nach den Schweizer Rechnungslegungsvorschriften für Banken sowie nach dem Kotierungsreglement der Schweizer Börse in Schweizer Franken. Der Einzelabschluss stellt die wirtschaftliche Lage so dar, dass ein den tatsächlichen Verhältnissen entsprechendes Bild nach dem True-and-Fair-View-Prinzip vermittelt wird (statutarischer Einzelabschluss True and Fair View gemäss Artikel 25 Absatz 1 Buchstabe b BankV).",
+    "Der Nachhaltigkeitsbericht umfasst die Auswirkungen, Ziele und Aktivitäten der BEKB im Hinblick auf eine nachhaltige Entwicklung. Zusammen mit dem Geschäftsbericht liefert er ein umfassendes Bild der finanziellen, gesellschaftlichen und ökologischen Dimensionen der Geschäftstätigkeit der BEKB. Die BEKB berichtet über alle wesentlichen Nachhaltigkeitsthemen.",
+    "Die Standards der Global Reporting Initiative (GRI) dienen als Leitlinie für die Berichterstattung: Die BEKB berichtet für den Zeitraum 1. Januar 2023 bis 31. Dezember 2023 in Übereinstimmung mit den GRI-Standards."
+  ]
+}
