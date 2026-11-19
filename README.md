@@ -1,9 +1,13 @@
 # BEKB Geschäftsberichte Analysen (2003–2026)
 
 [![Docs & Data CI](https://github.com/chatelao/bekb-geschaeftsbereichte-analysen/actions/workflows/docs-cicd.yml/badge.svg)](https://github.com/chatelao/bekb-geschaeftsbereichte-analysen/actions/workflows/docs-cicd.yml)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Docs-2563EB?logo=github)](https://chatelao.github.io/bekb-geschaeftsbereichte-analysen/)
+[![Read the Docs](https://readthedocs.org/projects/bekb-geschaeftsbereichte-analysen/badge/?version=latest)](https://bekb-geschaeftsbereichte-analysen.readthedocs.io/en/latest/?badge=latest)
 ![Datenabdeckung](https://img.shields.io/badge/Berichte-57%20(2003%E2%80%93H1--2026)-0F2942)
 ![Mehrjahresberichte](https://img.shields.io/badge/Analysen-7%20Themenberichte%20%7C%2013%20Grafiken-0F766E)
 ![Inflation & Audit](https://img.shields.io/badge/Audit-52%20Self--Healed%20%7C%20BFS%20LIK%202025-C8102E)
+
+> **Online-Dokumentation:** **[GitHub Pages (Live)](https://chatelao.github.io/bekb-geschaeftsbereichte-analysen/)** · **[Read the Docs](https://bekb-geschaeftsbereichte-analysen.readthedocs.io/en/latest/)**
 
 Strukturierte, vollständig reproduzierbare Längsschnitt-, Bilanz-, Risiko- und Governance-Analyse der **Berner Kantonalbank AG (BEKB)** über **24 Berichtsjahre** (`2003` bis `H1 / 06-2026`). Alle **57 Originalberichte** (23 Geschäftsberichte, 14 Semesterberichte und 20 Offenlegungsberichte) werden über eine vierstufige **«Hydrogen-First» Map-Validate-Reduce-Pipeline** extrahiert, deterministisch kreuzvalidiert und in **7 Mehrjahresberichte** sowie **13 hochauflösende Visualisierungen** überführt.
 
@@ -113,12 +117,15 @@ uvx --with mkdocs-material --with pymdown-extensions mkdocs serve
 
 Optional kann Stufe 4 auch über die Gemini Hydrogen API ausgeführt werden (`export GEMINI_API_KEY=... && python3 scripts/build_dataset_and_reports.py --backend gemini`).
 
-### Automatische Publikation auf Read the Docs
+### Automatische Publikation (GitHub Pages & Read the Docs)
 
-Dieses Repository enthält eine einsatzbereite Konfiguration für **Read the Docs** sowie **GitHub Actions**:
+Dieses Repository veröffentlicht die Dokumentation automatisch auf **GitHub Pages** und **Read the Docs**:
 
+- **Live-Portale:**
+  - **GitHub Pages:** <https://chatelao.github.io/bekb-geschaeftsbereichte-analysen/>
+  - **Read the Docs:** <https://bekb-geschaeftsbereichte-analysen.readthedocs.io/en/latest/>
 - **[`.readthedocs.yaml`](./.readthedocs.yaml) & [`mkdocs.yml`](./mkdocs.yml):** Nutzt `ubuntu-24.04` mit Python 3.12, bereitet über `scripts/prepare_docs.py` das optimierte Material-for-MkDocs-Layout inkl. Tabellen-Styling, Mermaid-Diagrammen, MathJax und Grafik-Galerie auf und prüft mit `fail_on_warning: true`.
 - **[`.github/workflows/docs-cicd.yml`](./.github/workflows/docs-cicd.yml):**
   1. Verifiziert bei jedem Push/PR auf `main`, dass `scripts/build_dataset_and_reports.py --backend local` reproduzierbar bleibt und `data/` bzw. `reports/` aktuell sind.
-  2. Baut die Dokumentation strikt mit `mkdocs build --strict` und legt die fertige Seite als Build-Artefakt ab.
+  2. Baut die Dokumentation strikt mit `mkdocs build --strict` und veröffentlicht bei Push auf `main` automatisch auf **GitHub Pages** (`deploy-pages`).
   3. Löst bei Push auf `main` optional einen Read-the-Docs-Webhook aus (sofern in den GitHub Repository Secrets `RTD_WEBHOOK_URL` und `RTD_WEBHOOK_TOKEN` hinterlegt sind; bei verknüpfter GitHub-App baut Read the Docs zusätzlich automatisch).
