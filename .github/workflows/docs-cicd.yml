@@ -31,7 +31,7 @@ jobs:
           git diff --exit-code data/ reports/
 
       - name: Install MkDocs dependencies
-        run: pip install --no-cache-dir -r docs/requirements.txt
+        run: pip install -r docs/requirements.txt
 
       - name: Prepare Read the Docs staging & run strict MkDocs build
         run: |
