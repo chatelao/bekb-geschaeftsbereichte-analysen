@@ -1,0 +1,88 @@
+site_name: BEKB Geschäftsberichte Analysen (2003–2026)
+site_description: >-
+  Strukturierte Längsschnitt- und Bilanzanalyse über alle 57 Berner Kantonalbank (BEKB)
+  Geschäfts-, Semester- und Offenlegungsberichte (2003 bis H1/06-2026).
+site_author: chatelao
+repo_url: https://github.com/chatelao/bekb-geschaeftsbereichte-analysen
+repo_name: chatelao/bekb-geschaeftsbereichte-analysen
+edit_uri: edit/main/
+
+docs_dir: .rtd_docs
+site_dir: site
+
+theme:
+  name: material
+  language: de
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Dunkelmodus aktivieren
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Hellmodus aktivieren
+  icon:
+    repo: fontawesome/brands/github
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Übersicht: index.md
+  - Mehrjahresberichte:
+      - Berichtskatalog: reports/index.md
+      - "01 · Zinszyklen & Ertragsarchitektur": reports/01_zinszyklen_und_ertragsarchitektur_2003_2025.md
+      - "02 · Bilanz, Hypotheken & Refinanzierung": reports/02_bilanzwachstum_hypotheken_und_refinanzierung_2003_2026.md
+      - "03 · Basel III & Aufsichtsrecht": reports/03_aufsichtsrechtliche_resilienz_basel_iii_2015_2026.md
+      - "04 · Effizienz, FTE & Transformation": reports/04_operative_effizienz_und_transformation_2003_2025.md
+      - "05 · Aktie, Dividende & Kanton Bern": reports/05_aktie_dividenden_und_wertschoepfung_2003_2025.md
+      - "06 · Semesterdynamik & Reserven": reports/06_unterjaehrige_dynamik_semesterberichte_2013_2026.md
+      - "07 · Epochen, Governance & Vergütung real": reports/07_strategische_epochen_und_governance_2003_2026.md
+      - "Grafik-Galerie (13 Charts)": reports/galerie.md
+  - Methodik & Audit:
+      - Analysestrategie (Hydrogen-Pipeline): ANALYSE_STRATEGIE.md
+      - Validierungs- & Selbstheilungsbericht: data/validation_report.md
+      - PDF-zu-Markdown Roadmap: ROADMAP.md
